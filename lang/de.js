@@ -18,5 +18,5 @@ var WORDS_DE = {
     "footerInfo" : "Webseite erstellt von",
     "footerInfo2" : "Ich hoffe du hattest einen tollen tag! :)",
     "lastUpdate" : "Zuletzt aktualisiert",
-    "translatorName" : "Übersetzt ins DEUTSCHE von Ibrahim Oezhan"
+    "translatorName" : "Übersetzt ins DEUTSCHE von <a href='https://ibrahim-oezhan.itch.io'>Ibrahim Oezhan</a>"
 }
