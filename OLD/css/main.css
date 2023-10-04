@@ -1,0 +1,129 @@
+.bitDance {
+  width: 20%;
+}
+
+.hidden { display: none !important; }
+
+html {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+body { 
+    background-image: url("../img/bg.svg");
+    background-size: 100px;
+}
+
+
+body.pageDown {
+    background-color: aquamarine;
+}
+
+h1 {
+    font-family: titlefont;
+}
+
+p {
+    font-family: mainfont;
+}
+
+@font-face {
+    font-family: titlefont;
+    src: url("../fonts/BAUHS93.TTF");
+  }
+
+@font-face {
+    font-family: mainfont;
+    src: url("../fonts/TCCEB.TTF");
+  }
+
+
+.text {
+    color: white;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 0.05em;
+    text-shadow: 0.05em;
+    text-shadow: 0px 3px black;
+}
+
+.title {
+    text-align: center;
+    font-size: 72px;
+    color: white;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 3px;
+    text-shadow: 2px;
+    text-shadow: 0px 10px black;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000659;
+    position: sticky;
+    top: 0;
+    width: 100%;
+  }
+  
+  li {
+    float: left;
+    width: 25%;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 2px 2px;
+    text-decoration: none;
+    font-size: 32px;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: #04AA6D;
+  }
+
+.textMiddle {
+  font-family: titlefont;
+  text-align: center;
+  margin-top: 10%;
+  font-size: 48px;
+  color: white;
+  -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 0.03em;
+    text-shadow: 0.05em;
+    text-shadow: 0px 3px black;
+}
+
+a.link1:visited,:link {
+  -webkit-text-stroke-color: #062c44;
+  -webkit-text-stroke-width: 0.03em;
+  text-shadow: 0.05em;
+  text-shadow: 0px 3px #062c44;
+  color: #1DA1F2;
+  text-decoration: underline;
+}
+
+a.link2:visited,:link {
+  -webkit-text-stroke-color: #282828;
+  -webkit-text-stroke-width: 0.03em;
+  text-shadow: 0.05em;
+  text-shadow: 0px 3px #282828;
+  color: #ff0000;
+  text-decoration: underline;
+}
+
+a.ohWhereDoILeadUpTo:visited, a.ohWhereDoILeadUpTo:link {
+  text-decoration: none;
+  color: white;
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 0.03em;
+  text-shadow: 0.05em;
+  text-shadow: 0px 3px black;
+}

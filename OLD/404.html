@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="css/404.css">
+      <link rel="shortcut icon" href="img/icon_lostPage.svg">
+     <title>You got lost? Well, why won't you jam with me a little?</title>
+
+    <audio id="music1"><source src="img/slickpick.ogg" type="audio/ogg"></audio>
+    <audio id="music2"><source src="img/swingmusical.ogg" type="audio/ogg"></audio>
+    <audio id="music3"><source src="img/groovy.ogg" type="audio/ogg"></audio>
+
+     <script>
+        function getRandomInt(min, max) {
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+
+        var songindex = getRandomInt(1, 3);
+        //alert(songindex)
+        file = document.getElementById("music" + String(songindex))
+        gif = document.getElementById("bitDance")
+        png = document.getElementById("bitDancePNG")
+        file.loop = true;
+        function playMusic() {
+          if (file.paused == true) {
+            file.play();
+            
+            document.getElementById("bitDance").style.opacity = "1";
+            document.getElementById("bitDancePNG").style.opacity = "0";
+            /*
+            switch (songindex){
+              case 1:
+                document.getElementsByTagName("body")[0].style = "animation: bgAn 0.5455s infinite;"
+            }*/
+
+          } else {
+            file.pause();
+            document.getElementById("bitDance").style.opacity = "0";
+            document.getElementById("bitDancePNG").style.opacity = "1";
+
+            document.getElementsByTagName("body")[0].style = "background-color: black;"
+          }
+          
+        }
+
+     </script>
+  </head>
+  <body>
+    <img src="img/bitDance.png" class="bitDancePNG" id="bitDancePNG" alt="Bitowsky">
+    <img src="img/bitDance.gif" class="bitDanceGIF" id="bitDance" alt="Dancing Bitowsky">
+    <img src="img/bitSecret.png" class="bitSecret" onclick="playMusic()" alt="Bitowsky???">
+  </body>
+</html>
