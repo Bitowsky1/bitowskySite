@@ -11,6 +11,11 @@ var WORDS_EN = {
     "cardInfo4" : "Owner of",
     "cardInfo5" : "Feel free to ask me for any collaboration!",
 
+    "button1" : "Fan-made Animated Brawl Stars Pins (Emotes)",
+
+    "soon" : "Soon...",
+    
+
     "socialTitle" : "MY SOCIAL MEDIAS:",
 
     "underConstruction" : "Oops!<br>It seems that the site is still under construction!<br>It will receive additional updates overtime.",
@@ -18,5 +23,11 @@ var WORDS_EN = {
     "footerInfo" : "Webpage created by",
     "footerInfo2" : "I hope you have a great day! :)",
     "lastUpdate" : "Last Updated",
-    "translatorName" : ""
+    "translatorName" : "",
+
+    "promptCopied" : "Copied to your clipboard!",
+    "promptUnlocksoon" : "This section is currently unavailable!",
+    "promptLangUnsupported" : "This section does not support this language. The content will be displayed in English.",
+
+    "promptClose" : "[CLOSE]"
 }

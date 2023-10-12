@@ -1,0 +1,72 @@
+body {
+    height: 750px;
+    margin: 0;
+}
+
+.mainBox {
+    width: 90%;
+    height: 90%;
+    background-color: rgba(132, 255, 212, 0.7);
+    position: fixed;
+    margin-left: 5%;
+    margin-top: 2.5%;
+    outline: 10px solid rgb(0, 46, 30);
+    border-radius: 20px;
+
+}
+
+.discTitle {
+    font-size: 400%;
+    text-align: center;
+    margin-top: 2%;
+}
+
+.discDesc {
+    font-size: 250%;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.discImg {
+    position: fixed;
+    bottom: 2.5%;
+    right: 5%;
+    height: 30%;
+}
+
+.discImgGif {
+    height: 52%;
+    bottom: -10%;
+    right: 1%;
+}
+
+@keyframes textAn {
+    0% {transform: rotate(358deg);}
+    50% {transform: rotate(362deg);}
+    100% {transform: rotate(358deg);}
+}
+
+.discBubble {
+    position: fixed;
+    width: 30%;
+    bottom: 4.5%;
+    right: 22.5%;
+    animation-name: textAn;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    transform-origin: 100% 50%;
+}
+
+.discBubbletxt {
+    font-size: 250%;
+    text-align: center;
+    padding-right: 1%;
+}
+
+.mainBoxLast {
+    width: 50%;
+    text-align: center;
+    font-size: 400%;
+}

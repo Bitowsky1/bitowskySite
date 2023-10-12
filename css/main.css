@@ -21,6 +21,7 @@ body {
     background-size: 48px;
     margin: 0;
     image-rendering: pixelated;
+    z-index: 0;
 }
 
 body.pageDown {
@@ -31,7 +32,7 @@ h1, .mainCardAvatarCredit, .mainCardAvatarTitle {
     font-family: titlefont;
 }
 
-p, .mainCardRightSectionsText, .mainCardBottomTitle, .mainCardBottomSectionsTab3, .footerDonotcrossText, .lang-langName, .langChooserText, .footerFinaltext {
+p, .mainCardRightSectionsText, .mainCardBottomTitle, .mainCardBottomSectionsTab3, .footerDonotcrossText, .lang-langName, .langChooserText, .footerFinaltext, .textFont {
     font-family: mainfont;
 }
 
@@ -127,6 +128,46 @@ ul {
   margin-right: auto;
 }
 
+
+.promptMessage {
+  width: 75%;
+  background-color: rgb(255, 255, 0, 0.8);
+  border: 5px solid black;
+  position: fixed;
+  margin-left: 12.5%;
+  text-align: center;
+  z-index: 5;
+  font-size: 300%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  user-select: none;
+  pointer-events: default;
+}
+
+.promptMessageHide {
+  margin-top: -500px;
+  transition: margin-top 0.6s;
+}
+
+.promptMessageShow {
+  margin-top: 0px;
+  transition: margin-top 0.15s;
+}
+
+.promptMessageClose {
+  -webkit-text-stroke-color: black;
+  text-shadow: 0px 2px black;
+  -webkit-text-stroke-width: 0.05em;
+  text-shadow: 0.05em;
+  font-size: 50%;
+  text-align: right;
+}
+
+.promptMessageClose:hover {
+  color: lightgreen;
+}
+
+
 .langChooser {
   height: 40px;
   margin-top: 10px;
@@ -220,7 +261,6 @@ a.mainCardAvatarCreditSocial:hover {
   height: 20%;
   background-color: #047149;
   outline: 5px black solid;
-  
 }
 
 .mainCardRightSectionsText {
@@ -263,6 +303,10 @@ a.mainCardAvatarCreditSocial:hover {
   margin-top: -5px;
 }
 
+.mainCardBottomSectionsTab {
+  user-select: none;
+}
+
 .mainCardBottomSectionsTab img {
   height: 80%;
 }
@@ -283,10 +327,22 @@ a.mainCardAvatarCreditSocial:hover {
   background-color: #ff5252;
 }
 
+.mainCardBottomSectionsTab3IMG {
+  opacity: 1;
+}
+
+.mainCardBottomSectionsTab3IMG:hover {
+  opacity: 0;
+}
+
 .mainCardBottomSectionsTab3 {
   background-color: #5865F2;
   padding-top: 12px;
-  font-size: 24px;
+  font-size: 36px;
+}
+
+.mainCardBottomSectionsTab3:hover {
+  background-color: #9aa1f8;
 }
 
 .mainCardBottomSectionsTab3 img {
@@ -294,12 +350,25 @@ a.mainCardAvatarCreditSocial:hover {
   vertical-align: middle;
 }
 
+.mainCardBottomSectionsTab3Over {
+  position: absolute;
+  margin-left: -265px;
+  margin-top: -2px;
+  font-size: 48px;
+  visibility: visible;
+  text-align: center;
+}
+
+.lang-copied {
+  margin-left: 40px;
+}
+
 .mainCardBottomSectionsTab4 {
   background-color: #101014;
 }
 
 .mainCardBottomSectionsTab4:hover {
-  background-color: #1c1c22;
+  background-color: #35353f;
 }
 
 .footer {
@@ -338,7 +407,7 @@ a.mainCardAvatarCreditSocial:hover {
 
 .footerDonotcrossText {
   background-color: rgb(255, 244, 184);
-  height: 200px;
+  min-height: 200px;
   position: absolute;
   left: 0;
   right: 0;
@@ -346,9 +415,9 @@ a.mainCardAvatarCreditSocial:hover {
   text-align: center;
   width: 75%;
   padding-top: 10px;
-  padding-bottom: -150px;
+  padding-bottom: 30px;
   outline: 10px solid rgb(69, 59, 0);
-  font-size: 56px;
+  font-size: 340%;
   color: white;
   transform: rotate(-5deg);
 }
@@ -358,4 +427,74 @@ a.mainCardAvatarCreditSocial:hover {
   margin-bottom: 50px;
   text-align: center;
   font-size: 24px;
+}
+
+.buttonSections {
+  width: 100%;
+  text-align: center;
+  user-select: none;
+}
+
+.buttonSectionsA {
+  width: 25%;
+  float: left;
+  min-height: 10%;
+  margin-left: 6%;
+  border-radius: 50px;
+  outline: 10px solid black;
+  font-size: 300%;
+}
+
+.buttonSectionsUnlock {
+  transform: scale(100%);
+  transition: 0.3s;
+  animation-name: buttonSectionsUnhoverAn;
+  animation-duration: 0.3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.buttonSectionsA img {
+  width: 80%;
+}
+
+.buttonSectionsA p {
+  margin-top: -7%;
+}
+
+@keyframes buttonSectionsUnhoverAn {
+  from {background-color: #36d79c;}
+  to {background-color: #04AA6D;}
+}
+
+@keyframes buttonSectionsHoverAn {
+  from {background-color: #04AA6D;}
+  to {background-color: #36d79c;}
+}
+
+.buttonSectionsUnlock:hover {
+  transform: scale(105%);
+  transition: 0.3s;
+  animation-name: buttonSectionsHoverAn;
+  animation-duration: 0.3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.buttonSectionsLock {
+  background-color: #004d31;
+}
+
+.zoomWarning {
+  position: fixed;
+  width: 80%;
+  height: 15%;
+  background-color: wheat;
+  left: 10%;
+  z-index: 99;
+  outline: 5px solid black;
+  background-color: rgba(156, 170, 4, 0.8);
+  text-align: center;
+  font-size: 150%;
+  padding-top: 0;
 }

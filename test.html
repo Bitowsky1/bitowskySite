@@ -1,0 +1,34 @@
+<head> 
+	<style> 
+		/* Set the body to occupy the 
+		whole browser window 
+		when there is less content */ 
+		body { 
+			height: 100vh; 
+			margin: 0; 
+		} 
+	</style> 
+</head> 
+<body> 
+	<h1 style="color: green"> 
+		GeeksforGeeks 
+	</h1> 
+	
+	<b> 
+		Zoom in or out of the page to 
+		get the current zoom value 
+	</b> 
+	
+	<p> 
+		Current Zoom Level in pixels: 
+		<span class="output"> 
+		</span> 
+	</p> 
+	
+	<script> 
+		window.addEventListener('resize', () => {
+  const browserZoomLevel = Math.round(window.devicePixelRatio * 100);
+  document.getElementsByClassName("output")[0].innerText = browserZoomLevel;
+})
+	</script> 
+</body>

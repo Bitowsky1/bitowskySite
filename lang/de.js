@@ -18,5 +18,15 @@ var WORDS_DE = {
     "footerInfo" : "Webseite erstellt von",
     "footerInfo2" : "Ich hoffe du hattest einen tollen tag! :)",
     "lastUpdate" : "Zuletzt aktualisiert",
-    "translatorName" : "Übersetzt ins DEUTSCHE von <a href='https://ibrahim-oezhan.itch.io'>Ibrahim Oezhan</a>"
+    "translatorName" : "Übersetzt ins DEUTSCHE von <a href='https://ibrahim-oezhan.itch.io'>Ibrahim Oezhan</a>",
+
+    "button1" : "Fan-gemachte Animierte Brawl Stars Pins (Emotes)",
+
+    "soon" : "Bald...",
+
+    "promptCopied" : "Kopiert in deine Zwischenablage!",
+    "promptUnlocksoon" : "Diese Sektion ist zurzeit nicht verfügbar!",
+    "promptLangUnsupported" : "Diese Sektion unterstützt deine Sprache nicht!. Der Inhalt wird auf Englisch dargestellt.",
+
+    "promptClose" : "[SCHLIEßEN]"
 }

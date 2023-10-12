@@ -5,18 +5,26 @@
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="shortcut icon" href="img/icon.svg">
+
+
+
     <script src="node_modules/jquery-csv/src/jquery.csv.js"></script>
-    <script src="js/read_text.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
     <script src="lang/en.js"></script>
     <script src="lang/pl.js"></script>
     <script src="lang/de.js"></script>
+    <script src="lang/fr.js"></script>
+
+    <script src="js/mainScript.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    
       
     <title>Bitowsky - Programming, Music, Animation and more!</title>
   </head>
 
   <body>
+    <div class="promptMessage promptMessageHide text text2 textFont">---</div>
     <div class="langChooser">
       <div class="langChooserText text"><span class="langChooserLeft" onClick="langChooseLeft()">&#9754;</span> <span class="lang-langName">TEST</span> <span class="langChooserRight" onClick="langChooseRight()">&#9755;</span></span></div>
     </div>
@@ -41,23 +49,23 @@
         <div class="mainCardBottomSections">
           <a href="https://twitter.com/Bitowsky1"><div class="mainCardBottomSectionsTab mainCardBottomSectionsTab1"><img src="./img/twitter.svg"></div></a>
           <a href="https://www.youtube.com/@BitowskyYT"><div class="mainCardBottomSectionsTab mainCardBottomSectionsTab2"><img src="./img/youtube.svg"></div></a>
-          <div class="mainCardBottomSectionsTab mainCardBottomSectionsTab3"><img src="./img/discord.svg"> <span class="text">Bitowsky#4626</span></div>
+          <div class="mainCardBottomSectionsTab mainCardBottomSectionsTab3" onClick="discordNameCopy()" onmouseover="discordNameHover()" onmouseleave="discordNameUnhover()"><img src="./img/discord.svg"><span class="text discordName">Bitowsky#4626</span></div>
           <a href="https://www.artstation.com/bitowsky"><div class="mainCardBottomSectionsTab mainCardBottomSectionsTab4"><img src="./img/artstation.svg"></div></a>
         </div>
       </div>
-
+      
     </div>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br>
+    <div class="buttonSections">
+      <a href="./subsites/pin-showcase.html"><div class="buttonSectionsA buttonSections1 buttonSectionsUnlock"><img src="./img/bit_gg_an.gif"><p class="text"><span class="lang-button1"></span></p></div></a>
+      <div class="buttonSectionsA buttonSections2 buttonSectionsLock" onClick="promptMessage('promptUnlocksoon')"><img src="./img/icon_lostPage.svg"><p class="text"><span class="lang-soon"></span></p></div>
+      <div class="buttonSectionsA buttonSections3 buttonSectionsLock" onClick="promptMessage('promptUnlocksoon')"><img src="./img/icon_lostPage.svg"><p class="text"><span class="lang-soon"></span></p></div>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <img src="./img/footerStart.png" class="footerStart">
     <div class="footer">
-      <div class="footerDonotcross">
-        <img src="./img/crossTapeBunch.png" class="footerTape">
-        
-      </div>
-      <div class="footerDonotcrossText text">
-        <span class="lang-underConstruction"></span>
-      </div>
-      <div class="footerFinaltext"><span class="lang-footerInfo"></span> Bitowsky (2023). <span class="lang-footerInfo2"></span><p><span class="lang-lastUpdate"></span>: 04 October 2023<br></p><span class="lang-translatorName"></span></div>
+      TEXTY TEXT
     </div>
   </body>
+  <script src="./js/scriptAfter.js"></script>
 </html>

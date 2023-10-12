@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-16">
+    <title>Pins and Emotes - Bitowsky</title>
+    
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="pin-showcase-style.css">
+    <link rel="shortcut icon" href="../img/icon.svg">
+
+    <script src="../lang/en.js"></script>
+    <script src="../lang/pl.js"></script>
+    <script src="../lang/de.js"></script>
+    <script src="../lang/fr.js"></script>
+
+
+    <script src="../js/mainScript.js"></script>
+    <script src="../js/pinData.js"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+<body>
+    <iframe id="my_iframe" style="display:none;"></iframe>
+    <div class="promptMessage promptMessageHide text text2 textFont">---</div>
+    
+    <!--
+    <div class="zoomWarning">
+        <p class="text text2">This page might not work properly, when zoomed in/out. Please set the browser zoom level to 100%</p>
+    </div>-->
+    
+        <div class="pins_list">
+            <div class="pins_mainLeft">
+                <p class="text pins_sortBy">Sort by:</p><hr>
+                <input type="radio" name="sortBy" value="any" class="sortByBox" onchange="pins_sortBy('any')" checked><span class="text textFont sortByText sortByOption1">Show Everything</span><hr>
+                <input type="radio" name="sortBy" value="character" class="sortByBox" onchange="pins_sortBy('official')"><span class="text textFont sortByText sortByOption2">Brawl Stars Official Pins</span><hr>
+                <input type="radio" name="sortBy" value="event" class="sortByBox" onchange="pins_sortBy('fanmade')"><span class="text textFont sortByText sortByOption3">Fanmade Pins</span><hr>
+                <input type="radio" name="sortBy" value="event" class="sortByBox" onchange="pins_sortBy('artist')"><span class="text textFont sortByText sortByOption4">Static Pin Artist</span><hr><br>
+                
+                <select name="sortBy" class="sortByList" onChange="pins_sorting()">
+                    <option value="volvo">???</option>
+                </select>
+                <a href="../subsites/pin-disclaimer.html"><div class="pins_disclaimer text text2 textFont">READ MY DISCLAIMER</div></a>
+            </div>
+
+            <div class="pins_mainRight">
+                If you see this message, then you have encountered an error :(
+            </div>
+        </div>
+        <div class="importantInfo text text2 textFont">IMPORTANT! All of the shown animations are <b>FANMADE</b>! <u style="color:lightcoral">I'm not working at Supercell!</u></div>
+    
+    <div class="pins_show pins_show_bs_before" onClick="pins_show_bg_clicked()">
+        <div class="pins_show_box pins_show_box_hide" onmouseover="pins_show_showcase_ISMOUSEOVERBOX = true" onmouseleave="pins_show_showcase_ISMOUSEOVERBOX = false">
+            <div class="pins_show_box_left">
+                <div class="pins_show_box_left_arrow">
+                    <img src="../img/arrowLeft.svg">
+                </div>
+                <img src="../img/pins/starrdrops_facepalm_angry.gif">
+            </div>
+
+            <div class="pins_show_box_right">
+                <div class="pins_show_box_titlebox pins_show_box_content">
+                    <p class="text text2 pins_show_box_title" id="pins_show_box_title"></p>
+                </div>
+                <div class="pins_show_box_notes">
+                    <img src="../img/notePin.png" class="pins_show_box_notes_pin">
+                    <p class="text text2 pins_show_box_notes_text">(creator note)</p>
+                </div>
+                <div class="pins_show_box_info">
+                    <p class="text text2">Animated by: <span class="pins_show_box_info__animation">???</span></p><hr>
+                    <p class="text text2">Static pin designed by: <span class="pins_show_box_info__static">???</span></p><hr>
+                    <p class="text text2"><span class="pins_show_box_info__isofficial"></span></p><hr>
+                    <p class="text text2">Uploaded on: <span class="pins_show_box_info__date"></span></p>
+                </div>
+                <div class="pins_show_box_buttons">
+                    <p class="text text2 pins_show_box_buttons_down">Download</p>
+                    <div class="pins_show_box_buttons_all">
+                        
+                    </div>
+                </div>
+            </div>
+            <!--
+            <div class="pins_show_box_bottom">
+                <p>(click outside the box, to close)</p>
+            </div>-->
+        </div>
+        
+    </div>
+</body>
+
+<script src="../js/pinShowcase.js"></script>
+<script>
+    if (localStorage.getItem("SAVE_LANG") != "EN") {
+        promptMessage("promptLangUnsupported", localStorage.getItem("SAVE_LANG"))
+    }
+</script>
+</html>
