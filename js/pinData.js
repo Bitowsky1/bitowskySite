@@ -77,6 +77,8 @@ pins[52] = {name: "World Cup Red Card", filename: "worldcup_redcard_an.gif", mat
 pins[53] = {name: "Mecha Edgar (Facepalm)", filename: "edgar_mecha_facepalm_an.gif", matchname: "edgar", generalgroup: "fanmade", matchartistname: "bitowsky", uploadDate: "03.09.2023", noteID: 27}
 pins[54] = {name: "Bitowsky (Hypercharge)", filename: "bit_hypercharge.gif", matchname: "bitowsky", generalgroup: "fanmade", matchartistname: "bitowsky", uploadDate: "05.09.2023", noteID: 28}
 pins[55] = {name: "Griff (Hypercharge)", filename: "griff_hypercharge_an.gif", matchname: "griff", generalgroup: "fanmade", matchartistname: "bitowsky", uploadDate: "10.10.2023", noteID: 29}
+pins[56] = {name: "Dark Angel Colt", filename: "coltskin_matt_darkangel.gif", matchname: "colt", generalgroup: "fanmade", matchartistname: "matt", uploadDate: "17.10.2023", noteID: 31}
+
 
 
 
@@ -116,6 +118,7 @@ pinsNotes[27] = {note: "<span style='font-size:85%;'>While making this pin, a we
 pinsNotes[28] = {note: "<span style='padding-top: -100px;'>f<span style='font-size:115%;'>e<span style='font-size:120%;'>e<span style='font-size:115%;'>l<span style='font-size:120%;'>i<span style='font-size:125%;'>n<span style='font-size:130%;'>g</span></span></span></span></span></span><br><span style='font-size: 250%;'>HYPER<br>CHARGED!</span></span>"}
 pinsNotes[29] = {note: "Fun fact: The coins were actually added as a last-call decision!"}
 pinsNotes[30] = {note: "The process of making this pin was actually streamed for one special friend (not talking about the design author)"}
+pinsNotes[31] = {note: "THe skin has been selected as a winner of Supercell Make. And guess what! I'm friends with the artists that made it! Does that make me cool now?"}
 
 
 
@@ -145,12 +148,13 @@ pinsFanmade[2] = {charname: "Bo", matchname: "bo"}
 pinsFanmade[3] = {charname: "Bruno", matchname: "bruno"}
 pinsFanmade[4] = {charname: "Champie", matchname: "champie"}
 pinsFanmade[5] = {charname: "Cleo", matchname: "cleo"}
-pinsFanmade[6] = {charname: "Edgar", matchname: "edgar"}
-pinsFanmade[7] = {charname: "Griff", matchname: "griff"}
-pinsFanmade[8] = {charname: "Hank", matchname: "hank"}
-pinsFanmade[9] = {charname: "Mortis", matchname: "mortis"}
-pinsFanmade[10] = {charname: "Starr Drop", matchname: "starrdrop"}
-pinsFanmade[11] = {charname: "Other", matchname: "other"}
+pinsFanmade[6] = {charname: "Colt", matchname: "colt"}
+pinsFanmade[7] = {charname: "Edgar", matchname: "edgar"}
+pinsFanmade[8] = {charname: "Griff", matchname: "griff"}
+pinsFanmade[9] = {charname: "Hank", matchname: "hank"}
+pinsFanmade[10] = {charname: "Mortis", matchname: "mortis"}
+pinsFanmade[11] = {charname: "Starr Drop", matchname: "starrdrop"}
+pinsFanmade[12] = {charname: "Other", matchname: "other"}
 
 
 
@@ -161,8 +165,9 @@ var pinsArtist = new Array();
 pinsArtist[0] = {artistname: "Bitowsky", matchartistname: "bitowsky", socialmedia: "https://twitter.com/Bitowsky1"}
 pinsArtist[1] = {artistname: "Gonzalo Vazquez", matchartistname: "gonz", socialmedia: "https://twitter.com/GonVazquez"}
 pinsArtist[2] = {artistname: "Marley", matchartistname: "marley", socialmedia: "https://twitter.com/The_Marley_"}
-pinsArtist[3] = {artistname: "Nexty", matchartistname: "nexty", socialmedia: "https://twitter.com/nextyart"}
-pinsArtist[4] = {artistname: "PDLP", matchartistname: "pdlp", socialmedia: "https://twitter.com/_pdlp"}
-pinsArtist[5] = {artistname: "Plort", matchartistname: "plort", socialmedia: "https://twitter.com/plort_was_taken"}
-pinsArtist[6] = {artistname: "SifuriX", matchartistname: "sifurix", socialmedia: "https://twitter.com/SifuriX"}
-pinsArtist[7] = {artistname: "TrueGamer007", matchartistname: "tg", socialmedia: "https://twitter.com/TrueGamer0071"}
+pinsArtist[3] = {artistname: "Matt Runner", matchartistname: "matt", socialmedia: "https://twitter.com/Matt_Runner_0"}
+pinsArtist[4] = {artistname: "Nexty", matchartistname: "nexty", socialmedia: "https://twitter.com/nextyart"}
+pinsArtist[5] = {artistname: "PDLP", matchartistname: "pdlp", socialmedia: "https://twitter.com/_pdlp"}
+pinsArtist[6] = {artistname: "Plort", matchartistname: "plort", socialmedia: "https://twitter.com/plort_was_taken"}
+pinsArtist[7] = {artistname: "SifuriX", matchartistname: "sifurix", socialmedia: "https://twitter.com/SifuriX"}
+pinsArtist[8] = {artistname: "TrueGamer007", matchartistname: "tg", socialmedia: "https://twitter.com/TrueGamer0071"}
