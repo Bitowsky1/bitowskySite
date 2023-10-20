@@ -78,6 +78,7 @@ pins[53] = {name: "Mecha Edgar (Facepalm)", filename: "edgar_mecha_facepalm_an.g
 pins[54] = {name: "Bitowsky (Hypercharge)", filename: "bit_hypercharge.gif", matchname: "bitowsky", generalgroup: "fanmade", matchartistname: "bitowsky", uploadDate: "05.09.2023", noteID: 28}
 pins[55] = {name: "Griff (Hypercharge)", filename: "griff_hypercharge_an.gif", matchname: "griff", generalgroup: "fanmade", matchartistname: "bitowsky", uploadDate: "10.10.2023", noteID: 29}
 pins[56] = {name: "Dark Angel Colt", filename: "coltskin_matt_darkangel.gif", matchname: "colt", generalgroup: "fanmade", matchartistname: "matt", uploadDate: "17.10.2023", noteID: 31}
+pins[57] = {name: "Chuck (Hypercharge)", filename: "chuck_hypercharge.gif", matchname: "chuck", generalgroup: "fanmade", matchartistname: "bitowsky", uploadDate: "20.10.2023", noteID: 32}
 
 
 
@@ -118,8 +119,8 @@ pinsNotes[27] = {note: "<span style='font-size:85%;'>While making this pin, a we
 pinsNotes[28] = {note: "<span style='padding-top: -100px;'>f<span style='font-size:115%;'>e<span style='font-size:120%;'>e<span style='font-size:115%;'>l<span style='font-size:120%;'>i<span style='font-size:125%;'>n<span style='font-size:130%;'>g</span></span></span></span></span></span><br><span style='font-size: 250%;'>HYPER<br>CHARGED!</span></span>"}
 pinsNotes[29] = {note: "Fun fact: The coins were actually added as a last-call decision!"}
 pinsNotes[30] = {note: "The process of making this pin was actually streamed for one special friend (not talking about the design author)"}
-pinsNotes[31] = {note: "THe skin has been selected as a winner of Supercell Make. And guess what! I'm friends with the artists that made it! Does that make me cool now?"}
-
+pinsNotes[31] = {note: "Skin by <a href='https://twitter.com/poltergeistKDA'>Poltergeist</a><br><br>The skin has been selected as a winner of Supercell Make. And guess what! I'm friends with the artists that made it! Does that make me cool now?"}
+pinsNotes[32] = {note: "When we got out first sneak peak of season 20, I have recreated the Chuck pin, but I didn't add any animation yet. Just recently I thought about hypercharging him. <i>Choo Choo!</i>"}
 
 
 
@@ -147,14 +148,15 @@ pinsFanmade[1] = {charname: "Bitowsky", matchname: "bitowsky"}
 pinsFanmade[2] = {charname: "Bo", matchname: "bo"}
 pinsFanmade[3] = {charname: "Bruno", matchname: "bruno"}
 pinsFanmade[4] = {charname: "Champie", matchname: "champie"}
-pinsFanmade[5] = {charname: "Cleo", matchname: "cleo"}
-pinsFanmade[6] = {charname: "Colt", matchname: "colt"}
-pinsFanmade[7] = {charname: "Edgar", matchname: "edgar"}
-pinsFanmade[8] = {charname: "Griff", matchname: "griff"}
-pinsFanmade[9] = {charname: "Hank", matchname: "hank"}
-pinsFanmade[10] = {charname: "Mortis", matchname: "mortis"}
-pinsFanmade[11] = {charname: "Starr Drop", matchname: "starrdrop"}
-pinsFanmade[12] = {charname: "Other", matchname: "other"}
+pinsFanmade[5] = {charname: "Chuck", matchname: "chuck"}
+pinsFanmade[6] = {charname: "Cleo", matchname: "cleo"}
+pinsFanmade[7] = {charname: "Colt", matchname: "colt"}
+pinsFanmade[8] = {charname: "Edgar", matchname: "edgar"}
+pinsFanmade[9] = {charname: "Griff", matchname: "griff"}
+pinsFanmade[10] = {charname: "Hank", matchname: "hank"}
+pinsFanmade[11] = {charname: "Mortis", matchname: "mortis"}
+pinsFanmade[12] = {charname: "Starr Drop", matchname: "starrdrop"}
+pinsFanmade[13] = {charname: "Other", matchname: "other"}
 
 
 
