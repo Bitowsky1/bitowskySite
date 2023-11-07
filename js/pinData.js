@@ -162,6 +162,7 @@ pinsFanmade[1] = {charname: "Bitowsky", matchname: "bitowsky"}
 pinsFanmade[2] = {charname: "Bo", matchname: "bo"}
 pinsFanmade[3] = {charname: "Bruno", matchname: "bruno"}
 pinsFanmade[4] = {charname: "Champie", matchname: "champie"}
+pinsFanmade[5] = {charname: "Chaos Cup", matchname: "chaoscup"}
 pinsFanmade[5] = {charname: "Chuck", matchname: "chuck"}
 pinsFanmade[6] = {charname: "Cleo", matchname: "cleo"}
 pinsFanmade[7] = {charname: "Colt", matchname: "colt"}
