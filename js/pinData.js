@@ -80,7 +80,18 @@ pins[55] = {name: "Griff (Hypercharge)", filename: "griff_hypercharge_an.gif", m
 pins[56] = {name: "Dark Angel Colt", filename: "coltskin_matt_darkangel.gif", matchname: "colt", generalgroup: "fanmade", matchartistname: "matt", uploadDate: "17.10.2023", noteID: 31}
 pins[57] = {name: "Chuck (Hypercharge)", filename: "chuck_hypercharge.gif", matchname: "chuck", generalgroup: "fanmade", matchartistname: "bitowsky", uploadDate: "20.10.2023", noteID: 32}
 
+// SIFURI'X CHAOS CUP PINS
 
+pins[58] = {name: "Chaos Cup (Happy)", filename: "chaoscup_happy.gif", matchname: "chaoscup", generalgroup: "fanmade", matchartistname: "sifurix", uploadDate: "07.11.2023", noteID: 33}
+pins[59] = {name: "Chaos Cup (Sad)", filename: "chaoscup_sad.gif", matchname: "chaoscup", generalgroup: "fanmade", matchartistname: "sifurix", uploadDate: "07.11.2023", noteID: 33}
+pins[60] = {name: "Chaos Cup (Angry)", filename: "chaoscup_angry.gif", matchname: "chaoscup", generalgroup: "fanmade", matchartistname: "sifurix", uploadDate: "07.11.2023", noteID: 33}
+pins[61] = {name: "Chaos Cup (GG)", filename: "chaoscup_gg.gif", matchname: "chaoscup", generalgroup: "fanmade", matchartistname: "sifurix", uploadDate: "07.11.2023", noteID: 33}
+pins[62] = {name: "Chaos Cup (Clap)", filename: "chaoscup_clap.gif", matchname: "chaoscup", generalgroup: "fanmade", matchartistname: "sifurix", uploadDate: "07.11.2023", noteID: 33}
+pins[63] = {name: "Chaos Cup (Thanks)", filename: "chaoscup_thanks.gif", matchname: "chaoscup", generalgroup: "fanmade", matchartistname: "sifurix", uploadDate: "07.11.2023", noteID: 33}
+pins[64] = {name: "Chaos Cup (Phew)", filename: "chaoscup_phew.gif", matchname: "chaoscup", generalgroup: "fanmade", matchartistname: "sifurix", uploadDate: "07.11.2023", noteID: 33}
+pins[65] = {name: "Chaos Cup (Special)", filename: "chaoscup_special.gif", matchname: "chaoscup", generalgroup: "fanmade", matchartistname: "sifurix", uploadDate: "07.11.2023", noteID: 33}
+pins[66] = {name: "Chaos Cup (Facepalm)", filename: "chaoscup_facepalm2.gif", matchname: "chaoscup", generalgroup: "fanmade", matchartistname: "sifurix", uploadDate: "07.11.2023", noteID: 33}
+pins[67] = {name: "Chaos Cup (Hypercharge)", filename: "chaoscup_hypercharge.gif", matchname: "chaoscup", generalgroup: "fanmade", matchartistname: "sifurix", uploadDate: "07.11.2023", noteID: 33}
 
 
 
@@ -121,6 +132,9 @@ pinsNotes[29] = {note: "Fun fact: The coins were actually added as a last-call d
 pinsNotes[30] = {note: "The process of making this pin was actually streamed for one special friend (not talking about the design author)"}
 pinsNotes[31] = {note: "Skin by <a href='https://twitter.com/poltergeistKDA'>Poltergeist</a><br><br>The skin has been selected as a winner of Supercell Make. And guess what! I'm friends with the artists that made it! Does that make me cool now?"}
 pinsNotes[32] = {note: "When we got out first sneak peak of season 20, I have recreated the Chuck pin, but I didn't add any animation yet. Just recently I thought about hypercharging him. <i>Choo Choo!</i>"}
+pinsNotes[33] = {note: "Is that champie? Or maybe they are both related?<br><br>Either way, can't deny that this cup looks sooo badass! Glad to make animated pins for it!"}
+
+
 
 
 
