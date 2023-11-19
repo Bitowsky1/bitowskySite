@@ -48,7 +48,7 @@ function pins_sorting(sortType) {
         // FOR REVERSE ORDER: pins.slice().reverse().forEach
 
         pins.forEach((pindata) => {
-            divPrepare += "<div class='pins_pinCell' onClick='pins_clicked(" + sortingIndex + ")'><img src='" + globalPinLocalization + pindata.filename + "' id='pins_pinCellImg'><p class='pins_pinText text'>" + pindata.name + "</p></div>"
+            divPrepare += "<div class='pins_pinCell' onClick='pins_clicked(" + sortingIndex + ")'><img src='" + globalPinLocalization + pindata.filename + "' id='pins_pinCellImg' loading='lazy'><p class='pins_pinText text'>" + pindata.name + "</p></div>"
             sortingIndex++;
             
         })
@@ -60,14 +60,14 @@ function pins_sorting(sortType) {
             
             if (document.getElementsByClassName('sortByList')[0][document.getElementsByClassName('sortByList')[0].selectedIndex].value == "all") {
                 if (pindata.generalgroup == "official") {
-                    divPrepare += "<div class='pins_pinCell' onClick='pins_clicked(" + sortingIndex + ")'><img src='" + globalPinLocalization + pindata.filename + "'><p class='pins_pinText text'>" + pindata.name + "</p></div>"
+                    divPrepare += "<div class='pins_pinCell' onClick='pins_clicked(" + sortingIndex + ")'><img src='" + globalPinLocalization + pindata.filename + "' loading='lazy'><p class='pins_pinText text'>" + pindata.name + "</p></div>"
                 }
                 
             } else {
                 console.log(pindata.matchname + " == " + document.getElementsByClassName('sortByList')[0][document.getElementsByClassName('sortByList')[0].selectedIndex].value)
                 if (pindata.generalgroup == "official") {
                     if (pindata.matchname == document.getElementsByClassName('sortByList')[0][document.getElementsByClassName('sortByList')[0].selectedIndex].value) {
-                        divPrepare += "<div class='pins_pinCell' onClick='pins_clicked(" + sortingIndex + ")'><img src='" + globalPinLocalization + pindata.filename + "'><p class='pins_pinText text'>" + pindata.name + "</p></div>"
+                        divPrepare += "<div class='pins_pinCell' onClick='pins_clicked(" + sortingIndex + ")'><img src='" + globalPinLocalization + pindata.filename + "' loading='lazy'><p class='pins_pinText text'>" + pindata.name + "</p></div>"
                     }
                 }
                 
@@ -80,14 +80,14 @@ function pins_sorting(sortType) {
             
             if (document.getElementsByClassName('sortByList')[0][document.getElementsByClassName('sortByList')[0].selectedIndex].value == "all") {
                 if (pindata.generalgroup == "fanmade") {
-                    divPrepare += "<div class='pins_pinCell' onClick='pins_clicked(" + sortingIndex + ")'><img src='" + globalPinLocalization + pindata.filename + "'><p class='pins_pinText text'>" + pindata.name + "</p></div>"
+                    divPrepare += "<div class='pins_pinCell' onClick='pins_clicked(" + sortingIndex + ")'><img src='" + globalPinLocalization + pindata.filename + "' loading='lazy'><p class='pins_pinText text'>" + pindata.name + "</p></div>"
                 }
                 
             } else {
                 console.log("all" + " == " + document.getElementsByClassName('sortByList')[0][document.getElementsByClassName('sortByList')[0].selectedIndex].value)
                 if (pindata.generalgroup == "fanmade") {
                     if (pindata.matchname == document.getElementsByClassName('sortByList')[0][document.getElementsByClassName('sortByList')[0].selectedIndex].value) {
-                        divPrepare += "<div class='pins_pinCell' onClick='pins_clicked(" + sortingIndex + ")'><img src='" + globalPinLocalization + pindata.filename + "'><p class='pins_pinText text'>" + pindata.name + "</p></div>"
+                        divPrepare += "<div class='pins_pinCell' onClick='pins_clicked(" + sortingIndex + ")'><img src='" + globalPinLocalization + pindata.filename + "' loading='lazy'><p class='pins_pinText text'>" + pindata.name + "</p></div>"
                     }
                 }
             }
@@ -97,7 +97,7 @@ function pins_sorting(sortType) {
         pins.forEach((pindata) => {
             //console.log(pindata.matchartistname + " == " + document.getElementsByClassName('sortByList')[0][document.getElementsByClassName('sortByList')[0].selectedIndex].value)
             if (pindata.matchartistname == document.getElementsByClassName('sortByList')[0][document.getElementsByClassName('sortByList')[0].selectedIndex].value) {
-                divPrepare += "<div class='pins_pinCell' onClick='pins_clicked(" + sortingIndex + ")'><img src='" + globalPinLocalization + pindata.filename + "'><p class='pins_pinText text'>" + pindata.name + "</p></div>"
+                divPrepare += "<div class='pins_pinCell' onClick='pins_clicked(" + sortingIndex + ")'><img src='" + globalPinLocalization + pindata.filename + "' loading='lazy'><p class='pins_pinText text'>" + pindata.name + "</p></div>"
             }
             sortingIndex++;
         })
@@ -176,7 +176,7 @@ function pins_clicked(pinIndex) {
     img.onload = function() {
         pins_setsizedata(this.width, this.height)
         //<div class='pins_show_box_left_arrow'><img src='../img/arrowLeft.svg'></div>
-        document.getElementsByClassName("pins_show_box_left")[0].innerHTML = "<img src='" + globalPinLocalization + pins[pinIndex].filename + "'><p class='text text2 pins_show_box_size'>Size: " + imgW + "x" + imgH + "</p>"
+        document.getElementsByClassName("pins_show_box_left")[0].innerHTML = "<img src='" + globalPinLocalization + pins[pinIndex].filename + "' loading='lazy'><p class='text text2 pins_show_box_size'>Size: " + imgW + "x" + imgH + "</p>"
     }
     img.src = globalPinLocalization + pins[pinIndex].filename;
 
