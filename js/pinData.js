@@ -95,6 +95,7 @@ pins[67] = {name: "Chaos Cup (Hypercharge)", filename: "chaoscup_hypercharge.gif
 
 pins[68] = {name: "Mico (Facepalm) [CONCEPT]", filename: "mico_facepalm_an.gif", matchname: "mico", generalgroup: "fanmade", matchartistname: "cvbby", uploadDate: "27.11.2023", noteID: 34}
 
+pins[69] = {name: "Brawlie (Trophy Hold)", filename: "brawlie_trophyhold.gif", matchname: "brawlies", generalgroup: "fanmade", matchartistname: "matt", uploadDate: "01.12.2023", noteID: 35}
 
 
 
@@ -134,7 +135,7 @@ pinsNotes[31] = {note: "Skin by <a href='https://twitter.com/poltergeistKDA'>Pol
 pinsNotes[32] = {note: "When we got out first sneak peak of season 20, I have recreated the Chuck pin, but I didn't add any animation yet. Just recently I thought about hypercharging him. <i>Choo Choo!</i>"}
 pinsNotes[33] = {note: "Is that champie? Or maybe they are both related?<br><br>Either way, can't deny that this cup looks sooo badass! Glad to make animated pins for it!"}
 pinsNotes[34] = {note: "I used this opportunity, to improve the 'Laugh' motion for this type of pin. I think I did a pretty good job with it! :)"}
-
+pinsNotes[35] = {note: "On the wave of making Brawlie Pins by Matt, I was able to animate one of his works. Sad, that we will not get any brawlies this year (2023) but nevertheless, the year bringed up a LOT of amazing fanarts, including my animated pins."}
 
 
 
@@ -160,19 +161,20 @@ var pinsFanmade = new Array();
 pinsFanmade[0] = {charname: "All", matchname: "all"}
 pinsFanmade[1] = {charname: "Bitowsky", matchname: "bitowsky"}
 pinsFanmade[2] = {charname: "Bo", matchname: "bo"}
-pinsFanmade[3] = {charname: "Bruno", matchname: "bruno"}
-pinsFanmade[4] = {charname: "Champie", matchname: "champie"}
-pinsFanmade[5] = {charname: "Chaos Cup", matchname: "chaoscup"}
-pinsFanmade[5] = {charname: "Chuck", matchname: "chuck"}
-pinsFanmade[6] = {charname: "Cleo", matchname: "cleo"}
-pinsFanmade[7] = {charname: "Colt", matchname: "colt"}
-pinsFanmade[8] = {charname: "Edgar", matchname: "edgar"}
-pinsFanmade[9] = {charname: "Griff", matchname: "griff"}
-pinsFanmade[10] = {charname: "Hank", matchname: "hank"}
-pinsFanmade[11] = {charname: "Mico", matchname: "mico"}
-pinsFanmade[12] = {charname: "Mortis", matchname: "mortis"}
-pinsFanmade[13] = {charname: "Starr Drop", matchname: "starrdrop"}
-pinsFanmade[14] = {charname: "Other", matchname: "other"}
+pinsFanmade[3] = {charname: "Brawlies", matchname: "brawlies"}
+pinsFanmade[4] = {charname: "Bruno", matchname: "bruno"}
+pinsFanmade[5] = {charname: "Champie", matchname: "champie"}
+pinsFanmade[6] = {charname: "Chaos Cup", matchname: "chaoscup"}
+pinsFanmade[7] = {charname: "Chuck", matchname: "chuck"}
+pinsFanmade[8] = {charname: "Cleo", matchname: "cleo"}
+pinsFanmade[9] = {charname: "Colt", matchname: "colt"}
+pinsFanmade[10] = {charname: "Edgar", matchname: "edgar"}
+pinsFanmade[11] = {charname: "Griff", matchname: "griff"}
+pinsFanmade[12] = {charname: "Hank", matchname: "hank"}
+pinsFanmade[13] = {charname: "Mico", matchname: "mico"}
+pinsFanmade[14] = {charname: "Mortis", matchname: "mortis"}
+pinsFanmade[15] = {charname: "Starr Drop", matchname: "starrdrop"}
+pinsFanmade[16] = {charname: "Other", matchname: "other"}
 
 
 
