@@ -96,6 +96,7 @@ pins[67] = {name: "Chaos Cup (Hypercharge)", filename: "chaoscup_hypercharge.gif
 pins[68] = {name: "Mico (Facepalm) [CONCEPT]", filename: "mico_facepalm_an.gif", matchname: "mico", generalgroup: "fanmade", matchartistname: "cvbby", uploadDate: "27.11.2023", noteID: 34}
 
 pins[69] = {name: "Brawlie (Trophy Hold)", filename: "brawlie_trophyhold.gif", matchname: "brawlies", generalgroup: "fanmade", matchartistname: "matt", uploadDate: "01.12.2023", noteID: 35}
+pins[70] = {name: "Mico (Thanks) [CONCEPT]", filename: "mico_thanks_an.gif", matchname: "mico", generalgroup: "fanmade", matchartistname: "cvbby", uploadDate: "08.12.2023", noteID: 36}
 
 
 
@@ -136,6 +137,7 @@ pinsNotes[32] = {note: "When we got out first sneak peak of season 20, I have re
 pinsNotes[33] = {note: "Is that champie? Or maybe they are both related?<br><br>Either way, can't deny that this cup looks sooo badass! Glad to make animated pins for it!"}
 pinsNotes[34] = {note: "I used this opportunity, to improve the 'Laugh' motion for this type of pin. I think I did a pretty good job with it! :)"}
 pinsNotes[35] = {note: "On the wave of making Brawlie Pins by Matt, I was able to animate one of his works. Sad, that we will not get any brawlies this year (2023) but nevertheless, the year bringed up a LOT of amazing fanarts, including my animated pins."}
+pinsNotes[36] = {note: "I made this pin the day before Brawl Talk for Starr Toon update. Doing anything, before my animations get outdated, i guess :D"}
 
 
 
