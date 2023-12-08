@@ -1,7 +1,7 @@
 var pins = new Array();
 // HORUS BO PINS
 
-pins[0] = {name: "Horus Bo (Normal)", filename: "bo_horus_normal_an.gif", matchname: "bo", generalgroup: "official", matchartistname: "tg", noteID: 1, uploadDate: "05.07.2023"}
+pins[0] = {name: "Horus Bo (Normal)", filename: "bo_horus_normal_an.gif", matchname: "bo", generalgroup: "official", matchartistname: "tg", noteID: 1, uploadDate: "05.07.2023", colorCode: "FF0000"}
 pins[1] = {name: "Horus Bo (Happy)", filename: "bo_horus_happy_an.gif", matchname: "bo", generalgroup: "fanmade", matchartistname: "tg", noteID: 1, uploadDate: "05.07.2023"}
 pins[2] = {name: "Horus Bo (Sad)", filename: "bo_horus_sad_an.gif", matchname: "bo", generalgroup: "fanmade", matchartistname: "tg", noteID: 1, uploadDate: "05.07.2023"}
 pins[3] = {name: "Horus Bo (Angry)", filename: "bo_horus_angry_an.gif", matchname: "bo", generalgroup: "fanmade", matchartistname: "tg", noteID: 1, uploadDate: "05.07.2023"}
