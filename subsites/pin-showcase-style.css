@@ -82,6 +82,7 @@ body {
 
 .pins_pinCell {
     max-width: 33.3%;
+    min-width: 33.3%;
     min-height: 50%;
     outline: 1px dashed black;
     background-color: rgb(4, 170, 109, 0.5);
