@@ -100,6 +100,8 @@ pins[70] = {name: "Mico (Thanks) [CONCEPT]", filename: "mico_thanks_an.gif", mat
 
 pins[71] = {name: "Skull Toon Facepalm (Happy) [CONCEPT]", filename: "skulltoon_facepalm_happy.gif", matchname: "skulltoon", generalgroup: "fanmade", matchartistname: "bitowsky", uploadDate: "19.01.2024", noteID: 37}
 
+pins[72] = {name: "Red Panda Nita", filename: "nita_panda.gif", matchname: "nita", generalgroup: "fanmade", matchartistname: "tg", uploadDate: "31.01.2024", noteID: 38}
+
 
 var pinsNotes = new Array();
 pinsNotes[0] = {note: "(No note given)"}
@@ -140,6 +142,7 @@ pinsNotes[34] = {note: "I used this opportunity, to improve the 'Laugh' motion f
 pinsNotes[35] = {note: "On the wave of making Brawlie Pins by Matt, I was able to animate one of his works. Sad, that we will not get any brawlies this year (2023) but nevertheless, the year bringed up a LOT of amazing fanarts, including my animated pins."}
 pinsNotes[36] = {note: "I made this pin the day before Brawl Talk for Starr Toon update. Doing anything, before my animations get outdated, i guess :D"}
 pinsNotes[37] = {note: "My first pin of 2024! Yeah, I know - it took me 19 days to make a pin animation in a new year. But I had exams, so I had to put animations to the side, haha!"}
+pinsNotes[38] = {note: "Skin designed by <a href='https://twitter.com/nextyart/status/1752060374059549005'>NextyArt</a><br><br>Very nice remodel concept. I could see it being used in the game! Good job, Nexty!"}
 
 
 
@@ -177,9 +180,10 @@ pinsFanmade[11] = {charname: "Griff", matchname: "griff"}
 pinsFanmade[12] = {charname: "Hank", matchname: "hank"}
 pinsFanmade[13] = {charname: "Mico", matchname: "mico"}
 pinsFanmade[14] = {charname: "Mortis", matchname: "mortis"}
-pinsFanmade[15] = {charname: "Skull Toon", matchname: "skulltoon"}
-pinsFanmade[16] = {charname: "Starr Drop", matchname: "starrdrop"}
-pinsFanmade[17] = {charname: "Other", matchname: "other"}
+pinsFanmade[15] = {charname: "Nita", matchname: "nita"}
+pinsFanmade[16] = {charname: "Skull Toon", matchname: "skulltoon"}
+pinsFanmade[17] = {charname: "Starr Drop", matchname: "starrdrop"}
+pinsFanmade[18] = {charname: "Other", matchname: "other"}
 
 
 
