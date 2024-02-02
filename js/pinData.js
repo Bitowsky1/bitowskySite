@@ -102,6 +102,7 @@ pins[71] = {name: "Skull Toon Facepalm (Happy) [CONCEPT]", filename: "skulltoon_
 
 pins[72] = {name: "Red Panda Nita", filename: "nita_panda.gif", matchname: "nita", generalgroup: "fanmade", matchartistname: "tg", uploadDate: "31.01.2024", noteID: 38}
 
+pins[73] = {name: "Football (Angry) [CONCEPT]", filename: "football_angry.gif", matchname: "other", generalgroup: "official", matchartistname: "gonz", uploadDate: "02.02.2024", noteID: 39}
 
 var pinsNotes = new Array();
 pinsNotes[0] = {note: "(No note given)"}
@@ -143,7 +144,7 @@ pinsNotes[35] = {note: "On the wave of making Brawlie Pins by Matt, I was able t
 pinsNotes[36] = {note: "I made this pin the day before Brawl Talk for Starr Toon update. Doing anything, before my animations get outdated, i guess :D"}
 pinsNotes[37] = {note: "My first pin of 2024! Yeah, I know - it took me 19 days to make a pin animation in a new year. But I had exams, so I had to put animations to the side, haha!"}
 pinsNotes[38] = {note: "Skin designed by <a href='https://twitter.com/nextyart/status/1752060374059549005'>NextyArt</a><br><br>Very nice remodel concept. I could see it being used in the game! Good job, Nexty!"}
-
+pinsNotes[39] = {note: "Not too revelant of a pin choice, but I got bored so I wanted to animate something really quickly. It kinda cured my boredom, haha!"}
 
 
 
