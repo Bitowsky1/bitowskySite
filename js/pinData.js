@@ -104,6 +104,11 @@ pins[72] = {name: "Red Panda Nita", filename: "nita_panda.gif", matchname: "nita
 
 pins[73] = {name: "Football (Angry) [CONCEPT]", filename: "football_angry.gif", matchname: "other", generalgroup: "official", matchartistname: "gonz", uploadDate: "02.02.2024", noteID: 39}
 
+pins[74] = {name: "Pinku Pawlette [CONCEPT]", filename: "collete_maid.gif", matchname: "colette", generalgroup: "official", matchartistname: "tg", uploadDate: "03.02.2024", noteID: 40}
+pins[75] = {name: "Kiiro Pawlette [CONCEPT]", filename: "collete_maid_kiiro.gif", matchname: "colette", generalgroup: "official", matchartistname: "tg", uploadDate: "03.02.2024", noteID: 40}
+pins[76] = {name: "Midori Pawlette [CONCEPT]", filename: "collete_maid_midori.gif", matchname: "colette", generalgroup: "official", matchartistname: "tg", uploadDate: "03.02.2024", noteID: 40}
+
+
 var pinsNotes = new Array();
 pinsNotes[0] = {note: "(No note given)"}
 pinsNotes[1] = {note: "After the premiere video from TrueGamer007, where he showed his timelapse of making those pins, I already had ideas of some animations for this set of pins."}
@@ -145,6 +150,7 @@ pinsNotes[36] = {note: "I made this pin the day before Brawl Talk for Starr Toon
 pinsNotes[37] = {note: "My first pin of 2024! Yeah, I know - it took me 19 days to make a pin animation in a new year. But I had exams, so I had to put animations to the side, haha!"}
 pinsNotes[38] = {note: "Skin designed by <a href='https://twitter.com/nextyart/status/1752060374059549005'>NextyArt</a><br><br>Very nice remodel concept. I could see it being used in the game! Good job, Nexty!"}
 pinsNotes[39] = {note: "Not too revelant of a pin choice, but I got bored so I wanted to animate something really quickly. It kinda cured my boredom, haha!"}
+pinsNotes[40] = {note: "Those three pins took the most time ever (at least for now) and it wasn't a hard task! Some might even notice, that Colette is missing one eye. But I say, that this is an improvement, not an oversight!"}
 
 
 
@@ -152,15 +158,16 @@ var pinsOfficial = new Array();
 pinsOfficial[0] = {charname: "All", matchname: "all"}
 pinsOfficial[1] = {charname: "8-Bit", matchname: "8bit"}
 pinsOfficial[2] = {charname: "Bo", matchname: "bo"}
-pinsOfficial[3] = {charname: "Darryl", matchname: "darryl"}
-pinsOfficial[4] = {charname: "Gus", matchname: "gus"}
-pinsOfficial[5] = {charname: "Lantern", matchname: "lantern"}
-pinsOfficial[6] = {charname: "Maisie", matchname: "maisie"}
-pinsOfficial[7] = {charname: "Pam", matchname: "pam"}
-pinsOfficial[8] = {charname: "Piper", matchname: "piper"}
-pinsOfficial[9] = {charname: "R-T", matchname: "rt"}
-pinsOfficial[10] = {charname: "Tick", matchname: "tick"}
-pinsOfficial[11] = {charname: "Other", matchname: "other"}
+pinsOfficial[3] = {charname: "Colette", matchname: "colette"}
+pinsOfficial[4] = {charname: "Darryl", matchname: "darryl"}
+pinsOfficial[5] = {charname: "Gus", matchname: "gus"}
+pinsOfficial[6] = {charname: "Lantern", matchname: "lantern"}
+pinsOfficial[7] = {charname: "Maisie", matchname: "maisie"}
+pinsOfficial[8] = {charname: "Pam", matchname: "pam"}
+pinsOfficial[9] = {charname: "Piper", matchname: "piper"}
+pinsOfficial[10] = {charname: "R-T", matchname: "rt"}
+pinsOfficial[11] = {charname: "Tick", matchname: "tick"}
+pinsOfficial[12] = {charname: "Other", matchname: "other"}
 
 
 
