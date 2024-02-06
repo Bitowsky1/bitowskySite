@@ -108,6 +108,10 @@ pins[74] = {name: "Pinku Pawlette [CONCEPT]", filename: "collete_maid.gif", matc
 pins[75] = {name: "Kiiro Pawlette [CONCEPT]", filename: "collete_maid_kiiro.gif", matchname: "colette", generalgroup: "official", matchartistname: "tg", uploadDate: "03.02.2024", noteID: 40}
 pins[76] = {name: "Midori Pawlette [CONCEPT]", filename: "collete_maid_midori.gif", matchname: "colette", generalgroup: "official", matchartistname: "tg", uploadDate: "03.02.2024", noteID: 40}
 
+pins[77] = {name: "Kitboxer [CONCEPT]", filename: "kit_boxer.gif", matchname: "kit", generalgroup: "official", matchartistname: "tg", uploadDate: "06.02.2024", noteID: 41}
+pins[78] = {name: "Kitboxer Darkpaw [CONCEPT]", filename: "kit_boxer_darkpaw.gif", matchname: "kit", generalgroup: "official", matchartistname: "tg", uploadDate: "06.02.2024", noteID: 41}
+pins[79] = {name: "Kitboxer Goldpaw [CONCEPT]", filename: "kit_boxer_goldpaw.gif", matchname: "kit", generalgroup: "official", matchartistname: "tg", uploadDate: "06.02.2024", noteID: 41}
+
 
 var pinsNotes = new Array();
 pinsNotes[0] = {note: "(No note given)"}
@@ -151,6 +155,7 @@ pinsNotes[37] = {note: "My first pin of 2024! Yeah, I know - it took me 19 days 
 pinsNotes[38] = {note: "Skin designed by <a href='https://twitter.com/nextyart/status/1752060374059549005'>NextyArt</a><br><br>Very nice remodel concept. I could see it being used in the game! Good job, Nexty!"}
 pinsNotes[39] = {note: "Not too revelant of a pin choice, but I got bored so I wanted to animate something really quickly. It kinda cured my boredom, haha!"}
 pinsNotes[40] = {note: "Those three pins took the most time ever (at least for now) and it wasn't a hard task! Some might even notice, that Colette is missing one eye. But I say, that this is an improvement, not an oversight!"}
+pinsNotes[41] = {note: "As I'm writing this, I'm on fire with animating the pins right now! Unfortunately, I can already see a horizon on which my work will be yet again slowed down. But maybe such break will be useful for future works?"}
 
 
 
@@ -161,13 +166,14 @@ pinsOfficial[2] = {charname: "Bo", matchname: "bo"}
 pinsOfficial[3] = {charname: "Colette", matchname: "colette"}
 pinsOfficial[4] = {charname: "Darryl", matchname: "darryl"}
 pinsOfficial[5] = {charname: "Gus", matchname: "gus"}
-pinsOfficial[6] = {charname: "Lantern", matchname: "lantern"}
-pinsOfficial[7] = {charname: "Maisie", matchname: "maisie"}
-pinsOfficial[8] = {charname: "Pam", matchname: "pam"}
-pinsOfficial[9] = {charname: "Piper", matchname: "piper"}
-pinsOfficial[10] = {charname: "R-T", matchname: "rt"}
-pinsOfficial[11] = {charname: "Tick", matchname: "tick"}
-pinsOfficial[12] = {charname: "Other", matchname: "other"}
+pinsOfficial[6] = {charname: "Kit", matchname: "kit"}
+pinsOfficial[7] = {charname: "Lantern", matchname: "lantern"}
+pinsOfficial[8] = {charname: "Maisie", matchname: "maisie"}
+pinsOfficial[9] = {charname: "Pam", matchname: "pam"}
+pinsOfficial[10] = {charname: "Piper", matchname: "piper"}
+pinsOfficial[11] = {charname: "R-T", matchname: "rt"}
+pinsOfficial[12] = {charname: "Tick", matchname: "tick"}
+pinsOfficial[13] = {charname: "Other", matchname: "other"}
 
 
 
