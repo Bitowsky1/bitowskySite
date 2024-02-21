@@ -112,6 +112,8 @@ pins[77] = {name: "Kitboxer [CONCEPT]", filename: "kit_boxer.gif", matchname: "k
 pins[78] = {name: "Kitboxer Darkpaw [CONCEPT]", filename: "kit_boxer_darkpaw.gif", matchname: "kit", generalgroup: "official", matchartistname: "tg", uploadDate: "06.02.2024", noteID: 41}
 pins[79] = {name: "Kitboxer Goldpaw [CONCEPT]", filename: "kit_boxer_goldpaw.gif", matchname: "kit", generalgroup: "official", matchartistname: "tg", uploadDate: "06.02.2024", noteID: 41}
 
+pins[80] = {name: "Buzz Hypercharge [CONCEPT]", filename: "buzz_hypercharge.gif", matchname: "buzz", generalgroup: "fanmade", matchartistname: "bitowsky", uploadDate: "21.02.2024", noteID: 42}
+
 
 var pinsNotes = new Array();
 pinsNotes[0] = {note: "(No note given)"}
@@ -156,6 +158,7 @@ pinsNotes[38] = {note: "Skin designed by <a href='https://twitter.com/nextyart/s
 pinsNotes[39] = {note: "Not too revelant of a pin choice, but I got bored so I wanted to animate something really quickly. It kinda cured my boredom, haha!"}
 pinsNotes[40] = {note: "Those three pins took the most time ever (at least for now) and it wasn't a hard task! Some might even notice, that Colette is missing one eye. But I say, that this is an improvement, not an oversight!"}
 pinsNotes[41] = {note: "As I'm writing this, I'm on fire with animating the pins right now! Unfortunately, I can already see a horizon on which my work will be yet again slowed down. But maybe such break will be useful for future works?"}
+pinsNotes[42] = {note: "Fun fact: I made this pin using my sister's laptop, while mine was at the fix service. It was a little tough, since her device is not as powerful as mine, so it was quite difficult to work on it lol"}
 
 
 
@@ -184,20 +187,21 @@ pinsFanmade[1] = {charname: "Bitowsky", matchname: "bitowsky"}
 pinsFanmade[2] = {charname: "Bo", matchname: "bo"}
 pinsFanmade[3] = {charname: "Brawlies", matchname: "brawlies"}
 pinsFanmade[4] = {charname: "Bruno", matchname: "bruno"}
-pinsFanmade[5] = {charname: "Champie", matchname: "champie"}
-pinsFanmade[6] = {charname: "Chaos Cup", matchname: "chaoscup"}
-pinsFanmade[7] = {charname: "Chuck", matchname: "chuck"}
-pinsFanmade[8] = {charname: "Cleo", matchname: "cleo"}
-pinsFanmade[9] = {charname: "Colt", matchname: "colt"}
-pinsFanmade[10] = {charname: "Edgar", matchname: "edgar"}
-pinsFanmade[11] = {charname: "Griff", matchname: "griff"}
-pinsFanmade[12] = {charname: "Hank", matchname: "hank"}
-pinsFanmade[13] = {charname: "Mico", matchname: "mico"}
-pinsFanmade[14] = {charname: "Mortis", matchname: "mortis"}
-pinsFanmade[15] = {charname: "Nita", matchname: "nita"}
-pinsFanmade[16] = {charname: "Skull Toon", matchname: "skulltoon"}
-pinsFanmade[17] = {charname: "Starr Drop", matchname: "starrdrop"}
-pinsFanmade[18] = {charname: "Other", matchname: "other"}
+pinsFanmade[5] = {charname: "Buzz", matchname: "buzz"}
+pinsFanmade[6] = {charname: "Champie", matchname: "champie"}
+pinsFanmade[7] = {charname: "Chaos Cup", matchname: "chaoscup"}
+pinsFanmade[8] = {charname: "Chuck", matchname: "chuck"}
+pinsFanmade[9] = {charname: "Cleo", matchname: "cleo"}
+pinsFanmade[10] = {charname: "Colt", matchname: "colt"}
+pinsFanmade[11] = {charname: "Edgar", matchname: "edgar"}
+pinsFanmade[12] = {charname: "Griff", matchname: "griff"}
+pinsFanmade[13] = {charname: "Hank", matchname: "hank"}
+pinsFanmade[14] = {charname: "Mico", matchname: "mico"}
+pinsFanmade[15] = {charname: "Mortis", matchname: "mortis"}
+pinsFanmade[16] = {charname: "Nita", matchname: "nita"}
+pinsFanmade[17] = {charname: "Skull Toon", matchname: "skulltoon"}
+pinsFanmade[18] = {charname: "Starr Drop", matchname: "starrdrop"}
+pinsFanmade[19] = {charname: "Other", matchname: "other"}
 
 
 
