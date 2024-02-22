@@ -114,6 +114,8 @@ pins[79] = {name: "Kitboxer Goldpaw [CONCEPT]", filename: "kit_boxer_goldpaw.gif
 
 pins[80] = {name: "Buzz Hypercharge [CONCEPT]", filename: "buzz_hypercharge.gif", matchname: "buzz", generalgroup: "fanmade", matchartistname: "bitowsky", uploadDate: "21.02.2024", noteID: 42}
 
+pins[81] = {name: "Belle Hypercharge [CONCEPT]", filename: "belle_hypercharge.gif", matchname: "belle", generalgroup: "fanmade", matchartistname: "bitowsky", uploadDate: "22.02.2024", noteID: 43}
+
 
 var pinsNotes = new Array();
 pinsNotes[0] = {note: "(No note given)"}
@@ -159,7 +161,7 @@ pinsNotes[39] = {note: "Not too revelant of a pin choice, but I got bored so I w
 pinsNotes[40] = {note: "Those three pins took the most time ever (at least for now) and it wasn't a hard task! Some might even notice, that Colette is missing one eye. But I say, that this is an improvement, not an oversight!"}
 pinsNotes[41] = {note: "As I'm writing this, I'm on fire with animating the pins right now! Unfortunately, I can already see a horizon on which my work will be yet again slowed down. But maybe such break will be useful for future works?"}
 pinsNotes[42] = {note: "Fun fact: I made this pin using my sister's laptop, while mine was at the fix service. It was a little tough, since her device is not as powerful as mine, so it was quite difficult to work on it lol"}
-
+pinsNotes[43] = {note: "I wasn't sure that I will be able to make it before the Brawl Talk, but as I'm writing it, there's still no premiere. It only shows that if you're determined enough, you can make anything super super fast!"}
 
 
 var pinsOfficial = new Array();
@@ -183,25 +185,26 @@ pinsOfficial[13] = {charname: "Other", matchname: "other"}
 
 var pinsFanmade = new Array();
 pinsFanmade[0] = {charname: "All", matchname: "all"}
-pinsFanmade[1] = {charname: "Bitowsky", matchname: "bitowsky"}
-pinsFanmade[2] = {charname: "Bo", matchname: "bo"}
-pinsFanmade[3] = {charname: "Brawlies", matchname: "brawlies"}
-pinsFanmade[4] = {charname: "Bruno", matchname: "bruno"}
-pinsFanmade[5] = {charname: "Buzz", matchname: "buzz"}
-pinsFanmade[6] = {charname: "Champie", matchname: "champie"}
-pinsFanmade[7] = {charname: "Chaos Cup", matchname: "chaoscup"}
-pinsFanmade[8] = {charname: "Chuck", matchname: "chuck"}
-pinsFanmade[9] = {charname: "Cleo", matchname: "cleo"}
-pinsFanmade[10] = {charname: "Colt", matchname: "colt"}
-pinsFanmade[11] = {charname: "Edgar", matchname: "edgar"}
-pinsFanmade[12] = {charname: "Griff", matchname: "griff"}
-pinsFanmade[13] = {charname: "Hank", matchname: "hank"}
-pinsFanmade[14] = {charname: "Mico", matchname: "mico"}
-pinsFanmade[15] = {charname: "Mortis", matchname: "mortis"}
-pinsFanmade[16] = {charname: "Nita", matchname: "nita"}
-pinsFanmade[17] = {charname: "Skull Toon", matchname: "skulltoon"}
-pinsFanmade[18] = {charname: "Starr Drop", matchname: "starrdrop"}
-pinsFanmade[19] = {charname: "Other", matchname: "other"}
+pinsFanmade[1] = {charname: "Belle", matchname: "belle"}
+pinsFanmade[2] = {charname: "Bitowsky", matchname: "bitowsky"}
+pinsFanmade[3] = {charname: "Bo", matchname: "bo"}
+pinsFanmade[4] = {charname: "Brawlies", matchname: "brawlies"}
+pinsFanmade[5] = {charname: "Bruno", matchname: "bruno"}
+pinsFanmade[6] = {charname: "Buzz", matchname: "buzz"}
+pinsFanmade[7] = {charname: "Champie", matchname: "champie"}
+pinsFanmade[8] = {charname: "Chaos Cup", matchname: "chaoscup"}
+pinsFanmade[9] = {charname: "Chuck", matchname: "chuck"}
+pinsFanmade[10] = {charname: "Cleo", matchname: "cleo"}
+pinsFanmade[11] = {charname: "Colt", matchname: "colt"}
+pinsFanmade[12] = {charname: "Edgar", matchname: "edgar"}
+pinsFanmade[13] = {charname: "Griff", matchname: "griff"}
+pinsFanmade[14] = {charname: "Hank", matchname: "hank"}
+pinsFanmade[15] = {charname: "Mico", matchname: "mico"}
+pinsFanmade[16] = {charname: "Mortis", matchname: "mortis"}
+pinsFanmade[17] = {charname: "Nita", matchname: "nita"}
+pinsFanmade[18] = {charname: "Skull Toon", matchname: "skulltoon"}
+pinsFanmade[19] = {charname: "Starr Drop", matchname: "starrdrop"}
+pinsFanmade[20] = {charname: "Other", matchname: "other"}
 
 
 
