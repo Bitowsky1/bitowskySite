@@ -118,6 +118,8 @@ pins[81] = {name: "Belle Hypercharge [CONCEPT]", filename: "belle_hypercharge.gi
 
 pins[82] = {name: "Lola Doll (Happy)", filename: "lola_doll_happy.gif", matchname: "lola", generalgroup: "fanmade", matchartistname: "iguana", uploadDate: "03.03.2024", noteID: 44}
 
+pins[83] = {name: "Melodie Hypercharge [CONCEPT]", filename: "melodie_hypercharge.gif", matchname: "melodie", generalgroup: "fanmade", matchartistname: "cvbby", uploadDate: "09.03.2024", noteID: 45}
+
 
 
 
@@ -167,6 +169,7 @@ pinsNotes[41] = {note: "As I'm writing this, I'm on fire with animating the pins
 pinsNotes[42] = {note: "Fun fact: I made this pin using my sister's laptop, while mine was at the fix service. It was a little tough, since her device is not as powerful as mine, so it was quite difficult to work on it lol"}
 pinsNotes[43] = {note: "I wasn't sure that I will be able to make it before the Brawl Talk, but as I'm writing it, there's still no premiere. It only shows that if you're determined enough, you can make anything super super fast!"}
 pinsNotes[44] = {note: "Skin designed by <a href='https://twitter.com/Gablocks_/status/1760419089866961172'>Gablocks</a><br><br>While scrolling through Twitter, I've encountered this pin and I thought that this would be a great opportunity for me to improve my 'Happy' pin animations!"}
+pinsNotes[45] = {note: "When I first heard the lobby music for Melodie, I've put it on a 30-minute loop just listening and listening and...it's soooo good! The whole design of the brawler is overall just high-note!"}
 
 
 var pinsOfficial = new Array();
@@ -205,12 +208,13 @@ pinsFanmade[12] = {charname: "Edgar", matchname: "edgar"}
 pinsFanmade[13] = {charname: "Griff", matchname: "griff"}
 pinsFanmade[14] = {charname: "Hank", matchname: "hank"}
 pinsFanmade[15] = {charname: "Lola", matchname: "lola"}
-pinsFanmade[16] = {charname: "Mico", matchname: "mico"}
-pinsFanmade[17] = {charname: "Mortis", matchname: "mortis"}
-pinsFanmade[18] = {charname: "Nita", matchname: "nita"}
-pinsFanmade[19] = {charname: "Skull Toon", matchname: "skulltoon"}
-pinsFanmade[20] = {charname: "Starr Drop", matchname: "starrdrop"}
-pinsFanmade[21] = {charname: "Other", matchname: "other"}
+pinsFanmade[16] = {charname: "Melodie", matchname: "melodie"}
+pinsFanmade[17] = {charname: "Mico", matchname: "mico"}
+pinsFanmade[18] = {charname: "Mortis", matchname: "mortis"}
+pinsFanmade[19] = {charname: "Nita", matchname: "nita"}
+pinsFanmade[20] = {charname: "Skull Toon", matchname: "skulltoon"}
+pinsFanmade[21] = {charname: "Starr Drop", matchname: "starrdrop"}
+pinsFanmade[22] = {charname: "Other", matchname: "other"}
 
 
 
@@ -219,11 +223,11 @@ pinsFanmade[21] = {charname: "Other", matchname: "other"}
 
 var pinsArtist = new Array();
 pinsArtist[0] = {artistname: "Bitowsky", matchartistname: "bitowsky", socialmedia: "https://twitter.com/Bitowsky1"}
-pinsArtist[1] = {artistname: "CvbbyKis", matchartistname: "cvbby", socialmedia: "https://twitter.com/RoCat219168"}
-pinsArtist[2] = {artistname: "Gonzalo Vazquez", matchartistname: "gonz", socialmedia: "https://twitter.com/GonVazquez"}
-pinsArtist[3] = {artistname: "IguanaBoy07", matchartistname: "iguana", socialmedia: "https://twitter.com/IguanaBoy07"}
-pinsArtist[4] = {artistname: "Marley", matchartistname: "marley", socialmedia: "https://twitter.com/The_Marley_"}
-pinsArtist[5] = {artistname: "Matt Runner", matchartistname: "matt", socialmedia: "https://twitter.com/Matt_Runner_0"}
+pinsArtist[1] = {artistname: "Gonzalo Vazquez", matchartistname: "gonz", socialmedia: "https://twitter.com/GonVazquez"}
+pinsArtist[2] = {artistname: "IguanaBoy07", matchartistname: "iguana", socialmedia: "https://twitter.com/IguanaBoy07"}
+pinsArtist[3] = {artistname: "Marley", matchartistname: "marley", socialmedia: "https://twitter.com/The_Marley_"}
+pinsArtist[4] = {artistname: "Matt Runner", matchartistname: "matt", socialmedia: "https://twitter.com/Matt_Runner_0"}
+pinsArtist[5] = {artistname: "Misty", matchartistname: "cvbby", socialmedia: "https://twitter.com/RoCat219168"}
 pinsArtist[6] = {artistname: "Nexty", matchartistname: "nexty", socialmedia: "https://twitter.com/nextyart"}
 pinsArtist[7] = {artistname: "PDLP", matchartistname: "pdlp", socialmedia: "https://twitter.com/_pdlp"}
 pinsArtist[8] = {artistname: "Plort", matchartistname: "plort", socialmedia: "https://twitter.com/plort_was_taken"}
