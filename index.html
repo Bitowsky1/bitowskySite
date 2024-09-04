@@ -1,21 +1,24 @@
-<script>
-    var IsSiteAvailable = true;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitowsky's Site?</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+    <link rel="icon" type="image/x-icon" href="favicon.svg">
+</head>
+<body>
+    <p style="font-size: 40px;">Oh no! It appears that you have encountered a black void!</p>
 
-    if (navigator.userAgent.match(/Android/i)
-         || navigator.userAgent.match(/webOS/i)
-         || navigator.userAgent.match(/iPhone/i)
-         || navigator.userAgent.match(/iPad/i)
-         || navigator.userAgent.match(/iPod/i)
-         || navigator.userAgent.match(/BlackBerry/i)
-         || navigator.userAgent.match(/Windows Phone/i)) {
-            window.location.replace("mobileWarning.html");
-         } else {
-            if (IsSiteAvailable) {
-                window.location.replace("main.html");
-            } else {
-                window.location.replace("subsites/pageDown.html");
-            }
-         }
+    <hr>
 
-    
-</script>
+    <p>Could it be because the site is currently unavaiable to see to the public and not because it was very buggy and not very optimized in terms of back-end and front-end?<br><br><br><br>Who knows!</p>
+    <br><br>
+    <p>But while you are contemplating, you can visit all of my other social medias! (Or at least the one that you tolerate or something)<br><br>Once the website is back up and running, I will definitely let you know through one of those platforms!</p>
+    <br><br>
+    <div id="button" onclick="goToLinktree()">My Social Medias</div>
+
+    <p class="footer">Bitowsky 2024</p>
+</body>
+</html>
