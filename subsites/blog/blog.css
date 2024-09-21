@@ -1,0 +1,199 @@
+* {
+    image-rendering: pixelated;
+}
+
+
+.mainBox {
+    width: 85%;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 50px auto;
+    border: 5px solid black;
+    border-radius: 40px;
+    padding: 50px 50px;
+    font-size: 28px;
+    position: relative;
+}
+
+#sectionMain {
+    font-size: 120px;
+    -webkit-text-stroke: 2px;
+    -webkit-text-stroke-color: rgb(0, 255, 0);
+    color: white;
+    text-transform: uppercase;
+    /*
+    animation: strokeChange 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    */
+    text-align: center;
+}
+
+@keyframes strokeChange {
+    0% {-webkit-text-stroke-color: rgba(0, 128, 0, 0); color: black;}
+    50% {-webkit-text-stroke-color: rgba(0, 128, 0, 255); color: white;}
+    100% {-webkit-text-stroke-color: rgba(0, 128, 0, 0); color: black;}
+}
+
+.animButton.turnOFF {
+    background-color: brown;
+}
+
+.animButton.turnON {
+    background-color: green;
+}
+
+
+#newYearCounter {
+    text-align: center;
+    font-size: 24px;
+    font-style: italic;
+}
+
+.sect1 {
+    font-size: 100px;
+    color:white;
+    -webkit-text-stroke: 2px black;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.sect2 {
+    font-size: 60px;
+    color:white;
+    -webkit-text-stroke: 2px black;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/*
+.animButtonBox {
+    background-color: white;
+    width: 100%;
+    position: relative;
+}
+
+.animButton{
+    margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+}
+*/
+
+.centerText {
+    text-align: center;
+}
+
+
+.charName {
+    font-family: titlefont;
+    text-align: center;
+    -webkit-text-stroke: 1px linear-gradient(red, yellow);
+    font-size: 72px;
+    margin: 20px;
+}
+
+.socialLink {
+    font-size: 24px;
+    margin: 0;
+    text-align: center;
+    font-style: italic;
+}
+
+.socialLink2 {
+    text-decoration: none;
+}
+
+.socialTwitter::after {
+    content: "Twitter";
+}
+
+.charBox {
+    margin: 20px auto;
+    min-height: 600px;
+    border: 10px solid black;
+    border-radius: 20px;
+}
+
+.charImg {
+    width: 350px;
+    float: left;
+    margin: 30px;
+    outline: 5px solid black;
+    border-radius: 40px;
+}
+
+.charText {
+    text-align: center;
+    margin: 30px;
+}
+
+.miniCharBox {
+    margin: 20px auto;
+    height: 250px;
+    border: 5px solid black;
+    border-radius: 40px;
+}
+
+.miniCharImg {
+    height: 100%;
+    outline: 5px solid black;
+    border-radius: 40px;
+    margin-right: 50px;
+    background-color: rgb(128, 255, 255);
+}
+
+.miniCharName {
+    font-family: titlefont;
+    text-align: center;
+    -webkit-text-stroke: 1px linear-gradient(red, yellow);
+    font-size: 72px;
+    margin: 0;
+    
+}
+
+.miniCharName a {
+    text-decoration: none;
+    color: white;
+}
+
+.miniCharText {
+    margin-right: 50px;
+    text-align: center;
+}
+
+.psInfo {
+    font-size: 30px;
+    font-style: italic;
+    text-align: center;
+    color: gray;
+}
+
+.endText {
+    text-align: center;
+}
+
+.endText2 {
+    text-align: center;
+    font-size: 200%;
+    transform: rotate(-5deg);
+    background-color: rgb(0, 200, 133);
+    width: 70%;
+    margin-left: 12.5%;
+    border: 5px solid rgb(0, 82, 59);
+    border-radius: 50px;
+    padding: 50px 0;
+}
+
+.thanksPinBox {
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+}
+
+.thanksPins {
+    float: left;
+    height: 150px;
+    margin-left: 40%;
+}
