@@ -1,6 +1,8 @@
 * {
     image-rendering: pixelated;
+    overflow-x: hidden;
 }
+
 
 
 .mainBox {
@@ -28,10 +30,92 @@
     text-align: center;
 }
 
+#sectionMain2 {
+    font-size: 120px;
+    -webkit-text-stroke: 2px;
+    -webkit-text-stroke-color: #005525;
+    color: #00cc58;
+    text-transform: uppercase;
+    animation: shine 0.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    text-align: center;
+}
+
+@keyframes shine {
+    0% {color: #00cc58;}
+    50% {color: #94ffc3;}
+    100% {color: #00cc58;}
+}
+
+
 @keyframes strokeChange {
     0% {-webkit-text-stroke-color: rgba(0, 128, 0, 0); color: black;}
     50% {-webkit-text-stroke-color: rgba(0, 128, 0, 255); color: white;}
     100% {-webkit-text-stroke-color: rgba(0, 128, 0, 0); color: black;}
+}
+
+h3 {
+    font-size: 120px;
+    font-style: normal;
+    font-family: titlefont;
+    margin: 0px;
+    color: white;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: #000000;
+    -webkit-transform: perspective(600px) rotateX(40deg);
+}
+
+.counterWiggle {
+    animation: textWiggle 0.5s;
+}
+
+@keyframes textWiggle {
+    0% {-webkit-transform: perspective(800px) rotateX(40deg);}
+    10% {-webkit-transform: perspective(400px) rotateX(40deg);}
+    25% {-webkit-transform: perspective(700px) rotateX(40deg);}
+    45% {-webkit-transform: perspective(500px) rotateX(40deg);}
+    70% {-webkit-transform: perspective(650px) rotateX(40deg);}
+    100% {-webkit-transform: perspective(600px) rotateX(40deg);}
+}
+
+.counterFlash {
+    animation: textFlash 0.5s;
+}
+
+@keyframes textFlash {
+    0% {-webkit-transform: perspective(800px) rotateX(40deg); color: #00cc58;}
+    10% {-webkit-transform: perspective(400px) rotateX(40deg);}
+    25% {-webkit-transform: perspective(700px) rotateX(40deg);}
+    45% {-webkit-transform: perspective(500px) rotateX(40deg);}
+    70% {-webkit-transform: perspective(650px) rotateX(40deg);}
+    100% {-webkit-transform: perspective(600px) rotateX(40deg); color: white;}
+}
+
+.newyearcolors {
+    animation: newyearcolors 1s;
+}
+
+@keyframes newyearcolors {
+    0% {color: #ff5151;}
+    12.5% {color: #ffc851;}
+    25% {color: #e5ff51;}
+    37.5% {color: #5aff51;}
+    50% {color: #51a2ff;}
+    62.5% {color: #6251ff;}
+    75% {color: #dc51ff;}
+    87.5% {color: #ff51b9;}
+    100% {color: #ff5151;}
+}
+
+.img2025 {
+    width: 60%;
+    height: 60%;
+    margin-left: 20%;
+    border: 5px black solid;
+    border-radius: 10px;
+    transform: rotate(-5deg);
+    image-rendering: auto;
 }
 
 .animButton.turnOFF {
@@ -122,7 +206,10 @@
     margin: 30px;
     outline: 5px solid black;
     border-radius: 40px;
+    image-rendering: pixelated;
 }
+
+
 
 .charText {
     text-align: center;
@@ -196,4 +283,12 @@
     float: left;
     height: 150px;
     margin-left: 40%;
+}
+
+.butitchanged {
+    opacity: 0;
+}
+
+.butitchanged:hover {
+    opacity: 1;
 }

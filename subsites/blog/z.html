@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <title>IT SWIRLS AND SWIRLS AND SWIRLS</title>
+     <style>
+        html {
+          margin: 0;
+          padding: 0;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        body {
+          background-color: black;
+          overflow-y: hidden;
+          padding: 0;
+          margin: 0;
+        }
+
+        h1, .mainCardAvatarCredit, .mainCardAvatarTitle {
+            font-family: titlefont;
+        }
+
+        p, .mainCardRightSectionsText, .mainCardBottomTitle, .mainCardBottomSectionsTab3, .footerDonotcrossText, .lang-langName, .langChooserText, .footerFinaltext {
+            font-family: mainfont;
+            color: white;
+            
+        }
+
+        .main {
+          text-align: center;
+          margin-top: 20%;
+          font-size: 28px;
+        }
+
+        .main2 {
+          text-align: center;
+          margin-top: 20%;
+          color: black;
+        }
+
+        @font-face {
+            font-family: titlefont;
+            src: url("../../fonts/BAUHS93.TTF");
+          }
+
+        @font-face {
+            font-family: mainfont;
+            src: url("../../fonts/TCCEB.TTF");
+          }
+        
+        .paper {
+          position: relative;
+          width: 100%;
+          max-width: 600px;
+          text-align: center;
+        }
+
+        img {
+          width: 100%;
+          height: auto;
+          display: block;
+          image-rendering: pixelated;
+        }
+
+        .paperText {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          color: white;
+          text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        .allpapers {
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: -20px;
+        }
+     </style>
+  </head>
+  <body>
+    <div class="allpapers">
+      <div class="paper">
+        <img src="blogImg/envelopePaper.png" alt="envelope paper">
+        <p class="paperText">TESTY TEST XD</p>
+      </div>
+  
+      <div class="paper">
+        <img src="blogImg/envelopePaper.png" alt="envelope paper">
+        <p class="paperText">TESTY TEST 2 XD</p>
+      </div>
+
+      <div class="paper">
+        <img src="blogImg/envelopePaper.png" alt="envelope paper">
+        <p class="paperText">TESTY TEST 2 XD</p>
+      </div>
+    </div>
+
+  </body>
+</html>
