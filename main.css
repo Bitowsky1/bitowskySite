@@ -8,17 +8,18 @@ body {
 }
 
 hr {
+    color: white;
     border-style: dotted;
 }
 
 * {
-    color: white;
     font-family: "base";
     text-align: center;
     font-size: 24px;
 }
 
 p {
+    color: white;
     margin: 50px;
 }
 
@@ -64,7 +65,7 @@ a:hover {
     color: black
 }
 
-#button {
+.button, .button2 {
     border: 1px white dotted;
     color: white;
     width: 300px;
@@ -75,9 +76,19 @@ a:hover {
     margin-bottom: 100px;
 }
 
-#button:hover {
+.button:hover, .button2:hover {
     border-color: black;
     background-color: white;
-    color:black;
+    color: black;
     cursor: pointer;
+}
+
+.button2 {
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+.buttonInfo {
+    font-size: 18px;
+    opacity: 50%;
 }

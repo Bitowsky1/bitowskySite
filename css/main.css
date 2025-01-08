@@ -516,3 +516,26 @@ a.mainCardAvatarCreditSocial:hover {
     padding: 15px 0;
     text-align: center;
 }
+
+.goBack::after{
+  content: "GO BACK TO MAIN SITE";
+}
+
+.goBack {
+  position: fixed;
+  z-index: 20;
+  padding: 20px;
+  background-color: black;
+  color: white;
+  font-family: mainfont;
+  opacity: 0.5;
+  user-select: none;
+  border-style: none dotted dotted none;
+  border-color: white;
+  font-size: 16px;
+}
+
+.goBack:hover {
+  opacity: 1;
+  cursor: pointer;
+}
