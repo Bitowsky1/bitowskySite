@@ -14,5 +14,9 @@ function goToBlog(link) {
     window.location.replace("./subsites/blog/" + link)
 }
 
+function goToLink(link) {
+    window.open(link, '_blank').focus();
+}
+
 console.log("%cCongratulations! You have succesfully sticked nose into somebody else's business!", "color: #00ff00; font-size: 24px");
 // And you even spectate the source code! Are you eager to give your chimney some coal this year?
