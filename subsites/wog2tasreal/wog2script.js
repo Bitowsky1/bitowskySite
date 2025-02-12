@@ -85,7 +85,7 @@ wog2levels.forEach(level => {
                 string += "<td>---</td><td>---</td><td>---</td><td>---</td><td>---</td>";
             }
         } else {
-            string += "<td class='levDisabled' colspan='5'>LEVEL NOT ELIGABLE FOR realTAS</td>"
+            string += "<td class='levDisabled' colspan='5'>LEVEL NOT ELIGIBLE FOR realTAS</td>"
             stats_bannedlevels += 1
         }
 
