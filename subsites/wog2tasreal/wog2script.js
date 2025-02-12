@@ -1,4 +1,4 @@
-string = "<tr class='recordTop'><th>Level Name</th><th>Least Time</th><th>Achiever</th><th>Date</th><th>Comment</th><th>Video</th></tr>";
+string = "<tr class='recordTop' style='position: sticky;top: 0; overflow: hidden;'><th>Level Name</th><th>Least Time</th><th>Achiever</th><th>Date</th><th>Comment</th><th>Video</th></tr>";
 
 var stats_totaltime = 0;
 var stats_attemptedlevels = 0
