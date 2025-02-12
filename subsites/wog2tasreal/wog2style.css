@@ -1,0 +1,136 @@
+@font-face {
+    font-family: mainfont;
+    src: url("../../fonts/TCCEB.TTF");
+  }
+
+body {
+    font-family: "mainfont";
+    margin: auto;
+    padding: 50px 180px 50px 180px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('background.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+table {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 24px;
+}
+
+table, th, td {
+    border: 3px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th, td {
+    padding: 20px;
+}
+
+.chapterName {
+    width: 100%;
+    background-size: cover;
+    animation-name: chapterimage;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    font-size: 48px;
+    -webkit-text-stroke: 5px;
+    paint-order: stroke fill;
+}
+
+@keyframes chapterimage {
+    0% {background-position: 0% 0%;}
+    40% {background-position: 0% 100%;}
+    50% {background-position: 0% 100%;}
+    90% {background-position: 0% 0%;}
+}
+
+.recordTop {
+    background-color: #1e1e1eff;
+    color: white;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.chap4text span {
+    background: linear-gradient(to right, #FFFCC4, #FF61FB, #3AB4FE);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: #2E1C17;
+}
+
+.noComment {
+    font-style: italic;
+    opacity: 50%;
+}
+
+.levDisabled {
+    transform: rotate(0deg);
+    color: red;
+    background-color: rgba(0, 0, 0, 0.5);
+    -webkit-text-stroke: 4px;
+    -webkit-text-stroke-color: black;
+    paint-order: stroke fill;
+}
+
+.start {
+    width: 100%;
+    font-size: 24px;
+}
+
+.start img {
+    width: 100%;
+    margin-top: -100px;
+}
+
+.wog2realtastitle {
+    font-family: "mainfont";
+    text-align: center;
+}
+
+.wog2note {
+    color: rgb(255, 0, 0);
+    text-align: center;
+}
+
+.start li::marker {
+    color: gray;
+    font-size: 30px;
+}
+
+.start li {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.videoAvailable {
+    height: 50px;
+}
+
+.videoAvailableDiscord {
+    filterN: invert(57%) sepia(64%) saturate(7273%) hue-rotate(223deg) brightness(98%) contrast(94%);
+}
+
+.videoAvailableYoutube {
+    filterN: invert(12%) sepia(81%) saturate(7407%) hue-rotate(6deg) brightness(96%) contrast(122%);
+}
+
+.goldenRecord {
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: black;
+    paint-order: stroke fill;
+    color: gold;
+    animation: goldenRecordText 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes goldenRecordText {
+    0% {color: gold;}
+    50% {color: yellow;}
+    100% {color: gold;}
+}

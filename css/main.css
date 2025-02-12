@@ -20,7 +20,7 @@ body {
     background-image: url("../img/bgAn2.gif");
     background-size: 48px;
     margin: 0;
-    image-rendering: pixelated;
+    
     z-index: 0;
 }
 
