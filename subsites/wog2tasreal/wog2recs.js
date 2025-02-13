@@ -1,3 +1,9 @@
+var wog2achievers = new Array();
+
+wog2achievers[0] = {achieverTag: "bit", name: "Bitowsky", profileColor: "#32a852", profileColor2: "#00e63f"}
+//wog2achievers[1] = {achieverTag: "bit2", name: "Bitowsky2"}
+
+
 var wog2 = new Array();
 
 // Template
@@ -108,9 +114,7 @@ wog2levels[66] = {leveltag: "DLS", levelname: "Destination Landing Station", cha
 
 
 
-var wog2achievers = new Array();
 
-wog2achievers[0] = {achieverTag: "bit", name: "Bitowsky"}
 
 var wog2chapters = new Array();
 wog2chapters[0] = {bgcolor: "#B2DB7E", bgColorRGB: "178, 219, 126", addclass: ""}

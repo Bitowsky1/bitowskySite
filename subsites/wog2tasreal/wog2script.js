@@ -13,6 +13,14 @@ function isTheRecordGolden(time) {
     
 }
 
+var playerPersStats = new Array;
+
+wog2achievers.forEach(player => {
+    playerPersStats.push([0])
+});
+
+
+
 wog2levels.forEach(level => {
     
     if (!level.isChapter) {
@@ -52,6 +60,8 @@ wog2levels.forEach(level => {
                 timetxt = Math.floor(wog2[lessTimeIndex].time / 60) + ":" + String(wog2[lessTimeIndex].time % 60).padStart(2, '0')
                 string += "<td class='" + isTheRecordGolden(wog2[lessTimeIndex].time) + "'>" + timetxt + "</td><td>" + wog2achievers[achieverIndex].name + "</td><td>" + wog2[lessTimeIndex].date + "</td>";
                 
+                playerPersStats[achieverIndex][0] += 1;
+
                 stats_totaltime += wog2[lessTimeIndex].time
 
                 if (wog2[lessTimeIndex].comment != "") {
@@ -120,6 +130,57 @@ wog2.forEach(data => {
         
     }
 });
+
+
+// PLAYER STATS
+
+var playerStatsSTR = "<tr class='playerStatsTop'><th>Player Name</th><th>Run Count</th><th>Active Records Count</th><th>Golden Times</th><th>Last Record</th></tr>"
+
+playerIndex = 0
+wog2achievers.forEach(player => {
+    
+
+    runCount = 0;
+    goldCount = 0;
+    
+    recordCount = 0;
+
+    lastRecordIndexCurr = 0;
+    lastRecordIndex = -1;
+    lastRecordLevelName = ""
+
+    wog2.forEach(data => {
+        if (data.achieverTag == player.achieverTag) {
+            runCount += 1;
+            if (data.time == 0) {
+                goldCount += 1;
+            }
+            lastRecordIndex = lastRecordIndexCurr
+            wog2levels.forEach(level => {
+                if (level.leveltag == data.leveltag) {
+                    lastRecordLevelName = level.levelname
+                }
+            });
+        }
+
+        lastRecordIndexCurr += 1
+    });
+
+
+
+    
+    playerStatsSTR += "<tr style='background: linear-gradient(to right, " + player.profileColor + ", " + player.profileColor2 + ");'><td>" + player.name + "</td><td>" + runCount + "</td><td>" + playerPersStats[playerIndex][0] + "</td><td>" + goldCount + "</td><td>" + wog2[lastRecordIndex].date + "<br>(" + lastRecordLevelName + ")</td></tr>"
+
+    playerIndex += 1
+});
+
+document.getElementById("playerStats").innerHTML = playerStatsSTR
+
+
+
+
+
+
 
 // STATS
 

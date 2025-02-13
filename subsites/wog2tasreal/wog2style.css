@@ -140,3 +140,10 @@ th, td {
     50% {color: yellow;}
     100% {color: gold;}
 }
+
+.playerStatsTop {
+    background-color: #1e1e1eff;
+    color: white;
+    font-weight: 700;
+    font-size: 24px;
+}
