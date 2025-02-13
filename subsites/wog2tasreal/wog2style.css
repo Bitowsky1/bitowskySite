@@ -12,6 +12,10 @@ body {
     background-size: 100% 100%;
 }
 
+.wog2realtaslogoOLD {
+    image-rendering: pixelated;
+}
+
 table {
     width: 100%;
     margin-left: auto;
@@ -48,10 +52,11 @@ th, td {
 }
 
 @keyframes chapterimage {
-    0% {background-position: 0% 0%;}
-    40% {background-position: 0% 100%;}
-    50% {background-position: 0% 100%;}
-    90% {background-position: 0% 0%;}
+    0% {background-position: 0% 10%;}
+    40% {background-position: 0% 90%;}
+    50% {background-position: 0% 90%;}
+    90% {background-position: 0% 10%;}
+    100% {background-position: 0% 10%;}
 }
 
 .recordTop {
