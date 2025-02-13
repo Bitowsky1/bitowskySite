@@ -30,23 +30,36 @@ tr.recordTop {
 }
 
 table, th, td {
-    border: 3px solid black;
+    border: 5px solid rgb(0, 0, 0);
     border-collapse: collapse;
     text-align: center;
+    color: white;
+    -webkit-text-stroke-width: 6px;
+    -webkit-text-stroke-color: black;
+    paint-order: stroke fill;
 }
 
 th, td {
+    outline: 1px solid rgb(115, 115, 115);
     padding: 15px 10px;
+}
+
+.record {
+    background-size: cover;
+    background-blend-mode: luminosity;
+    background-position: 0% 50%;
 }
 
 .chapterName {
     width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
     background-size: cover;
     animation-name: chapterimage;
     animation-duration: 12s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
-    font-size: 48px;
+    font-size: 60px;
     -webkit-text-stroke: 5px;
     paint-order: stroke fill;
 }
@@ -78,13 +91,13 @@ th, td {
 
 .noComment {
     font-style: italic;
-    opacity: 50%;
+    opacity: 80%;
 }
 
 .levDisabled {
     color: red;
     background-color: rgba(0, 0, 0, 0.5);
-    -webkit-text-stroke: 4px;
+    -webkit-text-stroke: 6px;
     -webkit-text-stroke-color: black;
     paint-order: stroke fill;
 }
@@ -124,15 +137,15 @@ th, td {
 }
 
 .videoAvailableDiscord {
-    filterN: invert(57%) sepia(64%) saturate(7273%) hue-rotate(223deg) brightness(98%) contrast(94%);
+    filter: invert(57%) sepia(64%) saturate(7273%) hue-rotate(223deg) brightness(98%) contrast(94%);
 }
 
 .videoAvailableYoutube {
-    filterN: invert(12%) sepia(81%) saturate(7407%) hue-rotate(6deg) brightness(96%) contrast(122%);
+    filter: invert(12%) sepia(81%) saturate(7407%) hue-rotate(6deg) brightness(96%) contrast(122%);
 }
 
 .goldenRecord {
-    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-width: 6px;
     -webkit-text-stroke-color: black;
     paint-order: stroke fill;
     color: gold;
@@ -151,4 +164,14 @@ th, td {
     color: white;
     font-weight: 700;
     font-size: 24px;
+}
+
+.recordTopSticky {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+}
+
+#wog2Foot{
+    text-align: center; margin-top: 200px;
 }

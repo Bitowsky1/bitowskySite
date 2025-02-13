@@ -1,4 +1,4 @@
-string = "<tr class='recordTop' style='position: sticky;top: 0; overflow: hidden;'><th>Level Name</th><th>Least Time</th><th>Achiever</th><th>Date</th><th>Comment</th><th>Video</th></tr>";
+string = "<tr class='recordTop'><th>Level Name</th><th>Least Time</th><th>Achiever</th><th>Date</th><th>Comment</th><th>Video</th></tr>";
 
 var stats_totaltime = 0;
 var stats_attemptedlevels = 0
@@ -13,12 +13,47 @@ function isTheRecordGolden(time) {
     
 }
 
+function doesCoverImageExists(tag, wantedValueToReturn) {
+    const img = new Image();
+    img.src = "img/" + tag + ".png";
+
+    if (img.complete) {
+        //alert(true)
+        console.log(wantedValueToReturn)
+        return "a";
+      } else {
+        img.onload = () => {
+            //alert(true)
+            console.log(wantedValueToReturn)
+            return "a";
+        };
+        
+        img.onerror = () => {
+          //alert(false)
+          console.log(false)
+          return "";
+        };
+      }
+}
+
 var playerPersStats = new Array;
 
 wog2achievers.forEach(player => {
-    playerPersStats.push([0])
+    
+    /*
+    0 - Active Records Count
+    1 - Total Time (Active Records)
+    2 - Total Time
+    */
+
+    playerPersStats.push([0, 0, 0])
 });
 
+videoImageClassIndex = 0;
+
+
+
+var level_pointToRecord = new Array;
 
 
 wog2levels.forEach(level => {
@@ -50,10 +85,14 @@ wog2levels.forEach(level => {
             currIndex += 1;
         });
 
-        string += "<tr class='record' style='background-color: rgba(" + wog2chapters[level.chapterIndex].bgColorRGB + ", 0.5);'><td>" + level.levelname + "</td>"
+        //string += "<tr class='record' style='background-color: rgba(" + wog2chapters[level.chapterIndex].bgColorRGB + ", 0.5);'><td>" + level.levelname + "</td>"
+        //string += "<tr class='record' style='background-image: url(img/" + level.leveltag + ".png); background-color: rgba(" + wog2chapters[level.chapterIndex].bgColorRGB + ", 0.5);'><td>" + level.levelname + "</td>"
+        string += "<tr class='record' style='background-image: url(img/" + level.leveltag + ".png); background-color: rgba(" + wog2chapters[level.chapterIndex].bgColorRGB + ", 0.7);'><td>" + level.levelname + "</td>"
         
         if (!level.disable) {
             if (lessTimeIndex != -1) {
+
+                level_pointToRecord.push(lessTimeIndex)
 
                 stats_attemptedlevels += 1;
 
@@ -61,6 +100,7 @@ wog2levels.forEach(level => {
                 string += "<td class='" + isTheRecordGolden(wog2[lessTimeIndex].time) + "'>" + timetxt + "</td><td>" + wog2achievers[achieverIndex].name + "</td><td>" + wog2[lessTimeIndex].date + "</td>";
                 
                 playerPersStats[achieverIndex][0] += 1;
+                playerPersStats[achieverIndex][1] += wog2[lessTimeIndex].time;
 
                 stats_totaltime += wog2[lessTimeIndex].time
 
@@ -70,9 +110,13 @@ wog2levels.forEach(level => {
                     string += "<td class='noComment'>(no comment)</td>"
                 }
 
+                // wog2[lessTimeIndex].video
+
                 if (wog2[lessTimeIndex].video) {
-                    string += "<td><a href='" + wog2[lessTimeIndex].video + "'><img class='videoAvailable' src='video.svg' alt='Video Available'></a><br>"
+                    string += "<td><a href='" + wog2[lessTimeIndex].video + "'><img id='videoClass" + lessTimeIndex + "' class='videoAvailable' src='video.svg' alt='Video Available'></a><br>"
                 
+                    videoImageClassIndex += 1;
+
                     switch(wog2[lessTimeIndex].proofType) {
                         case "discord":
                             string += "Discord Video";
@@ -92,6 +136,7 @@ wog2levels.forEach(level => {
                 }
     
             } else {
+                level_pointToRecord.push(-1)
                 string += "<td>---</td><td>---</td><td>---</td><td>---</td><td>---</td>";
             }
         } else {
@@ -112,29 +157,58 @@ document.getElementById("recs").innerHTML = string;
 
 var videoclass = 0;
 
-wog2.forEach(data => {
+console.log(level_pointToRecord)
+
+levelIndex = 0;
+
+wog2levels.forEach(level => {
+
+    if (level_pointToRecord[levelIndex] != -1 && level_pointToRecord[levelIndex] != undefined) {
+        console.log(level_pointToRecord[levelIndex])
+        console.log("proof: " + wog2[level_pointToRecord[levelIndex]].proofType)
+        switch (wog2[level_pointToRecord[levelIndex]].proofType) {
+            case "discord":
+                console.log("vid " + level_pointToRecord[levelIndex])
+                document.getElementById("videoClass" + level_pointToRecord[levelIndex]).classList.add("videoAvailableDiscord");
+                //videoclass += 1;
+                break;
+            case "youtube":
+                console.log("vid " + level_pointToRecord[levelIndex])
+                document.getElementById("videoClass" + level_pointToRecord[levelIndex]).classList.add("videoAvailableYoutube");
+                //videoclass += 1;
+                break;
+        
+        }
+        //videoclass += 1;
+    }
+
+    levelIndex += 1;
+
+    /*
 
     if (data.video) {
         switch (data.proofType) {
             case "discord":
-                //alert(videoclass)
-                //document.getElementsByClassName("videoAvailable")[videoclass].classList.add("videoAvailableDiscord");
+                console.log(videoclass)
+                document.getElementById("videoClass" + videoclass).classList.add("videoAvailableDiscord");
                 videoclass += 1;
                 break;
             case "youtube":
-                //document.getElementsByClassName("videoAvailable")[videoclass].classList.add("videoAvailableYoutube");
+                document.getElementById("videoClass" + videoclass).classList.add("videoAvailableYoutube");
                 videoclass += 1;
                 break;
         }
         //alert(videoclass)
         
     }
+
+    */
 });
 
 
 // PLAYER STATS
 
-var playerStatsSTR = "<tr class='playerStatsTop'><th>Player Name</th><th>Run Count</th><th>Active Records Count</th><th>Golden Times</th><th>Last Record</th></tr>"
+var playerStatsSTR = "<tr class='playerStatsTop'><th>Player Name</th><th>Run Count</th><th>Active Records Count</th><th>Total Time (Active Records)</th><th>Total Time</th><th>Golden Times</th></tr>"
 
 playerIndex = 0
 wog2achievers.forEach(player => {
@@ -152,6 +226,7 @@ wog2achievers.forEach(player => {
     wog2.forEach(data => {
         if (data.achieverTag == player.achieverTag) {
             runCount += 1;
+            playerPersStats[playerIndex][2] += data.time;
             if (data.time == 0) {
                 goldCount += 1;
             }
@@ -159,6 +234,7 @@ wog2achievers.forEach(player => {
             wog2levels.forEach(level => {
                 if (level.leveltag == data.leveltag) {
                     lastRecordLevelName = level.levelname
+                    
                 }
             });
         }
@@ -168,8 +244,9 @@ wog2achievers.forEach(player => {
 
 
 
-    
-    playerStatsSTR += "<tr style='background: linear-gradient(to right, " + player.profileColor + ", " + player.profileColor2 + ");'><td>" + player.name + "</td><td>" + runCount + "</td><td>" + playerPersStats[playerIndex][0] + "</td><td>" + goldCount + "</td><td>" + wog2[lastRecordIndex].date + "<br>(" + lastRecordLevelName + ")</td></tr>"
+
+    playerStatsSTR += "<tr style='background: linear-gradient(to right, " + player.profileColor + ", " + player.profileColor2 + ");'><td>" + player.name + "</td><td>" + runCount + "</td><td>" + playerPersStats[playerIndex][0] + "</td><td>" + Math.floor(playerPersStats[playerIndex][1] / 60) + ":" + String(playerPersStats[playerIndex][1] % 60).padStart(2, '0') + "</td><td>" + Math.floor(playerPersStats[playerIndex][2] / 60) + ":" + String(playerPersStats[playerIndex][2] % 60).padStart(2, '0') + "</td><td>" + goldCount + "</td></tr>"
+    //<td>" + wog2[lastRecordIndex].date + "<br>(" + lastRecordLevelName + ")</td>
 
     playerIndex += 1
 });
@@ -213,3 +290,8 @@ statsSTR += "Attempted Levels: " + stats_attemptedlevels + "/" + (wog2levels.len
 
 
 document.getElementById("stats").innerHTML = statsSTR;
+//document.getElementsByClassName("recordTop")[0].classList.add("recordTopSticky")
+
+
+
+document.getElementById("wog2Foot").innerHTML = "Leaderboard and website hosted by <a href='https://linktr.ee/Bitowsky'>Bitowsky</a>; 2025<br><a href='https://worldofgoo2.com'>World Of Goo 2</a> made by <a href='https://2dboy.com'>2D BOY</a> and <a href='https://tomorrowcorporation.com'>Tomorrow Corporation</a><br><br>Last site update: 13.02.2025"

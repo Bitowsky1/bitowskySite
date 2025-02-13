@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta property="og:title" content="World Of Goo 2 realTAS Leaderboard" />
+    <meta property="og:description" content="Use the power of mighty realTAS to beat the levels with as much precision as possible!" />
+    <meta property="og:image" content="https://bitowsky.com/subsites/wog2tasreal/logo5.png">
+    <meta property="og:type" content="website">
+    <meta charset="UTF-16">
+    <link rel="shortcut icon" href="icon.svg">
+    <link rel="stylesheet" href="wog2style.css">
+    <script src="../../js/common.js"></script>
+    <script src="wog2recs.js"></script>
+    <title>Changelogs | World Of Goo 2 realTAS Leaderboard</title>
+
+    
+
+    
+</head>
+<body>
+    <h1 class="wog2realtastitle">World Of Goo 2 realTAS leaderboard - Site Changelog</h1>
+    <h1 class="wog2realtastitle" style="font-size: 24px;"><a href="index.html">Click here, to go back</a></h1>
+    <hr>
+    <div id="log" style="font-size: 24px;">
+
+    </div>
+
+    <p id="wog2Foot"></p>
+</body>
+
+<script src="wog2scriptCommon.js"></script>
+
+<script>
+
+    var logs = new Array;
+
+    logs[0] = {
+        date: "12.02.2025",
+        version: "1",
+        logs: "First Launch of the site!"
+    }
+
+    logs[1] = {
+        date: "13.02.2025",
+        version: "2",
+        logs: "Levels now display their level image|Added 'Total Time' statistic - for both active and total runs - for Player Statistics.|Removed 'Last Record' - it might return in the future"
+    }
+
+
+
+
+    // CODE
+
+    logSTR = "";
+
+    logs.slice().reverse().forEach(x => wog2WriteLog(x))
+
+    function wog2WriteLog(x) {
+        logSTR += x.date + " (Version " + x.version + ")";
+
+        logNumb = 1;
+
+        const logList = x.logs.split("|");
+
+        logSTR += "<ul>"
+
+        logList.forEach(logtext => {
+            logSTR += "<li>" + logtext + "</li>"
+        });
+
+        logSTR += "</ul>"
+    }
+
+    document.getElementById("log").innerHTML = logSTR
+
+</script>
+
+    
+
+</html>
