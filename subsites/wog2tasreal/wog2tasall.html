@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta property="og:title" content="World Of Goo 2 realTAS Leaderboard" />
+    <meta property="og:description" content="Use the power of mighty realTAS to beat the levels with as much precision as possible!" />
+    <meta property="og:image" content="https://bitowsky.com/subsites/wog2tasreal/logo5.png">
+    <meta property="og:type" content="website">
+    <meta charset="UTF-16">
+    <link rel="shortcut icon" href="icon.svg">
+    <link rel="stylesheet" href="wog2style.css">
+    <script src="../../js/common.js"></script>
+    <script src="wog2recs.js"></script>
+    <title>All Runs | World Of Goo 2 realTAS Leaderboard</title>
+
+    
+
+    
+</head>
+<body>
+    <h1 class="wog2realtastitle">World Of Goo 2 realTAS leaderboard - All Runs</h1>
+    <h1 class="wog2realtastitle" style="font-size: 24px;"><a href="index.html">Click here, to go back</a></h1>
+    <hr>
+    
+    <table id="recs"></table>
+
+    <p id="wog2Foot"></p>
+</body>
+
+
+
+<script>
+
+    // CODE
+
+    
+
+    allSTR = "<tr><th>#</th><th>Level</th><th>Time</th><th>Achiever</th><th>Date</th></tr>";
+    var allindex = wog2.length;
+    wog2.slice().reverse().forEach(x => {
+
+        allLevelName = ""
+
+        wog2levels.forEach(level => {
+            if (level.leveltag == x.leveltag) {
+                allLevelName = level.levelname
+            }
+        });
+
+        allTime = Math.floor(x.time / 60) + ":" + String(x.time % 60).padStart(2, '0')
+
+        allAchieverName = ""
+
+        wog2achievers.forEach(player => {
+            if (player.achieverTag == x.achieverTag) {
+                allAchieverName = player.name
+            }
+        });
+
+        allSTR += "<tr><td>" + allindex + "</td><td>" + allLevelName + "</td><td>" + allTime + "</td><td>" + allAchieverName + "</td><td>" + x.date + "</td></tr>"
+        allindex -= 1
+    })
+    
+    
+
+
+    document.getElementById("recs").innerHTML = allSTR
+
+</script>
+
+<script src="wog2scriptCommon.js"></script>
+<script src="wog2recs.js"></script>
+
+</html>

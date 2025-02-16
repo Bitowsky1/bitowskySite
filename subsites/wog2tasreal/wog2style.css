@@ -47,7 +47,7 @@ th, td {
 .record {
     background-size: cover;
     background-blend-mode: luminosity;
-    background-position: 0% 50%;
+    background-position: 50% 50%;
 }
 
 .chapterName {
