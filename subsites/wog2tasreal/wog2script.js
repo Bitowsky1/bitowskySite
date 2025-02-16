@@ -1,4 +1,4 @@
-string = "<tr class='recordTop'><th title='Name of the level.'>Level Name</th><th title='The current least amount of time that took to beat this level.'>Least Time</th><th title='Name of the person, who got this record.'>Achiever</th><th title='Date, on which the record was achieved.'>Date</th><th title='Additional comments from the person, who got the record.'>Comment</th><th title='Click on the icon, to get the footage of getting the record.'>Video</th></tr>";
+string = "<tr class='recordTop'><th title='Name of the level.'>Level Name</th><th title='The current least amount of time that took to beat this level.'>Least Time</th><th title='Name of the person, who got this record.'>Achiever</th><th title='Date, on which the record was achieved. (Format: DD.MM.YYYY)'>Date</th><th title='Additional comments from the person, who got the record.'>Comment</th><th title='Click on the icon, to get the footage of getting the record.'>Video</th></tr>";
 
 var stats_totaltime = 0;
 var stats_attemptedlevels = 0
