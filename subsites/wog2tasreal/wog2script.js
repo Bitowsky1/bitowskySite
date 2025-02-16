@@ -87,7 +87,7 @@ wog2levels.forEach(level => {
         //string += "<tr class='record' style='background-color: rgba(" + wog2chapters[level.chapterIndex].bgColorRGB + ", 0.5);'><td>" + level.levelname + "</td>"
         //string += "<tr class='record' style='background-image: url(img/" + level.leveltag + ".png); background-color: rgba(" + wog2chapters[level.chapterIndex].bgColorRGB + ", 0.5);'><td>" + level.levelname + "</td>"
         
-        string += "<tr class='record' title='" + (level.disable ? "This level is not eligible for the realTAS leaderboard!" : "") + (lessTimeIndex != -1 && wog2[lessTimeIndex].time == 0 ? "This is a GOLDEN RECORD. You cannot get a better score than 0 seconds!" : "") + "' style='background-image: url(img/" + level.leveltag + ".png); background-color: rgba(" + wog2chapters[level.chapterIndex].bgColorRGB + ", 0.7); " + (level.customColor ? "-webkit-text-stroke-color: " + level.customColor + ";" : "") + " " + (lessTimeIndex != -1 && wog2[lessTimeIndex].time == 0 ? "border-color: yellow;" : "") + "'><td>" + level.levelname + "</td>"
+        string += "<tr class='record' title='" + (level.disable ? "This level is not eligible for the realTAS leaderboard!" : (lessTimeIndex == -1 ? "There are currently no records for this level. You can try to get it first!" : "")) + (lessTimeIndex != -1 && wog2[lessTimeIndex].time == 0 ? "This is a GOLDEN RECORD. You cannot get a better score than 0 seconds!" : "") + "' style='background-image: url(img/" + level.leveltag + ".png); background-color: rgba(" + wog2chapters[level.chapterIndex].bgColorRGB + ", 0.7); " + (level.customColor ? "-webkit-text-stroke-color: " + level.customColor + ";" : "") + " " + (lessTimeIndex != -1 && wog2[lessTimeIndex].time == 0 ? "border-color: yellow;" : "") + "'><td>" + level.levelname + "</td>"
         
         if (!level.disable) {
             if (lessTimeIndex != -1) {
@@ -123,6 +123,9 @@ wog2levels.forEach(level => {
                             break;
                         case "youtube":
                             string += "Youtube Video";
+                            break;
+                        case "video":
+                            string += "Local Video";
                             break;
                         default:
                             string += "Unknown Type";
@@ -177,6 +180,7 @@ wog2levels.forEach(level => {
                 document.getElementById("videoClass" + level_pointToRecord[levelIndex]).classList.add("videoAvailableYoutube");
                 //videoclass += 1;
                 break;
+            
         
         }
         //videoclass += 1;
