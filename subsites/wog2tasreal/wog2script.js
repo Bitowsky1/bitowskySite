@@ -1,4 +1,4 @@
-string = "<tr class='recordTop'><th>Level Name</th><th>Least Time</th><th>Achiever</th><th>Date</th><th>Comment</th><th>Video</th></tr>";
+string = "<tr class='recordTop'><th title='Name of the level.'>Level Name</th><th title='The current least amount of time that took to beat this level.'>Least Time</th><th title='Name of the person, who got this record.'>Achiever</th><th title='Date, on which the record was achieved.'>Date</th><th title='Additional comments from the person, who got the record.'>Comment</th><th title='Click on the icon, to get the footage of getting the record.'>Video</th></tr>";
 
 var stats_totaltime = 0;
 var stats_attemptedlevels = 0
@@ -10,7 +10,6 @@ function isTheRecordGolden(time) {
     } else {
         return "";
     }
-    
 }
 
 function doesCoverImageExists(tag, wantedValueToReturn) {
@@ -87,7 +86,8 @@ wog2levels.forEach(level => {
 
         //string += "<tr class='record' style='background-color: rgba(" + wog2chapters[level.chapterIndex].bgColorRGB + ", 0.5);'><td>" + level.levelname + "</td>"
         //string += "<tr class='record' style='background-image: url(img/" + level.leveltag + ".png); background-color: rgba(" + wog2chapters[level.chapterIndex].bgColorRGB + ", 0.5);'><td>" + level.levelname + "</td>"
-        string += "<tr class='record' style='background-image: url(img/" + level.leveltag + ".png); background-color: rgba(" + wog2chapters[level.chapterIndex].bgColorRGB + ", 0.7);'><td>" + level.levelname + "</td>"
+        
+        string += "<tr class='record' title='" + (level.disable ? "This level is not eligible for the realTAS leaderboard!" : "") + (lessTimeIndex != -1 && wog2[lessTimeIndex].time == 0 ? "This is a GOLDEN RECORD. You cannot get a better score than 0 seconds!" : "") + "' style='background-image: url(img/" + level.leveltag + ".png); background-color: rgba(" + wog2chapters[level.chapterIndex].bgColorRGB + ", 0.7); " + (level.customColor ? "-webkit-text-stroke-color: " + level.customColor + ";" : "") + " " + (lessTimeIndex != -1 && wog2[lessTimeIndex].time == 0 ? "border-color: yellow;" : "") + "'><td>" + level.levelname + "</td>"
         
         if (!level.disable) {
             if (lessTimeIndex != -1) {
@@ -208,7 +208,7 @@ wog2levels.forEach(level => {
 
 // PLAYER STATS
 
-var playerStatsSTR = "<tr class='playerStatsTop'><th>Player Name</th><th>Run Count</th><th>Active Records Count</th><th>Total Time (Active Records)</th><th>Total Time</th><th>Golden Times</th></tr>"
+var playerStatsSTR = "<tr class='playerStatsTop'><th title='Name of the player'>Player Name</th><th title='Amount of attempted runs in general'>Run Count</th><th title='Amount of records, that are currently on the leaderboard.'>Active Records Count</th><th title='Total amount of time summed from the records, that are currently on the leaderboard.'>Total Time (Active Records)</th><th title='Total amount of time summed from all of the attempted records.'>Total Time</th><th title='Amount of Golden Times (0 seconds) achieved in general by the player.'>Golden Times</th></tr>"
 
 playerIndex = 0
 wog2achievers.forEach(player => {

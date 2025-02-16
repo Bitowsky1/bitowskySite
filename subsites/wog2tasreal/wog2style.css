@@ -7,13 +7,15 @@ body {
     font-family: "mainfont";
     margin: auto;
     padding: 50px 180px;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('background.png');
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('bg.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    
 }
 
 .wog2realtaslogoOLD {
     image-rendering: pixelated;
+    margin-top: auto;
 }
 
 table {
@@ -34,13 +36,16 @@ table, th, td {
     border-collapse: collapse;
     text-align: center;
     color: white;
+}
+
+tr {
     -webkit-text-stroke-width: 6px;
     -webkit-text-stroke-color: black;
     paint-order: stroke fill;
 }
 
 th, td {
-    outline: 1px solid rgb(115, 115, 115);
+    /*outline: 1px solid rgb(255, 0, 0);*/
     padding: 15px 10px;
 }
 
@@ -48,6 +53,15 @@ th, td {
     background-size: cover;
     background-blend-mode: luminosity;
     background-position: 50% 50%;
+    opacity: 0.8;
+}
+
+.record:hover {
+    height: 150px;
+    background-blend-mode: normal;
+    opacity: 1;
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
 }
 
 .chapterName {
@@ -81,6 +95,7 @@ th, td {
 }
 
 .chap4text span {
+    background: linear-gradient(to right, #605e3b, #552053, #0f2f42);
     background: linear-gradient(to right, #FFFCC4, #FF61FB, #3AB4FE);
     -webkit-background-clip: text;
     background-clip: text;
@@ -109,7 +124,7 @@ th, td {
 
 .start img {
     width: 100%;
-    margin-top: -100px;
+    margin-top: 0;
 }
 
 .wog2realtastitle {
