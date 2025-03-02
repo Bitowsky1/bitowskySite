@@ -1,0 +1,155 @@
+@font-face {
+    font-family: mainfont;
+    src: url("../../fonts/TCCEB.TTF");
+}
+
+* {
+    font-family: mainfont;
+    font-size: 24px
+}
+
+body {
+    padding: 50px 180px;
+    margin: auto;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('bg.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.title {
+    width: 100%;
+}
+
+#selection {
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.selectionThing {
+    font-size: 24px;
+    text-align: center;
+}
+
+#comment {
+    text-align: center;
+    margin: 30px;
+}
+
+
+table {
+    width: 100%;
+    height: 100%;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 20px;
+}
+
+.boardName1 {
+    background-color: gray;
+}
+
+.boardName2 {
+    background-color: cyan;
+}
+
+.boardCellCorrect {
+    background-color: rgb(200, 255, 200);
+}
+
+.boardCellLower {
+    background-color: rgb(255, 200, 200);
+    background-image: url("arrowDown.png");
+}
+
+.boardCellHigher {
+    background-color: rgb(255, 200, 200);
+    background-image: url("arrowUp.png");
+}
+
+.boardCellName {
+    background-color: rgb(255, 255, 200);
+    font-size: 24px;
+}
+
+td {
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    -webkit-text-stroke: 6px black;
+    paint-order: stroke fill;
+}
+
+.fromChapter1_0 {
+    background-color: #1CBB22;
+    color: black;
+}
+
+.fromChapter1_1 {
+    background-color: #1aa21e;
+    color: black;
+}
+
+
+.fromChapter2_0 {
+    background-color: #E1886A;
+    color: black;
+}
+
+.fromChapter2_1 {
+    background-color: #c66f52;
+    color: black;
+}
+
+
+.fromChapter3_0 {
+    background-color: #504830;
+    color: white;
+}
+
+.fromChapter3_1 {
+    background-color: #3f3924;
+    color: white;
+}
+
+
+.fromChapter4_0 {
+    background-color: #002400;
+    color: #00ff00;
+}
+
+.fromChapter4_1 {
+    background-color: #023202;
+    color: #00ff00;
+}
+
+
+.fromChapter5_0 {
+    background-color: #7ab231;
+    color: black;
+}
+
+.fromChapter5_1 {
+    background-color: #679729;
+    color: black;
+}
+
+
+.introText {
+    text-align: center;
+}
+
+li {
+    margin-top: 10px;
+}
+
+#goodleFoot,#goodleFoot a {
+    text-align: center;
+    margin-top: 200px;
+    font-size: 20px;
+}

@@ -190,3 +190,8 @@ th, td {
 #wog2Foot{
     text-align: center; margin-top: 200px;
 }
+
+.dot {
+    width: 1px;
+    height: 1px;
+}

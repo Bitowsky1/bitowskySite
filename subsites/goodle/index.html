@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta property="og:title" content="Goodle" />
+    <meta property="og:description" content='Welcome to Goodle - "World Of Goo" themed Wordle Game!' />
+    <meta property="og:image" content="https://bitowsky.com/subsites/goodle/logo.png">
+    <meta property="og:type" content="website">
+    <link rel="shortcut icon" href="icon.png">
+    <title>Goodle - "World of Goo" themed Wordle Game!</title>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link href="goodle.css" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- 
+    <option value="goingUp">Going Up</option>
+        <option value="smallDivide">Small Divide</option>
+        <option value="hangLow">Hang Low</option>
+        <option value="flyingMachine">Flying Machine</option>
+        <option value="impaleSticky">Impale Sticky</option>
+        <option value="fistysBog">Fisty's Bog</option>
+        <option value="towerOfGoo">Tower Of Goo</option>
+        <option value="ivyTowers">Ivy Towers</option>
+        <option value="tumbler">Tumbler</option>
+        <option value="chain">Chain</option>
+        <option value="odeToTheBridgeBuilder">Ode To The Bridge Builder</option>
+        
+        <option value="drool">Ode To The Bridge Builder</option>
+    -->
+    <div id="main">
+        <img src="title.png" alt="Goodle Title" class="title"><br>
+        <section id="selection">
+            <select name="answer" id="answer" class="selectionThing selectColorMe" onchange="answerUpdateSelect()"></select>
+            <button onclick="checkAnswer()" class="selectionThing">That's my Guess!</button>
+            <button onclick="reset()" class="selectionThing">Reset</button>
+        </section>
+    </div>
+    
+    <div id="comment"></div>
+    <table id="board"></table>
+
+    <div>
+        <p class="introText">Welcome to Goodle - "World Of Goo" themed Wordle Game!<br>Guess the levels from World Of Goo 1, based on limited amount of data! Are you a true goofan to know all of the levels?</p>
+        <hr>
+        <p>Categories Explanation:</p>
+        <ul>
+            <li>Chapter - Chapter on which the level is located</li>
+            <li>Required Value - The amount of Gooballs required to finish the level. If the level doesn't require any gooballs, the value is set to 0.</li>
+            <li>OCD Value - The value set for OCD (without displaying the type of OCD). For "Observatory Observation Station", this value is set to 0.</li>
+            <li>Amount of Signposts - The amount of readable signposts. Spambot signs from MOM also count (like in Ode to the Bridge Builder), but not the signs with some sort of graphics on them (like the sign in Going Up). Basically anything that lets you trigger the sign animation.</li>
+            <li>Amount of Balls - The amount of Balls that are inside the level - whether it's loose or part of the structure. Anything, that game see as "balls", counts here (so, for example, anchors do count as well).</li>
+        </ul>
+        <hr>
+        <p>How to play?</p>
+        <ol>
+            <li>To start a new game, press "Reset", so that you can start with a blank board.</li>
+            <li>Select any level from the dropdown list. (Which one is your lucky one?) Then, press "That's my Guess!".</li>
+            <li>The level of your choice will appear on the board, alongside with their respective data, based on the category. (Cyan cells)</li>
+            <ul>
+                <li>If one or more numbers have a <span style="color: rgb(180, 50, 50)">red background</span> and:</li>
+                <ul>
+                    <li>arrow pointing down: you need to guess the level with the lower value</li>
+                    <li>arrow pointing up: you need to guess the level with the higher value</li>
+                </ul>
+                <li>If one or more numbers have a <span style="color: rgb(50, 180, 50)">green background</span> without any arrows, you guessed the value!</li>
+                <br>
+                <li>Example: Game has chosen "Blustery Day" but you guessed "Fly Away Little One":</li>
+                <ul>
+                    <li>"Chapter" - Colored green, because both of those levels are in Chapter 2</li>
+                    <li>"Required value" - Colored red with arrows up, because "Blustery Day" requires more than 4 Gooballs</li>
+                    <li>"OCD value" - Colored red with arrows up, because OCD in "Blustery Day" requires more than 12 Gooballs</li>
+                    <li>"Amount of Signposts" - Colored red with arrows down, because "Blustery Day" has less than 2 signposts.</li>
+                    <li>"Amount of Balls" - Colored red with arrows up, because "Blustery Day" has more than 22 balls.</li>
+                </ul>
+            </ul>
+            <li>Repeat until you either guess the correct level, or you're out of chances.</li>
+        </ol>
+    </div>
+    <div id="goodleFoot"></div>
+</body>
+<script src="data.js"></script>
+<script src="goodle.js"></script>
+<script src="goodleCommon.js"></script>
+</html>
