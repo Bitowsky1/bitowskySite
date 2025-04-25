@@ -1,0 +1,1 @@
+document.getElementById("footer").innerHTML = "<p>Bitowsky 2018 - 2025<br>Website fully created by Bitowsky.<br>Thank you for your support! <3</p>"

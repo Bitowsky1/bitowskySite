@@ -1,5 +1,6 @@
 body {
-    background-color: black;
+    background: url("img/bgAn2.gif");
+    margin: 0;
 }
 
 @font-face {
@@ -7,19 +8,36 @@ body {
     src: url("TCCEB.TTF");
 }
 
-hr {
+@font-face {
+    font-family: "header";
+    src: url("fonts/upheavtt.ttf");
+}
+
+h1 {
+    font-family: "header";
+    font-size: 64px;
     color: white;
-    border-style: dotted;
+    -webkit-text-stroke: 15px black;
+    paint-order: stroke fill;
+    letter-spacing: 5px;
+    margin: 0;
+}
+
+hr {
+    height: 10px;
+    background-color: black;
 }
 
 * {
     font-family: "base";
     text-align: center;
-    font-size: 24px;
+    font-size: 28px;
 }
 
 p {
     color: white;
+    -webkit-text-stroke: 5px black;
+    paint-order: stroke fill;
     margin: 50px;
 }
 
@@ -91,4 +109,192 @@ a:hover {
 .buttonInfo {
     font-size: 18px;
     opacity: 50%;
+}
+
+#bitProfile {
+    width: 80%;
+    padding-top: 50px;
+    transform: rotate(-2deg);
+}
+
+#bitProfile:hover {
+    cursor: pointer;
+}
+
+.intro {
+    font-size: 48px;
+}
+
+.introBox {
+    margin-top: 100px;
+}
+
+.introTalk p,.introTalk {
+    font-size: 36px;
+}
+
+.mainSection {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: url("img/sectionBG.png") round;
+    border-image-slice: 33% fill;
+    width: auto;
+    filter: brightness(90%);
+}
+
+.article {
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: url("img/sectionBG_yellow.png") round;
+    border-image-slice: 33% fill;
+    width: auto;
+}
+
+
+
+#mainHeaderp {
+    -webkit-text-stroke: 0px;
+    color: black;
+}
+
+#mainHeader {
+    font-size: 48px;
+}
+
+.iconSection {
+    width: 10px;
+}
+
+#mainButtons {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#mainButtons img {
+    width: 40%;
+    user-select: none;
+    filter: brightness(100%);
+}
+
+#mainButtons img:hover {
+    filter: brightness(120%);
+    cursor: pointer;
+}
+
+#footer {
+    background: linear-gradient(0deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.9) 40%, rgba(0,0,0,0) 100%);;
+    width: 100%;
+    min-height: 150px;
+    padding-top: 150px;
+    
+}
+
+#footer p{
+    opacity: 0.8;
+}
+
+#myUpdates {
+    margin-top: 50px;
+}
+
+.myUpdatesArticle {
+    filter: brightness(90%);
+}
+
+.myUpdatesArticle:hover {
+    filter: brightness(100%);
+    cursor: pointer;
+}
+
+.articleText {
+    margin: 10px;
+    color: black;
+    -webkit-text-stroke: 0px;
+}
+
+.articleTitle {
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+    -webkit-text-stroke: 10px black;
+}
+
+.articleDate {
+    font-style: italic;
+    opacity: 0.6;
+}
+
+.articleDate::before {
+    content: "Release date: ";
+}
+
+.other_goodle {
+    margin: -100px;
+}
+
+.othersTitle {
+    font-size: 64px;
+}
+
+.other_wog2tas {
+    margin: -50px;
+    width: 100%;
+}
+
+.othersButton img {
+    image-rendering: optimizeSpeed;
+    user-select: none;
+}
+
+#otherProjects {
+    margin-top: 100px;
+}
+
+.articleGeneral {
+    margin-top: 50px;
+}
+
+.articleLeft {
+    width: 40%;
+}
+
+.articleRight {
+    width: 40%;
+}
+
+.articleRight img {
+    width: 40%;
+}
+
+.articleLeft, .articleRight {
+    display: inline;
+}
+
+.projectName {
+    font-size: 48px;
+}
+
+.projectDevs {
+    font-size: 24px;
+    font-style: italic;
+    margin-top: -40px;
+    color: black;
+    -webkit-text-stroke-width: 0px;
+}
+
+.projectSubname {
+    font-size: 36px;
+    font-style: italic;
+    margin-top: -30px;
+}
+
+.projectComment {
+    color: black;
+    -webkit-text-stroke: 0px;
 }

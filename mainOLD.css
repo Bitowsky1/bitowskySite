@@ -1,0 +1,94 @@
+body {
+    background-color: black;
+}
+
+@font-face {
+    font-family: "base";
+    src: url("TCCEB.TTF");
+}
+
+hr {
+    color: white;
+    border-style: dotted;
+}
+
+* {
+    font-family: "base";
+    text-align: center;
+    font-size: 24px;
+}
+
+p {
+    color: white;
+    margin: 50px;
+}
+
+p.info {
+    margin: 50px;
+    opacity: 75%;
+}
+
+.footer {
+    margin: 20px;
+    font-size: 20px;
+    opacity: 50%;
+}
+
+.a-unused {
+    background: linear-gradient(
+        90deg,
+        rgba(255, 0, 0, 1) 0%,
+        rgba(255, 154, 0, 1) 10%,
+        rgba(208, 222, 33, 1) 20%,
+        rgba(79, 220, 74, 1) 30%,
+        rgba(63, 218, 216, 1) 40%,
+        rgba(47, 201, 226, 1) 50%,
+        rgba(28, 127, 238, 1) 60%,
+        rgba(95, 21, 242, 1) 70%,
+        rgba(186, 12, 248, 1) 80%,
+        rgba(251, 7, 217, 1) 90%,
+        rgba(255, 0, 0, 1) 100%
+    );
+    background-position: bottom;
+    background-size: 100% 2px;
+    background-repeat: no-repeat;
+    text-decoration: none;
+}
+
+a:default {
+    background: none;
+    color: white;
+}
+
+a:hover {
+    background-color: white;
+    color: black
+}
+
+.button, .button2 {
+    border: 1px white dotted;
+    color: white;
+    width: 300px;
+    margin: auto;
+    padding: 10px;
+    user-select: none;
+    cursor: default;
+    margin-bottom: 100px;
+}
+
+.button:hover, .button2:hover {
+    border-color: black;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.button2 {
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+.buttonInfo {
+    font-size: 18px;
+    opacity: 50%;
+}
