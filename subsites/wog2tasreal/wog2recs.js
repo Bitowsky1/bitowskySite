@@ -25,6 +25,7 @@ wog2[10] = {leveltag: "chain", time: 3, achieverTag: "bit", date: "16.02.2025", 
 wog2[11] = {leveltag: "sloppy", time: 19, achieverTag: "bit", date: "16.02.2025", comment: "Love me some wait time", proofType: "video", video: "videos/wog2_sloppywalker_tasreal.mp4"}
 wog2[12] = {leveltag: "jiggly", time: 16, achieverTag: "bit", date: "16.02.2025", comment: "It was quite stresful lol", proofType: "video", video: "videos/wog2_jellysjigglyjourney_tasreal.mp4"}
 wog2[13] = {leveltag: "jugglers", time: 36, achieverTag: "blazer", date: "22.04.2025", comment: "this is approximately how jugglers 0m record will look", proofType: "video", video: "videos/jugglers.mp4"}
+wog2[14] = {leveltag: "dissolving", time: 1, achieverTag: "bit", date: "26.04.2025", comment: "", proofType: "video", video: "videos/wog2_dissolvingtower_tasreal.mp4"}
 //wog2[10] = {leveltag: "juicer", time: 8, achieverTag: "bit", date: "12.12.2024", comment: "", proofType: "discord", video: "https://cdn.discordapp.com/attachments/1225511279721185362/1316504933016801372/wog2_tasreal_juicer.mp4?ex=67adb003&is=67ac5e83&hm=f21b3ffd1b0954c077518116e525de83726abd9066295e6618ddffa94fc638c4&"}
 
 //wog2[10] = {leveltag: "goohill", time: 1, achieverTag: "bit2", date: "12.02.2025", comment: "", proofType: "discord", video: "https://cdn.discordapp.com/attachments/1225511279721185362/1339206099181764678/wog2_familiardivide_tasreal.mp4?ex=67ade05f&is=67ac8edf&hm=2b94fd477ccd7d3f62c0539bb69b69ff8a74c9afd1fd818ccc97f06ced0c8bd2&"}
