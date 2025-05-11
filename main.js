@@ -1,3 +1,6 @@
+console.log("%cCongratulations! You have succesfully sticked your nose into somebody else's business!", "color: #00ff00; font-size: 24px");
+// And you even spectate the source code! Are you eager to give your chimney some coal this year?
+
 function goToLinktree () {
     window.location.replace("https://linktr.ee/bitowsky");
 }
@@ -21,6 +24,3 @@ function goToLink(link) {
 function goToPage(link) {
     window.location.href = link
 }
-
-console.log("%cCongratulations! You have succesfully sticked your nose into somebody else's business!", "color: #00ff00; font-size: 24px");
-// And you even spectate the source code! Are you eager to give your chimney some coal this year?

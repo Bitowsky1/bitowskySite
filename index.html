@@ -3,43 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bitowsky's Site?</title>
+    <title>Bitowsky - Game Dev, 2D Animation, Music Composer and more!</title>
     <link rel="stylesheet" href="main.css">
     <script src="main.js"></script>
-    <link rel="icon" type="image/x-icon" href="favicon.svg">
-	<style>
-		body {
-			background-color: black;
-			background-image: none;
-		}
-	</style>
+    <link rel="icon" type="image/x-icon" href="/img/bitpin.png">
+    <script>
+        pageType = "main"
+    </script>
 </head>
 <body>
-    <p style="font-size: 40px;">Oh no! It appears that you have encountered a black void!</p>
+    <img src="img/header.png" alt="Bitowsky's Avatar" id="bitProfile" onclick="goToPage('/index.html')">
 
-    <hr>
+    <br>
 
-    <p>Could it be because the site is currently unavaiable to see to the public and not because it was very buggy and not very optimized in terms of back-end and front-end?<br><br><br><br>Who knows!</p>
-    <br><br>
-    <p>But while you are contemplating, you can visit all of my other social medias! (Or at least the one that you tolerate or something)<br><br>Once the website is back up and running, I will definitely let you know through one of those platforms!</p>
-    <br><br>
-    <div class="button" onclick="goToLinktree()">My Social Medias</div>
-    <br>
-    <hr>
-    <!--<p>Have you commissioned me for 2D Animation? Check the Sheet of Pending Commissions to see, how the progress is going.</p>
-    <div id="button" onclick="goToSheet()">Sheet of Pending Commissions</div>
-    <hr>
---><p>Do you want to download my 2D Animated Pins? You can get them from my Shared Google Drive!</p>
-    <div class="button" onclick="goToDrive()">Animated Pins Google Drive</div>
-    <p class="info">DISCLAIMER: You are <u>obligated</u> to credit my work, if you use it in your own posts, videos, etc. (Commissioned work do not subject this rule).<br>You don't have to ask me for permission beforehand - you can use them freely however you want.</p>
-    <p class="info">Since my work is based on other people work, I have included additional tags of those artists. Please include their names as well - it will be much appreciated for them. :)</p>
-    <hr>
-    <p>My blogs and updates:</p>
-    <div class="button2" onclick='goToLink("https://medium.com/@GamerlandInterviewer/interview-with-bitowsky-6d988da1674b")'>Interview by Gamerland!<br><span class="buttonInfo">Release date: 22.01.2025</span></div>
-    <div class="button2" onclick="goToBlog('thank_you_for_2024.html')">Thank You For 2024!<br><span class="buttonInfo">Release date: 31.12.2024</span></div>
-    <div class="button2" onclick="goToBlog('thank_you_for_2023.html')">Thank You For 2023!<br><span class="buttonInfo">Release date: 31.12.2023</span></div>
-    <br>
-    <hr>
-    <p class="footer">Bitowsky 2023 - 2025</p>
+    <div id="mainButtons">
+        <img src="img/btnGamedev.png" alt="button_gamedev" onclick="goToPage('/subsites/gamedev.html')">
+        <img src="img/btnAnimation.png" alt="button_anims" onclick="goToPage('/subsites/animations.html')">
+        <img src="img/btnMusic.png" alt="button_music" onclick="goToPage('/subsites/music.html')">
+        <img src="img/btnTranslations.png" alt="button_trans" onclick="goToPage('/subsites/translations.html')">
+        <img src="img/btnOther.png" alt="button_other" onclick="goToPage('/subsites/otherProjects.html')">
+    </div>
+
+    <div class="article introTalk introBox">
+        <p>Heya! I'm Bitowsky!</p>
+        <p>I'm a Polish, 20 years old, self-taught <span class="introTalk" style="color:lightgreen">Game Developer</span>, <span class="introTalk" style="color:lightcoral">2D Animator</span>, <span class="introTalk" style="color:lightblue">Music Composer</span> and <span class="introTalk" style="color:lightgoldenrodyellow">more</span>! Trying my best with everything step by step!</p>
+        <!--<p>I have been on the internet since 2016. And since then, I have changed my nickname, avatar, and overall what I do on the internet.</p>
+        <p style="color:lightgreen">I do not play much games, but the ones I really love are the odd and weird ones! Games, like "World Of Goo" or "There Is No Game: Wrong Dimension". Those inspire me, as a Game Developer, to create my own odd and weird games. Will I ever succeed with releasing some big one? Only time will tell!</p>
+        <p style="color:lightcoral"></p>-->
+    </div>
+
+    <div id="myUpdates" class="article">
+        <h1>RECENT UPDATES</h1>
+        <br>
+
+        <div id="articlesShort"></div>
+
+        <p id="articlesShortSeemore"></p>
+
+        <!--
+        <div class="mainSection myUpdatesArticle" onclick="goToLink('https://medium.com/@GamerlandInterviewer/interview-with-bitowsky-6d988da1674b')">
+            <p class="articleText articleTitle">Interview by Gamerland!</p>
+            <hr>
+            <p class="articleDesc articleText">I've had a pleasure of sharing some cool info about me and my work in the Interview directed by GamerLand! It's a good read, believe me!</p>
+            <p class="articleDate articleText">22.01.2025</p>
+        </div>
+
+        <div class="mainSection myUpdatesArticle" onclick="goToBlog('thank_you_for_2024.html')">
+            <p class="articleText articleTitle">Thank you for 2024!</p>
+            <hr>
+            <p class="articleDesc articleText">This year is ending pretty fast, isn't it? Well, let's hope I'll get to say some "thanks" and "yous" before that happens!</p>
+            <p class="articleDate articleText">31.12.2024</p>
+        </div>
+
+        <div class="mainSection myUpdatesArticle" onclick="goToBlog('thank_you_for_2023.html')">
+            <p class="articleText articleTitle">Thank you for 2023!</p>
+            <hr>
+            <p class="articleDesc articleText">2023 is almost reaching its end. But there are still some "thanks" and "yous" from me to say!</p>
+            <p class="articleDate articleText">31.12.2023</p>
+        </div>
+        -->
+    </div>
+    <!--
+    <div class="mainSection">
+        <h1 id="mainHeader">GAME DEVELOPER</h1>
+        <img src="img/gamedev1.png" alt="Game Development Related Image">
+        <p>I have been passionate about creating games ever since I had access to PC. When I was starting my adventure with creating games, I used some of the basic engines, such as Scratch and Kodu. In 2018, I switched to using Construct 2, which I fell in love with.</p>
+        <p>At the beginning, I have never published any of my works to the outside, until December 2020. During that time, I have published my first "bigger" game called "Where Is My Pointer", which was a local multiplayer game about finding the position of your mouse. While it didn't revolutionized the game industry at all, I felt more confident, when it comes to showcasing my stuff. It is also around that time, where I created Bit Studio - my own team of passionate game creators. But at that time, it was a one-person brigade.</p>
+    </div>
+    -->
+    <div id="footer">
+        
+    </div>
 </body>
+<script src="mainEnd.js"></script>
+<script src="articles.js"></script>
 </html>

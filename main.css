@@ -1,3 +1,7 @@
+:root {
+    --mobileSize: 600px;
+}
+
 body {
     background: url("img/bgAn2.gif");
     margin: 0;
@@ -23,6 +27,14 @@ h1 {
     margin: 0;
 }
 
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 32px;
+        -webkit-text-stroke-width: 10px;
+        letter-spacing: 2px;
+    }
+}
+
 hr {
     height: 10px;
     background-color: black;
@@ -34,12 +46,34 @@ hr {
     font-size: 28px;
 }
 
+.otherProjectsMobileWarning {
+    color: rgb(255, 131, 131);
+}
+
+@media only screen and (max-width: 600px) {
+    * {
+        font-size: 20px;
+    }
+
+    .otherProjectsMobileWarning::before {
+        content: "WARNING: Those projects might not display properly on your device!";
+    }
+}
+
 p {
     color: white;
     -webkit-text-stroke: 5px black;
     paint-order: stroke fill;
     margin: 50px;
 }
+
+@media only screen and (max-width: 600px) {
+    p {
+        margin: 20px;
+        -webkit-text-stroke-width: 3px;
+    }
+}
+
 
 p.info {
     margin: 50px;
@@ -117,6 +151,15 @@ a:hover {
     transform: rotate(-2deg);
 }
 
+@media only screen and (max-width: 600px) {
+    #bitProfile {
+        content:url("img/headerMobile.png");
+        margin-top: -50px;
+        margin-bottom: -50px;
+        width: 100%;
+    }
+}
+
 #bitProfile:hover {
     cursor: pointer;
 }
@@ -133,6 +176,12 @@ a:hover {
     font-size: 36px;
 }
 
+@media only screen and (max-width: 600px) {
+    .introTalk p,.introTalk {
+        font-size: 24px;
+    }
+}
+
 .mainSection {
     margin-left: 20px;
     margin-right: 20px;
@@ -145,6 +194,14 @@ a:hover {
     filter: brightness(90%);
 }
 
+@media only screen and (max-width: 600px) {
+    .mainSection {
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 10px;
+    }
+}
+
 .article {
     margin-left: 20px;
     margin-right: 20px;
@@ -153,6 +210,19 @@ a:hover {
     border-image: url("img/sectionBG_yellow.png") round;
     border-image-slice: 33% fill;
     width: auto;
+}
+
+.article img {
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    .article {
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 0px;
+        padding-top: 10px;
+    }
 }
 
 
@@ -170,16 +240,24 @@ a:hover {
     width: 10px;
 }
 
+
 #mainButtons {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 50px;
 }
 
 #mainButtons img {
-    width: 40%;
+    width: 45%;
     user-select: none;
     filter: brightness(100%);
+}
+
+@media only screen and (max-width: 600px) {
+    #mainButtons img {
+        width: 90%;
+    }
 }
 
 #mainButtons img:hover {
@@ -190,13 +268,21 @@ a:hover {
 #footer {
     background: linear-gradient(0deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.9) 40%, rgba(0,0,0,0) 100%);;
     width: 100%;
-    min-height: 150px;
-    padding-top: 150px;
+    min-height: 200px;
+    padding-top: 100px;
     
 }
 
 #footer p{
     opacity: 0.8;
+    margin-top: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+    #footer p{
+        margin-top: 100px;
+        font-size: 14px;
+    }
 }
 
 #myUpdates {
@@ -225,31 +311,41 @@ a:hover {
     -webkit-text-stroke: 10px black;
 }
 
+@media only screen and (max-width: 600px) {
+    .articleTitle {
+        font-size: 28px;
+        -webkit-text-stroke-width: 5px;
+        letter-spacing: 1px;
+    }
+}
+
 .articleDate {
     font-style: italic;
     opacity: 0.6;
 }
+
+
 
 .articleDate::before {
     content: "Release date: ";
 }
 
 .other_goodle {
-    margin: -100px;
+    margin: 0px;
 }
 
 .othersTitle {
     font-size: 64px;
 }
 
-.other_wog2tas {
-    margin: -50px;
-    width: 100%;
+.othersButton {
+    object-fit: cover;
 }
 
 .othersButton img {
     image-rendering: optimizeSpeed;
     user-select: none;
+    max-width: 100%;
 }
 
 #otherProjects {
@@ -261,23 +357,49 @@ a:hover {
 }
 
 .articleLeft {
-    width: 40%;
+    width: 70%;
+    float: left
 }
 
 .articleRight {
-    width: 40%;
+    width: 30%;
+    float: right;
+    object-fit: contain;
 }
 
 .articleRight img {
-    width: 40%;
+    height: 100%;
+}
+
+.articleInTop {
+    min-height: 300px;
+}
+
+.articleBottom {
+    clear: both;
 }
 
 .articleLeft, .articleRight {
     display: inline;
 }
 
+@media only screen and (max-width: 600px) {
+    .articleLeft {
+        width: 100%;
+    }
+
+    .articleRight {
+        width: 100%;
+    }
+
+    .articleRight img {
+        width: 100%;
+        height: auto;
+    }
+}
+
 .projectName {
-    font-size: 48px;
+    font-size: 60px;
 }
 
 .projectDevs {
@@ -297,4 +419,45 @@ a:hover {
 .projectComment {
     color: black;
     -webkit-text-stroke: 0px;
+}
+
+@media only screen and (max-width: 600px) {
+    .projectName {
+        font-size: 36px;
+    }
+
+    .projectDevs {
+        font-size: 20px;
+        margin-top: 0px;
+    }
+
+    .projectSubname {
+        font-size: 20px;
+        margin-top: 0px;
+        -webkit-text-stroke-width: 4px;
+    }
+}
+
+.socialButton {
+    width: 100%;
+}
+
+.socialButton img {
+    height: 100px;
+    width: auto;
+}
+
+@media only screen and (min-width: 600px) {
+    .socialBlock {
+        width: 100%;
+        min-height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .socialBlock .mainSection {
+        width: auto;
+        float: left;
+    }
 }

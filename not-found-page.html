@@ -1,11 +1,18 @@
+<!--
+  SPOILING FUN, ARE WE?
+-->
+
 <!DOCTYPE html>
 <html>
   <head>
-     <title>But the way got lost in time...</title>
+     <title>room_void</title>
+     <link rel="icon" type="image/x-icon" href="/img/none.svg">
      <style>
         body {
           background-color: black;
           overflow-y: hidden;
+          image-rendering: pixelated;
+          overflow-x: hidden;
         }
 
         h1, .mainCardAvatarCredit, .mainCardAvatarTitle {
@@ -14,15 +21,16 @@
 
         p, .mainCardRightSectionsText, .mainCardBottomTitle, .mainCardBottomSectionsTab3, .footerDonotcrossText, .lang-langName, .langChooserText, .footerFinaltext {
             font-family: mainfont;
-            color: white;
+            color: black;
             
         }
 
-        .main {
-          text-align: center;
-          margin-top: 20%;
-          font-size: 28px;
+        * {
+          color: black;
+          font-family: mainfont;
         }
+
+        
 
         .main2 {
           text-align: center;
@@ -37,19 +45,118 @@
 
         @font-face {
             font-family: mainfont;
-            src: url("fonts/TCCEB.TTF");
+            src: url("/fonts/BobaMilky.TTF");
           }
+        
+        .main {
+          text-align: center;
+          margin-top: 20%;
+          font-size: 28px;
+          position: relative;
+          top: 0;
+          left: 0;
+        }
+
+        .bit {
+          scale: 5;
+          color: black;
+        }
+
+        .bitStill {
+          position: relative;
+          top: 0;
+          left: 0;
+        }
+
+        .bitSecret {
+          position: absolute;
+          opacity: 0;
+        }
      </style>
   </head>
   <body>
-    <div class="main">
-      <p>BUT THE WAY YOU'VE CHOSEN</p>
-      <p>WAS JUST</p>
-      <p>NOT ENOUGH</p>
-    </div>
-
-    <div class="main2">
-      <p style="color: black;">TRY AGAIN LITTLE ONE</p>
+    <div class="main" id="main">
+      <img src="/img/bitDance.png" id="bit" class="bit bitStill" onclick="dance()">
+      <img src="/img/bitSecret.png" id="bit" class="bit bitSecret" onclick="dance()">
     </div>
   </body>
+  <script src="/js/node_modules/howler/dist/howler.js"></script>
+  <script>
+    var music1 = new Howl({
+      src: ['/img/slickpick.ogg'],
+      loop: true,
+      volume: 0.5,
+    });
+
+    var music2 = new Howl({
+      src: ['/img/swingmusical.ogg'],
+      loop: true,
+      volume: 0.5,
+    });
+
+    var music3 = new Howl({
+      src: ['/img/groovy.ogg'],
+      loop: true,
+      volume: 0.5,
+    });
+
+    var music999 = new Howl({
+      src: ['/img/f.ogg'],
+      loop: true,
+      volume: 0.5,
+    });
+
+    var x = true;
+    var truth = false;
+
+    function dance() {
+      if (x) {
+        if (!truth) {
+          x = false
+          document.getElementById("bit").src = "/img/bitDance.gif"
+          
+          randM = Math.random()
+
+          if (randM < 0.3) {
+            music1.play();
+          } else if (randM < 0.6) {
+            music2.play();
+          } else if (randM < 0.95){
+            music3.play();
+          } else {
+            music999.play();
+            truth = true;
+            document.getElementById("bit").src = ""
+            document.getElementById("main").innerHTML = "OF ALL THE CHAOS, OF ALL THE GLOOM.<br><br>IT IS TIME TO SPREAD THE DOOM.<br><br>CONSPIRACIES SHALL BE NONE.<br><br>TO GET THE JOB, THE WAY IS ONE."
+          }
+        }
+      }
+      else {
+        x = true
+        
+        if (!truth) {
+          document.getElementById("bit").src = "/img/bitDance.png"
+        }
+        
+        try {
+          music1.stop();
+        } catch (err) {
+          // lol
+        }
+
+        try {
+          music2.stop();
+        } catch (err) {
+          // lol
+        }
+        
+        try {
+          music3.stop();
+        } catch (err) {
+          // lol
+        }
+        
+      }
+    }
+  </script>
 </html>
