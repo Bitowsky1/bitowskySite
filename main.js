@@ -1,4 +1,4 @@
-console.log("%cCongratulations! You have succesfully sticked your nose into somebody else's business!", "color: #00ff00; font-size: 24px");
+console.log("%cCongratulations! You have successfully sticked your nose into someone else's business!", "color: #00ff00; font-size: 24px");
 // And you even spectate the source code! Are you eager to give your chimney some coal this year?
 
 function goToLinktree () {
@@ -24,3 +24,5 @@ function goToLink(link) {
 function goToPage(link) {
     window.location.href = link
 }
+
+// Dvd... fvb aopur fvb'yl puav zvtlaopun, obo? Iba aol aptl pz apjrpun. Huk zv hyl aol hwwspjhapvuz. Svvr vba mvy aol bwkhalz.

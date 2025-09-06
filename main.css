@@ -36,8 +36,9 @@ h1 {
 }
 
 hr {
-    height: 10px;
-    background-color: black;
+    border: none;
+    border-top: 10px dotted black;
+    width: 90%;
 }
 
 * {
@@ -241,26 +242,26 @@ a:hover {
 }
 
 
-#mainButtons {
+.mainButtons {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
 }
 
-#mainButtons img {
+.mainButtons img {
     width: 45%;
     user-select: none;
     filter: brightness(100%);
 }
 
 @media only screen and (max-width: 600px) {
-    #mainButtons img {
+    .mainButtons img {
         width: 90%;
     }
 }
 
-#mainButtons img:hover {
+.mainButtons img:hover {
     filter: brightness(120%);
     cursor: pointer;
 }
@@ -460,4 +461,9 @@ a:hover {
         width: auto;
         float: left;
     }
+}
+
+.allLinksIMG {
+    width: 100px;
+    fill:black;
 }
