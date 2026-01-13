@@ -1,0 +1,40 @@
+title===Getting started (General Properties)
+
+Upon launching gooFLA for the first time, you will be asked to go to the General Properties tab to set everything what's important for your work.
+
+img===generalpropertiesscreen.png===width:50%;
+
+section===Paths
+
+section2===Game path
+Absolute path to the root folder of your copy of World of Goo. It should look something like <span class="codeblock">C:/Users/user/Documents/WorldOfGoo/</span>
+
+section2===Movie path
+Path from main game directory to the movie folder. <u>Unless you have a reason to change it, this one should remain as <span class="codeblock">res/movie/</span></u>.
+
+
+section===Movies
+
+section2===Language
+important===This is still a Work In Progress option. Do not change it!
+Language in which any text actors will be imported. This should match a language code used by World of Goo. When exported, it will always write to default English. Leave "text" for original English.
+
+section2===Fla's FPS
+Amount of Frames per Second, that will be used when creating Adobe Animate Project. This doesn't affect the exported movie - as stated on <a href="http://goofans.com/developers/world-of-goo-movie-editor/reference-guide">Goovie Reference Guide</a>: "the game will just display as many frames as it can".
+
+<u>It is recommended to leave this at 60 FPS.</u>
+
+section2===Text Width / Height
+Default width and height of the text objects in Adobe Animate, when importing a project. If the imported text cuts off after some lines, increase the values of those settings to fix the issue. This doesn't affect the exported movie.
+
+
+section===Fonts
+
+This section allows you to adjust settings regarding the fonts for the text used in the imported movies. None of those settings affect the the exported movie. Keep in mind, that <b>Adobe Animate will uses your installed fonts for any text.</b>.
+
+Upon launching the gooFLA for the first time, those settings are automatically set to the ones that should represent the actual in-game appearance. If you feel like some settings are incorrect, feel free to adjust them.
+
+Each font is split into 3 properties (from left to right):
+- <b>Name of the font.</b> This should match the naming of your installed font name. If you will attempt to open the project that uses a text with unaccessable font, Adobe Animate will ask you to replace it with some other font.
+- <b>Size of the font</b>. Values should be inputed in px format.
+- <b>Color of the font</b>. Values should be inputed in hexadecimal format, without the # symbol.

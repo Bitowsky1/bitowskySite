@@ -1,0 +1,31 @@
+title===Exporting FLA to MOVIE
+
+section===How to export
+
+To export a FLA, go to the second tab in the application. You will see the following options.
+
+img===exportscreen.png
+
+section2===Source .fla file
+Location of your .fla file, that you want to convert.
+
+section2===Movie folder export location
+Location to your MOVIE folder of your World of Goo. This should look something like <span class="codeblock">C:/Users/user/Documents/WorldOfGoo/res/movie/</span>. If you have set the "Game path" and "Movie path" properties in the "General properties", this option should be automatically filled out, upon launching gooFLA. 
+
+section2===Movie name
+Name of your movie (for example "Chapter1End", "wogcdestroy", etc.). This will create the folder in your res/movie/ directory with this name and generally mark everything in your movie to be pointed towards this location. If you want to use the same name as your .fla file (without extension), leave this field empty. 
+
+section2===Ignore override warnings
+If unchecked, you will get a warning everytime you'll attempt to override a non-empty folder (gooFLA will show the location)
+If checked, those warnings will never be displayed. (Use it, if you are exporting same project multiple times within a short amount of time.)
+
+important===After the export, make sure to use GooTool to encrypt the .resrc.xml file to be readable in Goovie.<br><br>Remember, that gooFLA will <u>ALWAYS</u> export the MOVIE to Goovie format, so it'll be ready to be previewed and further encrypted in that app.  
+
+warning===Always keep an eye about where you're trying to export the project. gooFLA will <u>try to delete set destination first, even if the export will result in an error</u>, so make backups if possible.
+
+section===Export info
+
+All of the assets in the fla file will get exported with a <b>flat structure</b> - there will be no subfolders and all of the files will be in one location.
+
+section2===Audio
+If there's at least one audio file exported, gooFLA will generate an image actor called "Audio Dummy". It will contain all of the data regarding any sound, that you provided. This object is invisible, so it won't be visually visible in the movie.

@@ -1,0 +1,10 @@
+title=Getting Started
+
+Something something kill yourself
+
+important=I'm 100 meters from your location and approaching immidietaly. I'm 100 meters from your location and approaching immidietaly. I'm 100 meters from your location and approaching immidietaly. I'm 100 meters from your location and approaching immidietaly. I'm 100 meters from your location and approaching immidietaly. I'm 100 meters from your location and approaching immidietaly. I'm 100 meters from your location and approaching immidietaly.
+important=I'm 100 meters from your location and approaching immidietaly.
+
+Just like in the picture below!
+
+img=workplace.png

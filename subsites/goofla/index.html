@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gooFLA - Animate WoG movies in Animate!</title>
+    <style>
+        @font-face {
+            font-family: "base";
+            src: url("/TCCEB.TTF");
+        }
+
+        * {
+            font-family: "base";
+            font-size: 32px;
+        }
+
+        body {
+            background-color: rgb(39, 39, 39);
+            width: 70%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        #imgHeader {
+            width: 50%;
+            display: block;
+            margin: auto;
+        }
+
+        #main {
+            margin-top: 20px;
+            display: block;
+            border: 20px solid transparent;
+            border-image: url("img/9slice.png") 60 fill stretch;
+            padding: 30px;
+            color: white;
+            text-align: center;
+        }
+
+        #main a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .button {
+            border: 5px solid #0e0e32;
+            border-radius: 5px;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        .button:hover {
+            cursor: pointer;
+            filter: brightness(130%);
+        }
+
+        .buttonMain {
+            background-color: #4444FF;
+        }
+
+        .buttonSubMain {
+            background-color: #00005B;
+        }
+
+        .buttonTextMini {
+            font-style: italic;
+            font-size: 25px;
+            opacity: 0.5;
+        }
+
+        #foot {
+            font-size: 25px;
+            opacity: 0.4;
+            font-style: italic;
+            text-align: center;
+            color: white;
+            margin-top: 20px;
+        }
+
+        #foot a {
+            color: limegreen;
+            text-decoration: none;
+        }
+
+    </style>
+    <meta property="og:title" content="gooFLA" />
+    <meta property="og:description" content="gooFLA - Animate WoG movies in Animate!" />
+    <meta property="og:image" content="https://bitowsky.com/subsites/goofla/img/gooflaLogo.png">
+    <meta property="og:type" content="website">
+    <link rel="shortcut icon" href="../../subsites/goofla/img/gooflaLogo.png">
+</head>
+<body>
+    <img src="img/gooflaHeader.png" id="imgHeader">
+
+    <div id="main">
+        Animate World of Goo movies in Adobe Animate and export them back!<br><br>
+
+        <a href="files/gooFLA.exe" download><div class="button buttonMain">Download gooFLA (Windows)<br><span class="buttonTextMini">Version 0.1</span></div>
+        <hr></a>
+        <a href="documentation.html"><div class="button buttonSubMain">Documentation<br><span class="buttonTextMini">(Read carefully!)</span></div></a>
+        <a href="files/sampleTemplate.fla" download><div class="button buttonSubMain">Download "sampleTemplate.fla"<br><span class="buttonTextMini">(For some head start)</span></div></a>
+        <a href="files/welcome_to_gooFLA.fla" download><div class="button buttonSubMain">Download "welcome_to_gooFLA.fla"<br><span class="buttonTextMini">(Test Animation)</span></div></a>
+    </div>
+    <div id="foot">gooFLA developed by <a href="https://bitowsky.com">Bitowsky</a></div>
+</body>
+</html>

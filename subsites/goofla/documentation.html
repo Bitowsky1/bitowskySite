@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gooFLA - Documentation</title>
+    <link rel="icon" type="image/x-icon" href="/img/icon_gamedev.png">
+    <meta property="og:title" content="Bitowsky" />
+    <meta property="og:description" content="Game Developer, 2D Animator, Music Composer and More!" />
+    <meta property="og:image" content="https://bitowsky.com/img/meta.png">
+    <meta property="og:type" content="website">
+    <style>
+        @font-face {
+            font-family: "base";
+            src: url("/TCCEB.TTF");
+        }
+
+        body {
+            background-color: #111111;
+            
+        }
+
+        * {
+            font-family: "base";
+            margin: 0;
+        }
+
+        #root {
+            margin: auto;
+            margin-top: 30px;
+            width: 90%;
+            overflow: auto;
+            display: flex;
+            min-height: 100dvh;
+        }
+
+        #header {
+            clear:both;
+            width: 90%;
+            margin: auto;
+        }
+
+        #header img {
+            display: block;
+            margin: auto;
+            width: 100%;
+            height: 50%;
+        }
+
+        #headerVersion {
+            color: gray;
+            text-align: center;
+            font-style: italic;
+            display: block;
+            width: 100%;
+        }
+
+        #left {
+            width: 30%;
+            float: left;
+            margin: 15px;
+        }
+
+        #main {
+            border: 10px solid transparent;
+            padding: 15px;
+            border-image: url("/img/sectionBG.png") round;
+            border-image-slice: 49% fill;
+            width: 70%;
+            filter: brightness(90%);
+            float: left;
+            height: 85dvh;
+        }
+
+        #mainText {
+            overflow-y: scroll;
+            height: 100%;
+            border-style: solid;
+            border-color: #111111;
+            border-radius: 10px;
+            padding: 5px;
+            background-color: white;
+        }
+
+        #main b {
+            color: rgb(200, 0, 0);
+        }
+
+        
+        .codeblock {
+            background-color: black;
+            color: white;
+            font-family: monospace;
+            font-size: 18px;
+            padding: 2px 10px;
+        }
+
+        #list {
+            margin-top: 15px;
+            border: 10px solid transparent;
+            padding: 15px;
+            border-image: url("/img/sectionBG.png") round;
+            border-image-slice: 49% fill;
+            filter: brightness(70%);
+            height: fit-content;
+            height: 65dvh;
+            overflow-y: scroll;
+            font-size: 24px;
+        }
+
+        #list a {
+            color: #00005B;
+            text-decoration: none;
+        }
+
+        
+        
+        .mainImg {
+            display: block;
+            image-rendering: optimizeSpeed;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .mainWarning {
+            border-style: solid;
+            border-color: darkgoldenrod;
+            border-radius: 10px;
+            padding: 10px;
+            background-color: yellow;
+            content: "";
+            display: table;
+            font-size: 20px;
+        }
+
+        .mainWarning2 {
+            border-style: solid;
+            border-color: darkred;
+            border-radius: 10px;
+            padding: 10px;
+            background-color: red;
+            color: white;
+            content: "";
+            display: table;
+            font-size: 20px;
+        }
+
+        .imgDesc {
+            display: block;
+            font-style: italic;
+            text-align: center;
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="root">
+        
+        <div id="left">
+            <div id="header">
+                <img src="img/gooflaDocs.png" alt="gooFLA logo">
+                <span id="headerVersion">Version 0.1 | Revision 1</span>
+            </div>
+            <div id="list">
+            
+            </div>
+        </div>
+        <div id="main">
+            <div id="mainText">
+                <span id="MAIN-TEST1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et mi a turpis tempus blandit et et dui. Praesent pretium sodales nunc. Suspendisse ultricies aliquet tellus et fringilla. Phasellus vel tortor quis ligula ultricies posuere. Cras aliquam faucibus finibus. Integer lobortis felis blandit, ullamcorper enim in, placerat justo. Maecenas mattis, augue nec aliquet hendrerit, magna erat blandit risus, in facilisis nisl sapien ut mauris. Phasellus rhoncus lectus risus, eu fringilla eros suscipit lacinia. Nunc ac risus pellentesque, dignissim ipsum in, eleifend eros. Nulla consectetur nulla non dictum hendrerit. Nulla risus nulla, interdum a rhoncus eu, condimentum ac lacus. Mauris viverra sapien quis nulla aliquet ullamcorper. Mauris ut nisl a erat fringilla sodales eu id lorem. Suspendisse pellentesque, sem eu semper auctor, nulla justo eleifend sem, a eleifend lectus eros non eros.</span><br><br>
+
+                <span id="MAIN-TEST2">Maecenas ac magna mollis enim pellentesque dignissim. Donec blandit condimentum aliquam. Nunc mollis nisi non est vehicula consequat. Fusce orci ante, fermentum in consequat eu, bibendum sit amet diam. Nam tristique neque nisi, et tincidunt nibh interdum sed. Maecenas sollicitudin ipsum ante, at ornare magna placerat vel. Morbi vel mollis eros. Morbi condimentum tortor quis mauris suscipit, ut vulputate leo pretium. Donec facilisis lectus viverra enim facilisis dapibus. Mauris sollicitudin nisl a orci accumsan, non blandit sem ultrices. Vivamus accumsan vulputate est id dignissim. Mauris quis elementum sem. Morbi tempus risus sed ultricies aliquet.<br><br>
+
+Aliquam sed odio enim. Phasellus sed ligula ac neque molestie condimentum. Integer eget orci urna. Sed sapien lorem, congue pretium fringilla vitae, vestibulum vitae tellus. Phasellus ornare mattis consectetur. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean commodo nunc in felis hendrerit auctor. Donec sed tempor ante, nec tincidunt mauris. Nam tincidunt velit quis augue fringilla, quis congue magna sagittis. Donec non porttitor mi. Aenean augue nibh, interdum eget gravida at, congue vitae ligula. Etiam malesuada posuere justo, et blandit ipsum rutrum sit amet. Aenean placerat ac urna sit amet tristique. Phasellus pharetra justo turpis, vitae pellentesque risus egestas a. Curabitur eu pretium leo. Fusce vitae ex turpis.<br><br>
+
+Donec vel turpis at sapien lacinia egestas sed vitae enim. Vestibulum rhoncus dapibus erat. Curabitur lectus ex, ultrices at orci vel, condimentum viverra est. Nunc iaculis vehicula velit, et tempus felis rutrum id. Vestibulum risus lorem, tincidunt nec consequat auctor, dignissim sed sem. Mauris tempor nulla massa, id aliquam nulla tempor at. Sed sed imperdiet leo. Duis vehicula orci mi, sit amet fringilla nibh consequat vitae. Praesent a dictum orci.</span><br><br>
+
+                <span id="MAIN-TEST3">Vestibulum efficitur lorem non risus efficitur congue. Sed feugiat enim quis congue sollicitudin. Duis non ultricies nisi, vel vulputate risus. Aenean porta diam eu sagittis condimentum. Quisque sit amet metus quis mi fermentum ullamcorper at ac ante. Nullam non leo pretium, fermentum est quis, pharetra metus. Pellentesque quis lectus quis eros mattis molestie ut hendrerit ipsum. <span style="color: red;">Maecenas id libero luctus, tempor massa sed, facilisis neque.</span></span>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="mainEnd.js"></script>
+</html>

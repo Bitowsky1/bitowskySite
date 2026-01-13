@@ -1,0 +1,36 @@
+title===Importing MOVIE to FLA
+
+section===How to import
+
+important===Before you'll start importing a MOVIE, make sure that the text.xml file in the "properties" folder of the game is present, named correctly and decrypted. This is required, even if you want to import a movie without any text actors.
+
+To import a movie, go to the first tab in the application. You will see the following options.
+
+img===importscreen.png
+
+section2===Movie to import
+A name of the movie for the program to import. This scans through the dictionaries in the path provided in the General Properties. <b><u>This will only list out movies, where the program can locate the decrypted .movie.xml and .resrc.xml files</u></b>. You can use "Refresh" button to force the program to update the list. 
+
+section2===.movie.xml decryption method
+A method that you used to decrypt the .movie.xml file. GooTool decrypts the files with the use of the top-bar command, while Goovie decrypts them by simply saving the project in that program. Since they both decrypt them in different styles, it's important to select the correct one.
+
+section2===Automatically open the project after import
+If you've set the .fla files to be read by the Adobe Animate, gooFLA can try to automatically open the project after the succesful import.
+
+<hr>
+
+After setting everything, press "Import my movie!". If everything has been correctly, gooFLA will convert the movie folder and turn it into an Adobe Animate project. Its location will be the same as the gooFLA executable.
+
+important===Make sure that you won't accidentally override the important animations!
+
+section===Import info
+
+section2===Image Actors
+
+<b>Image Actors</b> will get automatically put into symbols. Their name will match the bitmap name they contain and have the linkage the same as their ID. Similarly with <b>Text Actors</b> - they will be in a symbol, with a name and linkage matching the their ID.
+
+
+<b>Audio</b> is a bit of a bum. While they can be easily imported to Adobe Animate, if you want to have an audio preview, <b>you will need to manually update each one of the audio files in the library.</b> To do that, right click on the audio file, press "Properties" and in a new window click "Import" and locate the audio file. Repeat for every sound you want to hear.
+
+I know this is rather not convinient, but to my knowledge, this is the only way for Adobe Animate to understand audio imported outside of the app. There might be a support to importing vanilla WoG sounds and music, but there's nothing else that I can do.
+

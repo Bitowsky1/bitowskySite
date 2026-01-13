@@ -1,0 +1,35 @@
+title===Errors and troubleshooting
+
+Not everything is perfect in this world and gooFLA is no different. 
+
+In case of an error, gooFLA will display an error message. Most errors are rather simple to fix (error message will try to help with them), but some are a bit more complicated. Use this page for more info on how to fix them.
+
+
+section===I got an error "Bad magic number for central directory of the FLA."
+
+<i>(This is based only on my personal observations)</i>
+Upon saving a project in Adobe Animate, it creates some additional files that blocks the gooFLA from reading it. To fix it, you must delete those additionally created files. (This won't affect your animation nor the file)
+
+With the use of an archive reader (preferably WinRar), locate your .fla project and open it without extracting it. In the root of the file, you will find a "mimetype" file that blocks the gooFLA from reading the project. Delete it and then try to export the project again.
+
+img===deletemimetype.png
+
+Sometimes Adobe Animate will create more "mimetype" files in the same location. Make sure to delete all of them before the export.
+
+section===When exporting, some images were not present in the exported movie.
+
+Most likely Adobe Animate didn't properly include the copy of the image into the project. Check which image did not get copied and update it either with Adobe Animate (by updating the bitmap - Right Click > Properties > Import) or use WinRar to manually insert those missing files again.
+
+section===When importing, some text cuts off after some lines.
+
+If your text contains a lot of linebreaks, go to the General Properties in gooFLA and increase the "Text Height" property. This will increase the text boxes in imported projects. Alternatively, you can manually increase the text box inside the project in Adobe Animate.
+
+section===Linkages do not get saved correctly.
+
+Although it's not a gooFLA related problem, I think it's worth sharing the quick solution for this problem, which is simply <b>saving the project as another file</b>.
+
+section===I got a generic error.
+
+img===genericerror.png===height: 40%;width: auto;display: block;margin: auto;
+
+Any non-expected errors will throw out a general error, that contains an expanded description about the exception. Please report those with the screenshot of the error and I'll try my best to verify and fix the issue.

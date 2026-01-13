@@ -1,0 +1,17 @@
+title===About gooFLA
+
+GooFLA is a program made for World of Goo, that converts in-game cutscenes called "movies" into Adobe Animate .fla projects and viceversa! It was made for the users that don't want to use the <a href="http://goofans.com/developers/world-of-goo-movie-editor">World of Goo Movie Editor (Goovie)</a>
+
+section===Disclaimers
+- This project is not affiliated with, endorsed, sponsored, or specifically approved by 2D BOY and 2D BOY is not responsible for it. This is a fanmade project made by fans for fans.
+- This documentation assumes that you already have some knowledge, when it comes to how Adobe Animate works.
+- This documentation might not contain some information, when it comes to some aspects of the program. It will receive updates, when there's missing important info on something.
+
+section===Requirements
+
+In order to fully use the program, you will need the following programs:
+- gooFLA (obviously, duh)
+- Adobe Animate (gooFLA was tested on the 2024 version, but that might not be necesarly the required minimum)
+- GooTool (Check the <a href="https://discord.gg/6BEecnD">Goofans Discord</a> for that)
+- Goovie
+- World of Goo game

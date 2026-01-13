@@ -1,0 +1,5 @@
+title===Terminology
+This documentation contains wording that might confuse you at first. This section's purpose is to explain the meaning behind some of them.
+
+- <b>FLA / .fla</b> - Adobe Animate project file. This is the extention name that those projects use.
+- <b>MOVIE</b> - Cutscenes within World of Goo.

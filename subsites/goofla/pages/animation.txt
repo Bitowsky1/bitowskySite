@@ -1,0 +1,130 @@
+title===Let's go animating!
+
+For starters, it's recommended that you download the sample template called sampleTemplate.fla from the download page of the gooFLA. This is a premade .fla file that helps set everything important for your animation. It's not required to do that, but it will give you some head-start.
+
+After opening sampleTemplate.fla, you'll see the following workspace (It will most likely look differently on your end, due to a different workspace layout): 
+
+img===sampleTemplate.png===width: 90%;
+
+section==="Actors" in Animate
+
+In Goovie, images and texts are referred to as "actors". In Adobe Animate, you need to use <b>symbols</b>. Name of the symbol will reflect the name of the exported asset that it contains.
+
+section2===Creating a symbol with an image
+
+<hr>
+General rules:
+- Each symbol can only contain one bitmap at the time.
+
+<hr>
+
+- Import to your library a bitmap (image) that you want to use.
+- Create a new Graphic Symbol and open it.
+- Drag your bitmap into the symbol.
+-- <b>Make sure that it is centered within the symbol.</b> (You can use either the "Align" window or use the keyboard shortcut - in Adobe Animate 2024, the default shortcuts are Ctrl+Alt+2 and Ctrl+Alt+5)
+-- <b>Make also sure that the bitmap is not resized, rotated, skewed, etc. It must remain the same way as when you dragged it into the symbol.</b>
+
+img===createsymbol.png===width: 90%;
+
+section2===Creating a symbol with a text
+
+- In the sampleTemplate.fla file, there is a folder called "_FONTS", which contains several symbols with various text styles. You can pick one of it and copy it.
+- Enter the symbol and change the text.
+-- <b>For line breaks, do not depend on the text wrapping of a text object - make them manually. If you want to write a long one line text (or your text uses a lot of line breaks), extend the textbox's size.</b>
+
+- After changing the text and choosing its alignment in the properties, you will need to <b>adjust the text position within the symbol</b>
+-- Locate the center point in the symbol.
+-- Align the text vertically, so that the <b>center point of the symbol is in the <u>middle of the entire text</u> (not the middle of the textbox)</b>.
+-- Align the text horizontally, depending on the text alignment that you chose:
+--- For the left alignment: the left side of the textbox must touch the center point of the symbol.
+--- For the center alignment: textbox must be centered. (Ctrl+Alt+2 for Adobe Animate 2024)
+--- For the right alignment: the right side of the textbox must touch the center point of the symbol.
+
+img===createsymboltext.png===width: 90%;===Example of a left aligned text. Position-wise, left border touches the center of the symbol and is vertically aligned to match the center of the text.
+
+section===Animating symbols
+
+<hr>
+General rules:
+- Animate symbols - not bitmaps.
+- Every layer can only have one symbol.
+
+<hr>
+
+- After the succesfully created symbol, you can put it on the timeline to start the animation process.
+- You can either use the "Create classic tween" option (for linear movements) or animate the normal frames (for non-linear movements). You can mix both styles, just like in Goovie.
+- If you want the object to disappear, <b>clear the keyframes instead of deleting them.</b>
+- Make sure, that the object on the timeline matches your desired movie length and that it doesn't have any non-existant frames (fill them out with empty keyframes)
+
+section===Export Features
+
+Here's which data will and will not be exported. (Ergo - what can and cannot do with symbols and or their layers)
+
+section2===gooFLA can export:
+✅ Position
+✅ Angle
+✅ Scaling
+✅ Color and alpha - use the "Advanced" effect for the symbol
+
+section2===gooFLA cannot export:
+❌ Skewing - World of Goo does not use transformation matrix, therefore it can't perform skewing.
+❌ Other Effects - World of Goo does not use any effects other than color and alpha.
+❌ Parenting - Not supported in World of Goo movies, however it could be potentially possible to do with simple positioning, so stay tuned.
+
+section===Workarounds
+
+While the features below aren't normally supported in World of Goo, you can perform a trick to make it possible to export over to movie.
+
+section2===⚒️ Eases
+Adobe Animate offers tons of eases, including making your custom ones, while World of Goo have only two types of eases: none or linear.
+If you want to get around this limitation, you can take the part with a not supported ease and use the <b>"Convert to Frame-by-Frame Animation"</b> option from the Right-Click Mouse menu. This will convert the selected parts into individual frames, which contains separate data on where the object would be with the applied ease.
+
+important===While this is a somewhat revertable operation, it's recommended to first duplicate the layer and turn it into a guide layer. That way, if you change your mind, you can always revert back your changes. 
+
+
+section===Adding Audio
+
+Any audio, that you want to add, <b>must be on the layer inside the "_SOUNDS" folder on a timeline</b>. Otherwise, it will not get exported at all.
+
+You can put several audio in one layer and you can even mix it with others.
+
+<b>Do not make two or more audios start playing at the same frame</b>. gooFLA currently saves all audio to one object, so for now, you can get around this by separating the audio's starting points by one frame.
+
+important===Tooltip: You can hide the layer with the sound to mute it during the preview.
+
+section===Linkages===id-linkages
+
+In World of Goo, actors are assigned to various IDs that help the game reference their assets. In Adobe Animate, this is an equivalent of <b>giving it a linkage class name</b>.
+
+img===linkage.png===width: 90%;===Linkages in Adobe Animate are the equivalent of IDs in Goovie.
+
+To give your symbol a custom linkage class name, locate it in your library, find the column "Linkage" (should be right after the name), double click it and enter the ID. This is the ID that will be used in the exported movie.
+
+important===If you want to linkage objects with bitmap in it (Image Actors), <u>remember to linkage its symbol - not their bitmap!</u>
+
+<b>Giving your object a linkage is not required!</b> You can leave the object's linkage empty and gooFLA can automatically assign it depending on the object:
+
+- <b>Bitmap Symbol (Image Actor)</b> - It will be the same as the symbol's name
+- <b>Text Symbol (Text Actor)</b> - It will give the default naming (TEXT_[moviename]_str[index])
+- <b>Audio</b> - It will be the same as the audio file
+
+section===Layers
+
+Any layer, that is not a guide layer, will get exported.
+
+img===layers.png===width: 90%;
+
+<b>Mask and masked layers</b> will get exported just like normal layers, since World of Goo doesn't support masking.
+
+Use <b>folders</b> to organize your layers however you want.
+
+Since <b>guide layers</b> are ignored during export, you can <u>use it for your advantage</u> like making backup layers and more.
+
+Layer names do not affect the final export, so you can name them however you want. <b>The exception is naming a folder "_SOUNDS" which gooFLA uses to export audio data. (More in "Adding Audio" above)</b>
+
+
+section===Additional Stuff
+
+section2===800 x 600 canvas
+
+If you want your movie to work with the 4:3 format as well, gooFLA will generate (on import) a special guide layer called "800x600" that has a border that limits the view to exactly 800x600 to the center. Use it, if you want to.
