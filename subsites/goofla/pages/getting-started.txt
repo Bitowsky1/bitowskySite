@@ -7,7 +7,7 @@ img===generalpropertiesscreen.png===width:50%;
 section===Paths
 
 section2===Game path
-Absolute path to the root folder of your copy of World of Goo. It should look something like <span class="codeblock">C:/Users/user/Documents/WorldOfGoo/</span>
+Absolute path to the root folder of your copy of World of Goo (Ergo - folder in which the file WorldOfGoo.exe is located). It should look something like <span class="codeblock">C:/Users/user/Documents/WorldOfGoo/</span>
 
 section2===Movie path
 Path from main game directory to the movie folder. <u>Unless you have a reason to change it, this one should remain as <span class="codeblock">res/movie/</span></u>.

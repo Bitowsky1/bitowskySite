@@ -9,7 +9,7 @@ To import a movie, go to the first tab in the application. You will see the foll
 img===importscreen.png
 
 section2===Movie to import
-A name of the movie for the program to import. This scans through the dictionaries in the path provided in the General Properties. <b><u>This will only list out movies, where the program can locate the decrypted .movie.xml and .resrc.xml files</u></b>. You can use "Refresh" button to force the program to update the list. 
+A name of the movie for the program to import. This scans through the dictionaries in the path provided in the General Properties. <b><u>This will only list out movies, where the program can locate the decrypted .movie.xml file</u></b>. You can use "Refresh" button to force the program to update the list. 
 
 section2===.movie.xml decryption method
 A method that you used to decrypt the .movie.xml file. GooTool decrypts the files with the use of the top-bar command, while Goovie decrypts them by simply saving the project in that program. Since they both decrypt them in different styles, it's important to select the correct one.
@@ -19,7 +19,7 @@ If you've set the .fla files to be read by the Adobe Animate, gooFLA can try to 
 
 <hr>
 
-After setting everything, press "Import my movie!". If everything has been correctly, gooFLA will convert the movie folder and turn it into an Adobe Animate project. Its location will be the same as the gooFLA executable.
+After setting everything, press "Import my movie!". If everything has been correctly set, gooFLA will convert the movie folder and turn it into an Adobe Animate project. <b>Its location will be the same as the gooFLA executable.</b>
 
 important===Make sure that you won't accidentally override the important animations!
 

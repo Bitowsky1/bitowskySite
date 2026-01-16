@@ -58,7 +58,7 @@ General rules:
 
 section===Export Features
 
-Here's which data will and will not be exported. (Ergo - what can and cannot do with symbols and or their layers)
+Here's which data will and will not be exported. (Ergo - what you can and cannot do with symbols and/or their layers)
 
 section2===gooFLA can export:
 ✅ Position
@@ -70,6 +70,7 @@ section2===gooFLA cannot export:
 ❌ Skewing - World of Goo does not use transformation matrix, therefore it can't perform skewing.
 ❌ Other Effects - World of Goo does not use any effects other than color and alpha.
 ❌ Parenting - Not supported in World of Goo movies, however it could be potentially possible to do with simple positioning, so stay tuned.
+❌ Scenes - Currently unsupported, but might be possible to implement. For now, all animations must be contained within one scene.
 
 section===Workarounds
 

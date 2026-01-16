@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>gooFLA - Animate WoG movies in Animate!</title>
+
     <style>
         @font-face {
             font-family: "base";
@@ -28,7 +29,7 @@
             margin: auto;
         }
 
-        #main {
+        .main {
             margin-top: 20px;
             display: block;
             border: 20px solid transparent;
@@ -38,7 +39,11 @@
             text-align: center;
         }
 
-        #main a {
+        .main2 {
+            border-image: url("img/9slice2.png") 60 fill stretch;
+        }
+
+        .main a {
             text-decoration: none;
             color: inherit;
         }
@@ -93,15 +98,58 @@
 <body>
     <img src="img/gooflaHeader.png" id="imgHeader">
 
-    <div id="main">
+    <div class="main">
         Animate World of Goo movies in Adobe Animate and export them back!<br><br>
 
-        <a href="files/gooFLA.exe" download><div class="button buttonMain">Download gooFLA (Windows)<br><span class="buttonTextMini">Version 0.1</span></div>
+        <a href="files/gooFLA.exe" download><div class="button buttonMain">Download gooFLA (Windows)<br><span class="buttonTextMini">Version 0.2</span></div>
         <hr></a>
         <a href="documentation.html"><div class="button buttonSubMain">Documentation<br><span class="buttonTextMini">(Read carefully!)</span></div></a>
         <a href="files/sampleTemplate.fla" download><div class="button buttonSubMain">Download "sampleTemplate.fla"<br><span class="buttonTextMini">(For some head start)</span></div></a>
         <a href="files/welcome_to_gooFLA.fla" download><div class="button buttonSubMain">Download "welcome_to_gooFLA.fla"<br><span class="buttonTextMini">(Test Animation)</span></div></a>
     </div>
-    <div id="foot">gooFLA developed by <a href="https://bitowsky.com">Bitowsky</a></div>
+    <div id="foot">gooFLA developed by <a href="https://bitowsky.com">Bitowsky</a><br>Additional credits to <span style="color: brown;">Xowerr</span></div>
+
+    <div class="main">
+        <span style="font-size: 60px;">Changelog</span>
+        <div id="changelog">
+
+        </div>
+    </div>
 </body>
+<script>
+        changelogs = [
+            {
+                "version": "0.1",
+                "date": "13.01.2026",
+                "changes": [
+                    "Main release!"
+                ]
+            },
+            {
+                "version": "0.2",
+                "date": "16.01.2026",
+                "changes": [
+                    "Added a support for automatically decrypting and encrypting .resrc.bin files. (Shoutout to Xowerr for the original script)",
+                    "Added slight help with configuring the 'Game Path' setting in the General Properties",
+                    "Fixed issues with not exporting color data correctly",
+                    "Fixed an issue with the 800x600canvas helper layer not importing correctly."
+                ]
+            }
+        ]
+
+        finalDiv = ""
+
+        changelogs.slice().reverse().forEach(change => {
+            finalDiv += "<div class='main main2'>Version " + change["version"] + "<br>Release date: " + change["date"] + "<br><hr>Changes:<br>"
+            
+            change["changes"].forEach(changeSing => {
+                finalDiv += "- " + changeSing + "<br>"
+            });
+            
+            finalDiv += "</div>"
+        });
+
+        document.getElementById("changelog").innerHTML = finalDiv
+
+    </script>
 </html>
