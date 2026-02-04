@@ -88,6 +88,10 @@
             text-decoration: none;
         }
 
+        .changelog {
+            text-shadow: 0px 5px 0 #00000044
+        }
+
     </style>
     <meta property="og:title" content="gooFLA" />
     <meta property="og:description" content="gooFLA - Animate WoG movies in Animate!" />
@@ -101,7 +105,7 @@
     <div class="main">
         Animate World of Goo movies in Adobe Animate and export them back!<br><br>
 
-        <a href="files/gooFLA.exe" download><div class="button buttonMain">Download gooFLA (Windows)<br><span class="buttonTextMini">Version 0.2</span></div>
+        <a href="files/gooFLA.exe" download><div class="button buttonMain">Download gooFLA (Windows)<br><span class="buttonTextMini">Version 0.3</span></div>
         <hr></a>
         <a href="documentation.html"><div class="button buttonSubMain">Documentation<br><span class="buttonTextMini">(Read carefully!)</span></div></a>
         <a href="files/sampleTemplate.fla" download><div class="button buttonSubMain">Download "sampleTemplate.fla"<br><span class="buttonTextMini">(For some head start)</span></div></a>
@@ -134,13 +138,23 @@
                     "Fixed issues with not exporting color data correctly",
                     "Fixed an issue with the 800x600canvas helper layer not importing correctly."
                 ]
+            },
+            {
+                "version": "0.3",
+                "date": "04.02.2026",
+                "changes": [
+                    "Imported images will now automatically have \"Allow Smoothing\" option enabled, which will prevent them from appearing pixelated.",
+                    "Fixed an issue where the final keyframe did not generate during import, therefore making some anims look broken.",
+                    "Now each layer should have fixed amount of frames on import.",
+                    "gooFLA will now support the process of automatically decrypting text.xml file, if no decrypted version of it already exist."
+                ]
             }
         ]
 
         finalDiv = ""
 
         changelogs.slice().reverse().forEach(change => {
-            finalDiv += "<div class='main main2'>Version " + change["version"] + "<br>Release date: " + change["date"] + "<br><hr>Changes:<br>"
+            finalDiv += "<div class='main main2 changelog'>Version " + change["version"] + "<br>Release date: " + change["date"] + "<br><hr>Changes:<br>"
             
             change["changes"].forEach(changeSing => {
                 finalDiv += "- " + changeSing + "<br>"
