@@ -11,7 +11,9 @@ section===Requirements
 
 In order to fully use the program, you will need the following programs:
 - gooFLA (obviously, duh)
-- Adobe Animate (gooFLA was tested on the 2024 version, but that might not be necesarly the required minimum)
+- Adobe Animate*
 - GooTool (Check the <a href="https://discord.gg/6BEecnD">Goofans Discord</a> for that)
 - Goovie
 - World of Goo game
+
+*gooFLA was tested on the 2024 version, but that might not be necesarly the required minimum. It has also been tested on Adobe Flash so it should be mostly compatible with that as well.
