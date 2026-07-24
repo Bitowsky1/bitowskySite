@@ -1,0 +1,41 @@
+,EN
+LangName,English
+Round,LEVELS LEFT:
+Rewatch,REWATCH
+NextLevel,NEXT LEVEL
+Gametip_input,CLICK AND HOLD COUNTY'S DISPLAY AND MOVE THE MOUSE UP OR DOWN TO ADJUST YOUR ANSWER.
+Gametip_submit,"IF YOU'RE READY WITH YOUR ANSWER, HIT COUNTY'S BUTTON ON HIS HEAD!"
+Results_perfect,NAILED IT TO THE MILLISECOND!
+Results_early,YOU WERE OFF BY {TIME} SECONDS TOO EARLY!
+Results_late,YOU WERE OFF BY {TIME} SECONDS TOO LATE!
+Results_points,YOU GOT {POINTS} POINTS!
+Results_comment_perfect,"Woah, a perfect score?[awt] Tick-tock-stic!"
+Results_comment_close,"Ohhh...[awt] so close.[awt] But good job, either way!"
+Results_comment_good,"Hey, that's pree-[awt]tick-[awt]y[awt] good!"
+Results_comment_mid,"Nice, but...[awt] could've done better?"
+Results_comment_bad,Well...[awt] can't say you haven't at least tried.[awt] I think.
+Results_comment_awful,"Sorry, but...[awt] that's out of acceptable range..."
+EndTalk,End of the game![awt] Now let's see how well you've performed![awt] [shg]Press the button on my head[/shg] to see the results.
+FinalPre,"With all of those interesting points, you [shg]total score[/shg] is..."
+FinalReact_test1,WOWOWOWOWOWOW
+FinalReact_test2,POGGERS SCORE LOLOLOLOLO
+FinalReact_test3,"I mean...[awt] I think, becaase this is a test talk, [awt]and I can't rate it preciselly yet."
+FinalReact_finish,Anyway![awt] Feel free to [shg]press the button on my head[/shg] for the finish!
+,
+,
+,
+,
+,
+,
+,
+,
+Q_golf,How long until the [shg]ball gets into the hole[/shg]?
+Q_clock,How long until the [shg]minute hand gets to 12[/shg]?
+Q_football,How long until the [shg]ball gets kicked[/shg]?
+Q_beachdog,How long until the [shg]dog touches the sea[/shg]?
+Q_domino,How long until the [shg]last domino block falls down[/shg]?
+Q_tennis,How long until the [shg]tennis ball gets hit by the racket[/shg]?
+Q_volleyball,How long until the [shg]volleyball ball gets hit[/shg]?
+Q_coin,How long until the [shg]coin stops moving[/shg]?
+Q_frisbeedog,How long until the [shg]frisbee collides with the dog[/shg]?
+Q_snowboard,How long until the [shg]snowboarder lands on the ground[/shg]?
