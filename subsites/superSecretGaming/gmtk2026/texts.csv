@@ -1,6 +1,36 @@
 ,EN
 LangName,English
 ClickToStart,"(Mouse click, to start...)"
+Version,Version {VERSION}
+MenuPlay,PLAY
+MenuHowToPlay,HOW TO PLAY?
+MenuCredits,CREDITS
+MenuTalk,Hey![awt] The name's [shg]County[/shg]![awt] I'll be your clock for today!
+Credits1,Game created by:\n[color=lime]Bitowsky[/color]
+Credits2,Videos taken from\n{LOGO_PEXELS}\nunder Pexels' free license
+Credits3,Created for\n{LOGO_GMTK}
+CreditsTalk,"With special thanks to [shg]Sebixo, Gliderpop[awt] and AnomeQ[/shg]![awt] Tee hee!"
+CreditsQuit,GO BACK
+HowToPlay1,Hey hey![awt] And welcome to [shg]”It's Gonna Happen!”[/shg]!
+HowToPlay2,"My name is [shg]County[/shg], and I'll be your clock for today!"
+HowToPlay3,"In this game, your goal is to [shg]predict, in what time a certain action is gonna happen[/shg]."
+HowToPlay4,"Every level, you're gonna be shown a video with someone or something doing a certain activity."
+HowToPlay5,Then...
+HowToPlay6,...the video will get paused.
+HowToPlay7,"[shg]Using my display[/shg], your goal is to guess, [shg]how long it takes for the video to get to the action that I will ask for[/shg]."
+HowToPlay8,"Depending on your answer, you'll receive some points.[awt] [shg]The more precise your answer is, the more points you'll get![/shg]"
+HowToPlay9,"And at the end of the game, all the received points will tally up nicely into [shg]your final game score[/shg]!"
+HowToPlay10,And that's pretty much it!
+HowToPlay11,Now let's see if you're a master of predicting things![awt] Tee hee!
+Ending1,Hey![awt] Thanks for playing this [shg]GMTK Game Jam 2026[/shg] submission.
+Ending2,Have fun with other submissions!
+Ending3,...
+Ending4,...
+Ending5,Unless...[awt] you're playing this after the jam ended.
+Ending6,...
+Ending7,...
+Ending8,"In that case, have a nice day or night![awt] And check the batteries in your clocks![awt] Tee hee!"
+Ending9,"And if you want to go back to the main menu, [shg]press the button on my head[/shg]!"
 Round,LEVELS LEFT:
 Rewatch,REWATCH
 NextLevel,NEXT LEVEL
