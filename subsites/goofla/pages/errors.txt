@@ -8,7 +8,7 @@ In case of an error, gooFLA will display an error message. Most errors are rathe
 section===I got an error "Bad magic number for central directory of the FLA."
 
 <i>(This is based only on my personal observations)</i>
-Upon saving a project in Adobe Animate, it creates some additional files that blocks the gooFLA from reading it. To fix it, you must delete those additionally created files. (This won't affect your animation nor the file)
+Upon saving a project in Adobe Animate, the program creates some additional files that block gooFLA from reading it. To fix it, you need to <b>delete those additionally created files manually.</b> (Don't worry, this won't affect your file nor your animation.)
 
 With the use of an archive reader (preferably WinRar), locate your .fla project and open it without extracting it. In the root of the file, you will find a "mimetype" file that blocks the gooFLA from reading the project. Delete it and then try to export the project again.
 

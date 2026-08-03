@@ -33,14 +33,14 @@
             margin-top: 20px;
             display: block;
             border: 20px solid transparent;
-            border-image: url("img/9slice.png") 60 fill stretch;
+            border-image: url("img/9slice.png") 90 fill stretch;
             padding: 30px;
             color: white;
             text-align: center;
         }
 
         .main2 {
-            border-image: url("img/9slice2.png") 60 fill stretch;
+            border-image: url("img/9slice2.png") 90 fill stretch;
         }
 
         .main a {
@@ -66,6 +66,12 @@
 
         .buttonSubMain {
             background-color: #00005B;
+        }
+
+        .buttonOther {
+            background-color: rgb(39, 39, 39);
+            border-color: rgb(20, 20, 20);
+
         }
 
         .buttonTextMini {
@@ -105,7 +111,8 @@
     <div class="main">
         Animate World of Goo movies in Adobe Animate and export them back!<br><br>
 
-        <a href="files/gooFLA.exe" download><div class="button buttonMain">Download gooFLA (Windows)<br><span class="buttonTextMini">Version 0.5</span></div>
+        <a href="files/gooFLA.exe" download><div class="button buttonMain">Download gooFLA (Windows)<br><span class="buttonTextMini">Version 0.6</span></div>
+        <a href="https://drive.google.com/drive/folders/1X7hLDPfrL459XGBydeFVX_4GDMWdKqxj?usp=sharing"><div class="button buttonOther"><span class="buttonTextMini">Older Versions (Google Drive)</span></div>
         <hr></a>
         <a href="documentation.html"><div class="button buttonSubMain">Documentation<br><span class="buttonTextMini">(Read carefully!)</span></div></a>
         <a href="files/sampleTemplate.fla" download><div class="button buttonSubMain">Download "sampleTemplate.fla"<br><span class="buttonTextMini">(For some head start)</span></div></a>
@@ -161,6 +168,13 @@
                 "date": "30.07.2026",
                 "changes": [
                     "Fixes related to empty in-between frames.",
+                ]
+            },
+            {
+                "version": "0.6",
+                "date": "03.08.2026",
+                "changes": [
+                    "Added partial support to parenting (read Documentation for more info)",
                 ]
             }
         ]

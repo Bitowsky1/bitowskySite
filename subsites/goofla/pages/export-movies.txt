@@ -15,6 +15,9 @@ Location to your MOVIE folder of your World of Goo. This should look something l
 section2===Movie name
 Name of your movie (for example "Chapter1End", "wogcdestroy", etc.). This will create the folder in your res/movie/ directory with this name and generally mark everything in your movie to be pointed towards this location. If you want to use the same name as your .fla file (without extension), leave this field empty. 
 
+section2===Parenting Data
+If enabled, gooFLA will also include any present parenting data and convert it to be visible in the MOVIE. Please refer to the section <b>"Let's go animating! > Workarounds > Parenting"</b> for more info about the parenting.
+
 section2===Do not encrypt final files
 If unchecked, gooFLA will automatically encrypt all of the necesarry files to be ready with the use of Goovie and World of Goo.
 If checked, this process gets skipped and gooFLA will generate an xml file, which you can then manually encrypt it with the use of GooTool. 

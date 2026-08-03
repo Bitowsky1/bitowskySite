@@ -69,7 +69,6 @@ section2===gooFLA can export:
 section2===gooFLA cannot export:
 ❌ Skewing - World of Goo does not use transformation matrix, therefore it can't perform skewing.
 ❌ Other Effects - World of Goo does not use any effects other than color and alpha.
-❌ Parenting - Not supported in World of Goo movies, however it could be potentially possible to do with simple positioning, so stay tuned.
 ❌ Scenes - Currently unsupported, but might be possible to implement. For now, all animations must be contained within one scene.
 
 section===Workarounds
@@ -80,16 +79,26 @@ section2===⚒️ Eases
 Adobe Animate offers tons of eases, including making your custom ones, while World of Goo have only two types of eases: none or linear.
 If you want to get around this limitation, you can take the part with a not supported ease and use the <b>"Convert to Frame-by-Frame Animation"</b> option from the Right-Click Mouse menu. This will convert the selected parts into individual frames, which contains separate data on where the object would be with the applied ease.
 
-important===While this is a somewhat revertable operation, it's recommended to first duplicate the layer and turn it into a guide layer. That way, if you change your mind, you can always revert back your changes. 
+important===While this is a somewhat revertable operation, it's recommended to first duplicate the layer and turn it into a guide layer. That way, if you change your mind, you can easily revert back your changes. 
+
+section2===⚒️ Parenting
+While MOVIEs do not support parenting objects, it's possible to export the parenting data from FLA to MOVIE.
+To do that, <b>you need to convert all parenting frames of child's layer and parent's layer to a Frame-by-Frame animation</b>. Use the "Convert to Frame-by-Frame Animation" option, accessible by right-clicking the frames - this will convert the selected parts into individual frames, which contains separate data on where the object would be, according to its parenting data.
+
+This also works with big hierarchies of objects, but they all need to be converted to Frame-by-Frame animation.
+
+important===While this is a somewhat revertable operation, it's recommended to first duplicate all required layers and turn them into guide layers. That way, if you change your mind, you can easily revert back your changes. 
 
 
 section===Adding Audio
 
 Any audio, that you want to add, <b>must be on the layer inside the "_SOUNDS" folder on a timeline</b>. Otherwise, it will not get exported at all.
 
+img===audioImplementation.png===width: 90%;===Example of where the audio needs to be placed.
+
 You can put several audio in one layer and you can even mix it with others.
 
-<b>Do not make two or more audios start playing at the same frame</b>. gooFLA currently saves all audio to one object, so for now, you can get around this by separating the audio's starting points by one frame.
+<b>Do not make two or more audios start playing at the same frame</b>. gooFLA currently saves all audio to one object, so the sound on the higher layer will take priority. You can get around this by separating the audio's starting points by one frame.
 
 important===Tooltip: You can hide the layer with the sound to mute it during the preview.
 
